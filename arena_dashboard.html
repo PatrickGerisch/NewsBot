@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>News-Bot Arena – A/B-Vergleich</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>body{font-family:'Segoe UI',sans-serif;background:#f9fafb;color:#111827;margin:0;padding:24px}
+.wrap{max-width:900px;margin:0 auto}h1{font-size:1.35rem;margin-bottom:2px}
+.sub{color:#6b7280;font-size:.9rem;margin-bottom:16px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:.85rem}td,th{padding:7px 4px;border-top:1px solid #f0f0f0;text-align:left}
+.warn{font-size:.75rem;color:#6b7280;margin-top:14px}</style></head><body><div class="wrap">
+<h1>🏁 News-Bot Arena – A/B-Vergleich der Varianten</h1>
+<div class="sub">Stand: 2026-07-23 08:14 ET · Markt VORBÖRSLICH · gleiche Signale, verschiedene Schalter · je Start 10.000 € · reines Papiergeld</div>
+<div class="card"><canvas id="c" height="120"></canvas></div>
+<div class="card"><b>Rangliste (Depotwert)</b><table>
+<tr><th>Variante</th><th style="text-align:right">Depot</th><th style="text-align:right">Rendite</th><th style="text-align:right">vs. Buy&amp;Hold</th></tr>
+<tr><td><b>baseline</b></td><td style='text-align:right'>10,000.00 €</td><td style='text-align:right;color:#0e9f6e'>+0.00 %</td><td style='text-align:right'>+0.00 %-Pkt.</td></tr><tr><td><b>regime</b></td><td style='text-align:right'>10,000.00 €</td><td style='text-align:right;color:#0e9f6e'>+0.00 %</td><td style='text-align:right'>+0.00 %-Pkt.</td></tr><tr><td><b>social</b></td><td style='text-align:right'>10,000.00 €</td><td style='text-align:right;color:#0e9f6e'>+0.00 %</td><td style='text-align:right'>+0.00 %-Pkt.</td></tr><tr><td><b>confidence</b></td><td style='text-align:right'>10,000.00 €</td><td style='text-align:right;color:#0e9f6e'>+0.00 %</td><td style='text-align:right'>+0.00 %-Pkt.</td></tr><tr><td><b>all</b></td><td style='text-align:right'>10,000.00 €</td><td style='text-align:right;color:#0e9f6e'>+0.00 %</td><td style='text-align:right'>+0.00 %-Pkt.</td></tr></table></div>
+<div class="warn">baseline = aktueller Bot (alle Schalter aus). regime/social/confidence = je ein Upgrade an, all = alle an.
+Signale (Schlagzeilen + StockTwits + Momentum) werden pro Lauf einmal geholt und geteilt; nur die Portfolio-Bildung
+unterscheidet sich. Kein Anlagerat.</div>
+</div><script>new Chart(document.getElementById('c'),{type:'line',
+data:{labels:["2026-07-23"],datasets:[{label:'baseline',data:[10000.0],borderColor:'#111827',borderWidth:2,pointRadius:0,tension:.2},{label:'regime',data:[10000.0],borderColor:'#2563eb',borderWidth:2,pointRadius:0,tension:.2},{label:'social',data:[10000.0],borderColor:'#c27803',borderWidth:2,pointRadius:0,tension:.2},{label:'confidence',data:[10000.0],borderColor:'#0e9f6e',borderWidth:2,pointRadius:0,tension:.2},{label:'all',data:[10000.0],borderColor:'#e02424',borderWidth:2,pointRadius:0,tension:.2},{label:'Buy & Hold',data:[10000.0],borderColor:'#9ca3af',borderWidth:1,borderDash:[5,4],pointRadius:0}]},
+options:{plugins:{legend:{position:'bottom'}},scales:{y:{ticks:{callback:v=>v.toLocaleString('de-DE')+' €'}}}}});</script>
+</body></html>

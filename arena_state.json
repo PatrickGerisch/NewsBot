@@ -1,0 +1,36 @@
+{
+  "start": "2026-07-23",
+  "bh_anteile": 13.379537816344122,
+  "variants": {
+    "baseline": {
+      "cash": 10000.0,
+      "pos": {},
+      "handelstage": 1,
+      "letzter_tag": "2026-07-23"
+    },
+    "regime": {
+      "cash": 10000.0,
+      "pos": {},
+      "handelstage": 1,
+      "letzter_tag": "2026-07-23"
+    },
+    "social": {
+      "cash": 10000.0,
+      "pos": {},
+      "handelstage": 1,
+      "letzter_tag": "2026-07-23"
+    },
+    "confidence": {
+      "cash": 10000.0,
+      "pos": {},
+      "handelstage": 1,
+      "letzter_tag": "2026-07-23"
+    },
+    "all": {
+      "cash": 10000.0,
+      "pos": {},
+      "handelstage": 1,
+      "letzter_tag": "2026-07-23"
+    }
+  }
+}
