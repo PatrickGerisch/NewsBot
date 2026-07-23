@@ -56,6 +56,84 @@ MAXTAGE = 5                  # max. Haltedauer in Handelstagen
 BAND = 0.10                  # Rebalancing-Deadband: nur handeln, wenn Abweichung
                              # > 10 % des Zielgewichts (bremst stündlichen Mikro-Churn)
 
+# ----------------------------------------------------------------------------- #
+#  UPGRADE-SCHALTER (Standard: AUS -> laufende Strategie bleibt unveraendert)
+#  Begruendung/Details siehe News-Bot-Effizienz-Upgrades.md. Zum Aktivieren auf
+#  True setzen – am besten einzeln, dann gegen den Ausgangsstand A/B vergleichen.
+# ----------------------------------------------------------------------------- #
+USE_REGIME_FILTER = False      # Baisse -> keine neuen Longs, Hausse -> keine neuen Shorts
+USE_SOCIAL_VOLUME_GATE = False # StockTwits nur werten, wenn genug Posts (Volumen-Spike)
+USE_CONFIDENCE_SIZING = False  # Positionsgroesse ~ |Score| statt strikt gleichgewichtet
+SOCIAL_MIN_POSTS = 5           # Schwelle fuers Volume-Gate (v1: absolute Postzahl)
+ENRICH_LOGGING = True          # additive Features -> news_bot_features.csv (fuers Lernen)
+
+
+# ----------------------------------------------------------------------------- #
+#  Helfer fuer die Upgrades (nur wirksam, wenn der jeweilige Schalter True ist)
+# ----------------------------------------------------------------------------- #
+def market_regime(settled, bench=None):
+    """Marktregime aus dem Benchmark: (+1 Hausse / -1 Baisse / 0 unbekannt, ratio).
+    Hausse := Benchmark >= 200-Tage-Schnitt (bzw. Mittel, falls < 200 Tage vorhanden)."""
+    bench = BENCH if bench is None else bench
+    try:
+        s = settled[bench].dropna()
+        if len(s) < 20:
+            return 0, 0.0
+        ma = s.iloc[-200:].mean() if len(s) >= 200 else s.mean()
+        px = float(s.iloc[-1])
+        return (1 if px >= ma else -1), float(px / ma - 1)
+    except Exception:
+        return 0, 0.0
+
+
+def apply_regime(ziel_dir, regime):
+    """Gated: im Baisse-Regime nur Shorts, in Hausse nur Longs zulassen."""
+    if not USE_REGIME_FILTER or regime == 0:
+        return ziel_dir
+    keep = -1 if regime < 0 else 1
+    return {t: d for t, d in ziel_dir.items() if d == keep}
+
+
+def confidence_weights(ziel_dir, scores):
+    """Zielgewichte je Titel (Summe 1). Off -> gleichgewichtet (equity/N);
+    On  -> proportional zu |Score| (staerkere Signale bekommen mehr Kapital)."""
+    n = len(ziel_dir)
+    if n == 0:
+        return {}
+    if not USE_CONFIDENCE_SIZING:
+        return {t: 1.0 / n for t in ziel_dir}
+    tot = sum(abs(scores.get(t, 0)) for t in ziel_dir) or 1.0
+    return {t: abs(scores.get(t, 0)) / tot for t in ziel_dir}
+
+
+def _mom(series, tage):
+    s = series.dropna()
+    return (s.iloc[-1] / s.iloc[-1 - tage] - 1) * 100 if len(s) > tage else 0.0
+
+
+def _features_log(ts, heute, sig, settled, mark, ziel_set, regime, regime_ratio):
+    """Additive Protokollierung je Kandidat -> news_bot_features.csv. Aendert KEINE
+    Handelsentscheidung. Das Label (Ergebnis nach N Tagen) wird spaeter aus dem
+    Tages-Cache nachberechnet; hier werden nur die Merkmale zum Signalzeitpunkt
+    festgehalten (Basis fuers Meta-Labeling)."""
+    if not ENRICH_LOGGING or not sig:
+        return
+    neu = not os.path.exists(F['features.csv'])
+    with open(F['features.csv'], 'a', newline='') as f:
+        w = csv.writer(f)
+        if neu:
+            w.writerow(['Zeitstempel', 'Datum', 'Asset', 'Score', 'Sentiment', 'Social',
+                        'ST_Posts', 'Mom5', 'Mom20', 'Mom60', 'Vol20', 'Regime',
+                        'RegimeRatio', 'Mark', 'ImZiel'])
+        for t, d in sig.items():
+            s = settled[t].dropna() if t in settled.columns else settled.iloc[0:0]
+            vol20 = float(s.pct_change().iloc[-20:].std() * 100) if len(s) > 20 else 0.0
+            w.writerow([ts, heute, t, d.get('score', 0), d.get('sent', 0),
+                        d.get('soc', 0), d.get('n_soc', 0),
+                        f"{_mom(s, 5):.2f}", f"{_mom(s, 20):.2f}", f"{_mom(s, 60):.2f}",
+                        f"{vol20:.2f}", regime, f"{regime_ratio:.4f}",
+                        f"{(mark.get(t, 0) or 0):.2f}", 1 if t in ziel_set else 0])
+
 POS_WORTE = ['rate cut', 'stimulus', 'beats', 'beat estimates', 'surge', 'rally',
              'deal', 'agreement', 'record high', 'upgrade', 'strong growth',
              'cooling inflation', 'soft landing', 'breakthrough', 'optimism']
@@ -76,7 +154,8 @@ US_HOLIDAYS = {'2026-01-01', '2026-01-19', '2026-02-16', '2026-04-03', '2026-05-
 
 B = os.path.dirname(os.path.abspath(__file__))
 F = {k: os.path.join(B, f'news_bot_{k}') for k in
-     ['state.json', 'history.csv', 'trades.csv', 'log.csv', 'runs.csv', 'dashboard.html']}
+     ['state.json', 'history.csv', 'trades.csv', 'log.csv', 'runs.csv', 'dashboard.html',
+      'features.csv']}
 
 
 # ----------------------------------------------------------------------------- #
@@ -247,10 +326,12 @@ def signale_rechnen(settled, news, tickers):
         mom = (s.iloc[-1] / s.iloc[-6] - 1) * 100 if len(s) > 6 else 0
         sent, hl = sentiment(news[t])
         soc, n_soc, soc_hl = soc_all.get(t, (0, 0, ''))
-        stimmung = max(-3, min(3, sent + soc))
+        # Volume-Gate (gated): Social nur werten, wenn genug Posts -> sonst neutral
+        soc_eff = soc if (not USE_SOCIAL_VOLUME_GATE or n_soc >= SOCIAL_MIN_POSTS) else 0
+        stimmung = max(-3, min(3, sent + soc_eff))
         score = stimmung + (2 if mom > 1.5 else -2 if mom < -1.5 else 0)
-        treiber = f'[StockTwits] {soc_hl}' if (abs(soc) >= abs(sent) and soc_hl) else hl
-        sig[t] = {'score': score, 'mom': mom, 'stimmung': stimmung,
+        treiber = f'[StockTwits] {soc_hl}' if (abs(soc_eff) >= abs(sent) and soc_hl) else hl
+        sig[t] = {'score': score, 'mom': mom, 'stimmung': stimmung, 'sent': sent,
                   'treiber': treiber, 'soc': soc, 'n_soc': n_soc}
     return sig
 
@@ -335,24 +416,27 @@ def main():
         logf = _log_oeffnen()
         lw = csv.writer(logf)
 
-        # --- Ziel-Portfolio: ALLE klaren Signale gleichgewichtet, kein Hebel ---
+        # --- Ziel-Portfolio: alle klaren Signale (gleichgewichtet, kein Hebel) ---
         # Haltedauer erreicht -> raus und diesen Lauf nicht neu eröffnen
         aged = {t for t, p in s['pos'].items() if s['handelstage'] - p['tag'] >= MAXTAGE}
         ziel_dir = {t: (1 if sig[t]['score'] >= 3 else -1)
                     for t in manage if abs(sig[t]['score']) >= 3 and t not in aged}
-        N = len(ziel_dir)
+        regime, regime_ratio = market_regime(settled)
+        ziel_dir = apply_regime(ziel_dir, regime)      # gated: Regime-Filter
         equity = _equity()
-        ziel_notional = (equity / N) if N else 0.0     # Gleichgewicht -> Summe = 100 %
+        gew = confidence_weights(ziel_dir, {t: sig[t]['score'] for t in ziel_dir})
+        N = len(ziel_dir)
 
         for t in sorted(manage, key=lambda x: -abs(sig[x]['score'])):
             mk = _px(t)
             if mk <= 0:                                # ohne Kurs nicht handelbar
                 continue
+            nt = equity * gew.get(t, 0.0)              # Ziel-Notional je Titel (gated: ~|Score|)
             cur_stk = s['pos'][t]['stk'] if t in s['pos'] else 0.0
-            tgt_stk = (ziel_notional * ziel_dir[t]) / mk if t in ziel_dir else 0.0
+            tgt_stk = (nt * ziel_dir[t]) / mk if t in ziel_dir else 0.0
             delta = tgt_stk - cur_stk
             # Deadband: kleine Abweichungen nicht handeln (Schließen aber immer)
-            if tgt_stk != 0 and abs(delta * mk) < BAND * ziel_notional:
+            if tgt_stk != 0 and abs(delta * mk) < BAND * nt:
                 continue
             if abs(delta) < 1e-9:
                 continue
@@ -385,6 +469,7 @@ def main():
                          akt, sig[t]['treiber'], sig[t]['soc'], sig[t]['n_soc']])
             trades_run += 1
         logf.close()
+        _features_log(ts, heute, sig, settled, mark, set(ziel_dir), regime, regime_ratio)
 
     # --- Bewertung (immer), Historie (1 Zeile/Tag, auf letzten Stand aktualisiert) ---
     equity = _equity()

@@ -71,24 +71,27 @@ def load_keys():
 #  Reine Planungsfunktion (ohne Netz -> testbar): Ziel-Orderliste bestimmen
 # ----------------------------------------------------------------------------- #
 def plan_orders(sig, equity, positions, prices, entry_dates, today,
-                assets=ALPACA_ASSETS, maxtage=MAXTAGE, band=BAND):
+                assets=ALPACA_ASSETS, maxtage=MAXTAGE, band=BAND, regime=0):
     """positions/prices: {sym: signed_qty}/{sym: kurs}. entry_dates: {sym:'YYYY-MM-DD'}.
-    Liefert (orders, ziel_dir, N). orders = Liste {sym,cur,tgt,delta,flip,aged}."""
+    Liefert (orders, ziel_dir, N). orders = Liste {sym,cur,tgt,delta,flip,aged}.
+    regime (gated): -1/0/+1 fuer den Regime-Filter aus news_bot.py."""
     aged = {sym for sym in positions if positions[sym] != 0 and sym in entry_dates
             and np.busday_count(entry_dates[sym], today) >= maxtage}
     ziel_dir = {t: (1 if sig[t]['score'] >= 3 else -1)
                 for t in assets if abs(sig[t]['score']) >= 3 and t not in aged}
+    ziel_dir = nb.apply_regime(ziel_dir, regime)                 # gated: Regime-Filter
+    gew = nb.confidence_weights(ziel_dir, {t: sig[t]['score'] for t in ziel_dir})  # gated
     N = len(ziel_dir)
-    tgt_notional = (equity / N) if N else 0.0
     orders = []
     for t in assets:
         price = prices.get(t, 0) or 0
         if price <= 0:
             continue
+        nt = equity * gew.get(t, 0.0)                            # Ziel-Notional je Titel
         cur = positions.get(t, 0.0)
-        tgt = int((tgt_notional * ziel_dir[t]) / price) if t in ziel_dir else 0  # ganze Stücke
+        tgt = int((nt * ziel_dir[t]) / price) if t in ziel_dir else 0  # ganze Stücke
         delta = tgt - cur
-        if tgt != 0 and abs(delta * price) < band * tgt_notional:   # Deadband
+        if tgt != 0 and abs(delta * price) < band * nt:   # Deadband
             continue
         if abs(delta) < 1e-9:
             continue
@@ -140,8 +143,9 @@ def run():
             sig.setdefault(t, {'score': 0, 'mom': 0, 'stimmung': 0,
                                'treiber': '', 'soc': 0, 'n_soc': 0})
         prices = {t: mark.get(t, 0) for t in manage}
+        regime, _ = nb.market_regime(settled)            # gated: Regime-Filter (siehe news_bot.py)
         orders, ziel_dir, N = plan_orders(sig, equity, positions, prices,
-                                          entry_dates, heute, assets=manage)
+                                          entry_dates, heute, assets=manage, regime=regime)
 
         for o in orders:
             sym, delta, tgt = o['sym'], o['delta'], o['tgt']
