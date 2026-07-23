@@ -51,6 +51,11 @@ jobs:
         continue-on-error: true
         run: python news_bot_alpaca.py | tee alp_out.txt
 
+      - name: Arena A/B-Vergleich (arena.py)
+        id: arena
+        continue-on-error: true      # reiner Simulator-Vergleich, beeinflusst die Bots nicht
+        run: python arena.py | tee arena_out.txt
+
       - name: Zusammenfassung ins Run-Log
         if: always()
         run: |
@@ -64,6 +69,10 @@ jobs:
             echo '```'
             grep -E '^RUN|Alpaca-Paper|Konto-Status|  (BUY|SELL|EXIT)' alp_out.txt 2>/dev/null || echo '(keine Ausgabe)'
             echo '```'
+            echo '### Arena (A/B-Vergleich der Varianten)'
+            echo '```'
+            grep -E '^RUN|baseline|regime|social|confidence|all|BuyHold' arena_out.txt 2>/dev/null || echo '(keine Ausgabe)'
+            echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: State zurück ins Repo committen
@@ -71,7 +80,7 @@ jobs:
         run: |
           git config user.name  "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
-          rm -f sim_out.txt alp_out.txt
+          rm -f sim_out.txt alp_out.txt arena_out.txt
           git add -A
           if git diff --cached --quiet; then
             echo "Keine State-Änderungen."
