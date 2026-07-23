@@ -1,0 +1,82 @@
+name: News-Bot (Paper)
+
+# Läuft in der GitHub-Cloud – unabhängig von Surface oder Handy.
+# Cron-Zeiten sind in UTC. Die US-Börse (9:30–16:00 ET) liegt je nach Sommer-/
+# Winterzeit bei ~13:30–20:00 bzw. ~14:30–21:00 UTC. Wir laufen stündlich über
+# ein etwas breiteres Fenster; die Bots prüfen die Marktzeit selbst und handeln
+# nur bei offenem Markt (sonst nur Bewertung, trades=0).
+on:
+  schedule:
+    - cron: '0 13-21 * * 1-5'   # stündlich Mo–Fr, ~US-Handelszeit
+  workflow_dispatch: {}          # zusätzlich manuell startbar (Knopf im Actions-Tab)
+
+# Verhindert, dass zwei Läufe gleichzeitig am selben State arbeiten
+concurrency:
+  group: news-bot
+  cancel-in-progress: false
+
+# Erlaubt dem Workflow, den aktualisierten State zurück ins Repo zu committen
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      # Aus den Repository-Secrets (Settings -> Secrets and variables -> Actions).
+      # Die Skripte lesen genau diese beiden Variablennamen.
+      APCA_API_KEY_ID: ${{ secrets.ALPACA_API_KEY_ID }}
+      APCA_API_SECRET_KEY: ${{ secrets.ALPACA_API_SECRET_KEY }}
+      TZ: America/New_York
+    steps:
+      - name: Repo auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Abhängigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Simulator (news_bot.py)
+        id: sim
+        continue-on-error: true      # ein Fehler hier stoppt den Alpaca-Bot nicht
+        run: python news_bot.py | tee sim_out.txt
+
+      - name: Alpaca Paper (news_bot_alpaca.py)
+        id: alp
+        continue-on-error: true
+        run: python news_bot_alpaca.py | tee alp_out.txt
+
+      - name: Zusammenfassung ins Run-Log
+        if: always()
+        run: |
+          {
+            echo "## News-Bot Lauf $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
+            echo '### Simulator'
+            echo '```'
+            grep -E '^RUN|News-Bot:|Cache' sim_out.txt 2>/dev/null || echo '(keine Ausgabe)'
+            echo '```'
+            echo '### Alpaca Paper'
+            echo '```'
+            grep -E '^RUN|Alpaca-Paper|Konto-Status|  (BUY|SELL|EXIT)' alp_out.txt 2>/dev/null || echo '(keine Ausgabe)'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: State zurück ins Repo committen
+        if: always()
+        run: |
+          git config user.name  "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          rm -f sim_out.txt alp_out.txt
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Keine State-Änderungen."
+          else
+            git commit -m "News-Bot State-Update [skip ci]"
+            git pull --rebase --autostash origin "${{ github.ref_name }}" || true
+            git push
+          fi

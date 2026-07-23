@@ -1,0 +1,4 @@
+yfinance
+alpaca-py
+numpy
+pandas

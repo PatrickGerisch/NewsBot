@@ -1,0 +1,30 @@
+{
+  "start": "2026-07-17",
+  "cash": 6679.619484752292,
+  "pos": {
+    "GLD": {
+      "stk": 8.930913206945409,
+      "einstieg": 373.75178494262695,
+      "tag": 4,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-21 14:11 ET"
+    },
+    "USO": {
+      "stk": 25.941154052738153,
+      "einstieg": 128.6442918319702,
+      "tag": 4,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-21 15:01 ET"
+    },
+    "QQQ": {
+      "stk": -4.717471759065321,
+      "einstieg": 708.4056297607423,
+      "tag": 4,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-07-21 15:14 ET"
+    }
+  },
+  "bh_anteile": 13.32054612938296,
+  "handelstage": 6,
+  "letzter_tag": "2026-07-23"
+}

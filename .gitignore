@@ -1,0 +1,10 @@
+# Niemals API-Schlüssel ins Repo! Die kommen ausschließlich in GitHub-Secrets.
+alpaca_keys.env
+
+# Python-Kram
+__pycache__/
+*.pyc
+
+# temporäre Lauf-Ausgaben
+sim_out.txt
+alp_out.txt
