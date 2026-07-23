@@ -1,27 +1,83 @@
 {
   "start": "2026-07-17",
-  "cash": 6679.619484752292,
+  "cash": 7524.275065662751,
   "pos": {
-    "GLD": {
-      "stk": 8.930913206945409,
-      "einstieg": 373.75178494262695,
-      "tag": 4,
+    "TRV": {
+      "stk": 2.496381594078399,
+      "einstieg": 377.97890354919434,
+      "tag": 6,
       "richtung": "LONG",
-      "einstieg_ts": "2026-07-21 14:11 ET"
+      "einstieg_ts": "2026-07-23 11:04 ET"
     },
-    "USO": {
-      "stk": 25.941154052738153,
-      "einstieg": 128.6442918319702,
-      "tag": 4,
+    "LITE": {
+      "stk": 1.117254473011171,
+      "einstieg": 844.5520698852539,
+      "tag": 6,
       "richtung": "LONG",
-      "einstieg_ts": "2026-07-21 15:01 ET"
+      "einstieg_ts": "2026-07-23 11:04 ET"
     },
-    "QQQ": {
-      "stk": -4.717471759065321,
-      "einstieg": 708.4056297607423,
-      "tag": 4,
+    "ABT": {
+      "stk": 9.298117134188146,
+      "einstieg": 101.48071530532836,
+      "tag": 6,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-23 11:04 ET"
+    },
+    "CVNA": {
+      "stk": -15.4874458768154,
+      "einstieg": 60.86455295753479,
+      "tag": 6,
       "richtung": "SHORT",
-      "einstieg_ts": "2026-07-21 15:14 ET"
+      "einstieg_ts": "2026-07-23 11:04 ET"
+    },
+    "EQT": {
+      "stk": 17.37647162125974,
+      "einstieg": 54.30213902664184,
+      "tag": 6,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-23 11:04 ET"
+    },
+    "TER": {
+      "stk": 2.5459474131060937,
+      "einstieg": 370.620215057373,
+      "tag": 6,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-23 11:04 ET"
+    },
+    "CDNS": {
+      "stk": -2.8185711295184372,
+      "einstieg": 334.437708480835,
+      "tag": 6,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-07-23 11:04 ET"
+    },
+    "AXON": {
+      "stk": -1.9242390295314664,
+      "einstieg": 489.87493511962896,
+      "tag": 6,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-07-23 11:04 ET"
+    },
+    "SNPS": {
+      "stk": -2.523500912515064,
+      "einstieg": 373.543145980835,
+      "tag": 6,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-07-23 11:04 ET"
+    },
+    "CF": {
+      "stk": 7.343362746575248,
+      "einstieg": 128.49420767211913,
+      "tag": 6,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-23 11:04 ET"
+    },
+    "STX": {
+      "stk": 1.024449325189261,
+      "einstieg": 921.0602755737305,
+      "tag": 6,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-23 11:04 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
