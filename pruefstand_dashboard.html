@@ -8,16 +8,16 @@
 table{width:100%;border-collapse:collapse;font-size:.85rem}td,th{padding:7px 4px;border-top:1px solid #f0f0f0;text-align:left}
 .warn{font-size:.75rem;color:#6b7280;margin-top:14px}</style></head><body><div class="wrap">
 <h1>🧪 Strategie-Prüfstand – Literatur-Faktoren vs. Buy &amp; Hold</h1>
-<div class="sub">Stand: 2026-07-24 12:34 ET · Markt OFFEN · kein Rebalancing faellig · je Start 10.000 € · reines Papiergeld</div>
+<div class="sub">Stand: 2026-07-24 14:14 ET · Markt OFFEN · kein Rebalancing faellig · je Start 10.000 € · reines Papiergeld</div>
 <div class="card"><canvas id="c" height="120"></canvas></div>
 <div class="card"><b>Rangliste (Depotwert)</b><table>
 <tr><th>Strategie</th><th style="text-align:right">Depot</th><th style="text-align:right">Rendite</th><th style="text-align:right">vs. Buy&amp;Hold</th></tr>
-<tr><td><b>reversal5</b></td><td style='text-align:right'>10,019.44 €</td><td style='text-align:right;color:#0e9f6e'>+0.19 %</td><td style='text-align:right'>+0.86 %-Pkt.</td></tr><tr><td><b>mom12_1</b></td><td style='text-align:right'>9,682.94 €</td><td style='text-align:right;color:#e02424'>-3.17 %</td><td style='text-align:right'>-2.51 %-Pkt.</td></tr></table></div>
+<tr><td><b>reversal5</b></td><td style='text-align:right'>10,034.25 €</td><td style='text-align:right;color:#0e9f6e'>+0.34 %</td><td style='text-align:right'>+1.26 %-Pkt.</td></tr><tr><td><b>mom12_1</b></td><td style='text-align:right'>9,559.45 €</td><td style='text-align:right;color:#e02424'>-4.41 %</td><td style='text-align:right'>-3.49 %-Pkt.</td></tr></table></div>
 <div class="warn">mom12_1 = Querschnitts-Momentum 12-1 (Jegadeesh/Titman), monatliches Rebalancing, Top-20 long, gleichgewichtet.
 reversal5 = Kurzfrist-Reversal, wöchentlich die 20 größten 5-Tage-Verlierer long. Kosten wie News-Bot
 (Slippage 5 bps + Kommission 5 bps je Trade). Erwartung laut Forschung: Brutto-Effekte
 existieren, nach Kosten oft nicht – genau das wird hier gemessen. Kein Anlagerat.</div>
 </div><script>new Chart(document.getElementById('c'),{type:'line',
-data:{labels:["2026-07-23", "2026-07-24"],datasets:[{label:'mom12_1',data:[10039.22, 9682.94],borderColor:'#2563eb',borderWidth:2,pointRadius:0,tension:.2},{label:'reversal5',data:[10037.77, 10019.44],borderColor:'#c27803',borderWidth:2,pointRadius:0,tension:.2},{label:'Buy & Hold',data:[10000.0, 9933.64],borderColor:'#9ca3af',borderWidth:1,borderDash:[5,4],pointRadius:0}]},
+data:{labels:["2026-07-23", "2026-07-24"],datasets:[{label:'mom12_1',data:[10039.22, 9559.45],borderColor:'#2563eb',borderWidth:2,pointRadius:0,tension:.2},{label:'reversal5',data:[10037.77, 10034.25],borderColor:'#c27803',borderWidth:2,pointRadius:0,tension:.2},{label:'Buy & Hold',data:[10000.0, 9908.75],borderColor:'#9ca3af',borderWidth:1,borderDash:[5,4],pointRadius:0}]},
 options:{plugins:{legend:{position:'bottom'}},scales:{y:{ticks:{callback:v=>v.toLocaleString('de-DE')+' €'}}}}});</script>
 </body></html>
