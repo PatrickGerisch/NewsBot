@@ -115,3 +115,20 @@ Datum,Asset,Mom5%,Stimmung,Score,Aktion,Schlagzeile,StockTwits,ST-Posts
 2026-07-24,AXON,-9.2,0,-2,EXIT SHORT,,0,0
 2026-07-24,ABT,1.9,0,2,EXIT LONG,[StockTwits] $BSX $SPY $ABT $MDT moving towards $45 close for the day,1,5
 2026-07-24,STX,22.5,-2,0,EXIT LONG,[StockTwits] $MU $STX $SNDK,-2,18
+2026-07-24,LITE,18.0,3,5,AUFSTOCKEN LONG,NVIDIA is Acquiring ‘Dark Fiber’ Across the United States. Here’s Why That’s a Big Deal.,1,9
+2026-07-24,COHR,13.1,3,5,AUFSTOCKEN LONG,NVIDIA is Acquiring ‘Dark Fiber’ Across the United States. Here’s Why That’s a Big Deal.,1,3
+2026-07-24,ALLE,10.8,3,5,AUFSTOCKEN LONG,US Equity Markets Close Lower as Oil Prices Surge on Widening Middle East Tensions,1,1
+2026-07-24,TSLA,-18.3,-2,-4,AUFSTOCKEN SHORT,"Stock market today: Dow, S&P 500, Nasdaq recover as oil eases, new Trump tariffs take effe",0,7
+2026-07-24,MU,16.1,2,4,AUFSTOCKEN LONG,[StockTwits] $MU $ALT Happy National Tequila Day boys and girls! Make sure to pick up a bottle of Dulce,2,9
+2026-07-24,DELL,12.4,2,4,AUFSTOCKEN LONG,[StockTwits] $DELL runs another $13 from here at a minimum,2,14
+2026-07-24,WDAY,-12.1,-2,-4,AUFSTOCKEN SHORT,Is Workday (WDAY) A Bargain After Downgrades Put Its AI Growth Story Under Scrutiny?,1,5
+2026-07-24,TRV,11.4,2,4,AUFSTOCKEN LONG,UVE Q2 Earnings Beat Estimates on Lower Losses and Premium Growth,0,0
+2026-07-24,PTC,-11.2,-2,-4,AUFSTOCKEN SHORT,2 Software Stocks with Promising Prospects and 1 We Ignore,0,0
+2026-07-24,EQT,8.1,2,4,AUFSTOCKEN LONG,[StockTwits] EQT Corporation $EQT is trading right at $53.39 on the 8-hour chart featuring a call split,1,7
+2026-07-24,CVNA,-14.8,-1,-3,AUFSTOCKEN SHORT,"[StockTwits] $OPEN Top Realty groups: Compass: $262B/245,173 units Anywhere Advisors: $192B/247,998 uni",-2,21
+2026-07-24,ROL,-13.2,-1,-3,AUFSTOCKEN SHORT,[StockTwits] $ROL At levels not seen since 2023 after earnings tonight. $32 next target,-1,5
+2026-07-24,MRVL,11.2,1,3,LONG,[StockTwits] $MRVL $NVDA $TSM,2,14
+2026-07-24,CF,6.8,1,3,AUFSTOCKEN LONG,Air Products Awarded Long-Term Taiwan Semiconductor Supply Deal,0,0
+2026-07-24,CDNS,-9.4,0,-2,EXIT SHORT,,0,0
+2026-07-24,ISRG,-17.5,1,-1,EXIT SHORT,[StockTwits] $BSX Med tech on the move. $JNJ $ISRG $ABT $MDT,1,6
+2026-07-24,SNDK,14.1,-1,1,EXIT LONG,"SK Hynix and Micron Sink 6%, SanDisk Drops 9% as Korea Chip Selloff Hits U.S. Memory Stock",0,17
