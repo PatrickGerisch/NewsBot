@@ -61,6 +61,11 @@ jobs:
         continue-on-error: true      # Literatur-Strategien, beeinflusst die Bots nicht
         run: python pruefstand.py | tee pruef_out.txt
 
+      - name: Dual Momentum (paper_trading_bot.py)
+        id: dual
+        continue-on-error: true      # evidenzbasierter Monatsstratege, unabhaengig von den News-Bots
+        run: python paper_trading_bot.py | tee dual_out.txt
+
       - name: Zusammenfassung ins Run-Log
         if: always()
         run: |
@@ -82,6 +87,10 @@ jobs:
             echo '```'
             grep -E '^RUN|mom12_1|reversal5|BuyHold|Pruefstand' pruef_out.txt 2>/dev/null || echo '(keine Ausgabe)'
             echo '```'
+            echo '### Dual Momentum (evidenzbasiert)'
+            echo '```'
+            grep -E '^Position:|^Kennzahlen:|Umschichtung|Monats-Check' dual_out.txt 2>/dev/null || echo '(keine Ausgabe)'
+            echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: State zurück ins Repo committen
@@ -89,7 +98,7 @@ jobs:
         run: |
           git config user.name  "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
-          rm -f sim_out.txt alp_out.txt arena_out.txt pruef_out.txt
+          rm -f sim_out.txt alp_out.txt arena_out.txt pruef_out.txt dual_out.txt
           git add -A
           if git diff --cached --quiet; then
             echo "Keine State-Änderungen."
