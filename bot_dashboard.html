@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Paper-Bot Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>body{font-family:'Segoe UI',sans-serif;background:#f9fafb;color:#111827;margin:0;padding:24px}
+.wrap{max-width:860px;margin:0 auto}h1{font-size:1.4rem}.sub{color:#6b7280;font-size:.9rem;margin-bottom:18px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:20px}
+.kpi{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px}
+.kpi b{display:block;font-size:1.35rem}.kpi span{color:#6b7280;font-size:.78rem}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:.85rem}td{padding:6px 4px;border-top:1px solid #f0f0f0}
+.warn{font-size:.75rem;color:#6b7280;margin-top:14px}</style></head><body><div class="wrap">
+<h1>📊 Paper-Trading-Bot – Dual Momentum</h1>
+<div class="sub">Stand: 2026-07-23 · Papiergeld, kein echtes Depot · Start: 2026-07-17</div>
+<div class="kpis">
+<div class="kpi"><b>10,054 €</b><span>Depotwert (Start 10.000)</span></div>
+<div class="kpi"><b>+0.54 %</b><span>Rendite Strategie</span></div>
+<div class="kpi"><b>-1.67 %</b><span>Buy &amp; Hold S&amp;P 500</span></div>
+<div class="kpi" style="border-color:#0e9f6e"><b style="color:#0e9f6e">+2.20 %-Pkt.</b><span>Über-/Unterrendite</span></div>
+<div class="kpi"><b>-1.40 %</b><span>Max. Drawdown</span></div>
+<div class="kpi"><b>Emerging Markets</b><span>Aktuelle Position · 1 Trades</span></div>
+</div>
+<div class="card"><canvas id="c" height="110"></canvas></div>
+<div class="card"><b>Letzte Trades</b><table><tr><td>2026-07-17</td><td>START: Kauf Emerging Markets</td><td style="text-align:right">9990.00 €</td></tr></table></div>
+<div class="warn">Regelwerk: Monatsende-Check, 12-Monats-Momentum S&amp;P 500 vs. Emerging Markets, bei negativem Momentum Wechsel in Anleihen. 0,1 % Kosten je Umschichtung. Diese Simulation dient dem ehrlichen Strategietest – Ergebnisse der Vergangenheit garantieren nichts. Kein Anlagerat.</div></div>
+<script>new Chart(document.getElementById('c'),{type:'line',data:{labels:["2026-07-17", "2026-07-18", "2026-07-20", "2026-07-21", "2026-07-22", "2026-07-23"],datasets:[
+{label:'Strategie',data:[9990.0, 9849.93, 9849.93, 9891.95, 10114.5, 10053.81],borderColor:'#1a56db',borderWidth:2,pointRadius:0,tension:.2},
+{label:'Buy & Hold S&P 500',data:[10000.0, 9899.01, 9899.01, 9879.89, 9953.79, 9833.46],borderColor:'#9ca3af',borderWidth:2,pointRadius:0,tension:.2}]},
+options:{plugins:{legend:{position:'bottom'}},scales:{y:{ticks:{callback:v=>v.toLocaleString('de-DE')+' €'}}}}});</script>
+</body></html>
