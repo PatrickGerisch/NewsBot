@@ -38,22 +38,39 @@ VARIANTS = [
     ('all',        True,  True,  True),
 ]
 
+# --- v2-Verbesserungen (in-place; Varianten-Namen unveraendert) ------------- #
+REGIME_FULL_OFF     = 0.05   # |Abstand SPY<->MA|, ab dem die Gegen-Regime-Seite auf 0 skaliert
+REGIME_CONFIRM_DAYS = 2      # so viele Handelstage muss ein neues Vorzeichen halten, bevor es kippt
+SOCIAL_MIN_POSTS_V2 = 8      # v2: hoehere Volumen-Schwelle - aber nur fuer rein social-getriebene Trades
+
 
 # --------------------------------------------------------------------------- #
 #  Reine, guenstige Logik (pro Variant unterschiedlich) – ohne Netzzugriff
 # --------------------------------------------------------------------------- #
 def score_from_raw(raw, social_gate):
-    """Score aus den einmal geholten Rohdaten – Social-Gate variantenabhaengig."""
-    soc_eff = raw['soc'] if (not social_gate or raw['n_soc'] >= nb.SOCIAL_MIN_POSTS) else 0
-    stimmung = max(-3, min(3, raw['sent'] + soc_eff))
-    return stimmung + (2 if raw['mom'] > 1.5 else -2 if raw['mom'] < -1.5 else 0)
+    """Score aus den einmal geholten Rohdaten.
+    social_gate=False -> Social zaehlt voll (wie baseline/confidence).
+    social_gate=True  -> v2: Social wird nur verworfen, wenn es den Trade ALLEIN ueber
+    die |Score|>=3-Schwelle hebt UND das StockTwits-Volumen zu duenn ist (< V2-Schwelle)."""
+    mom  = 2 if raw['mom'] > 1.5 else -2 if raw['mom'] < -1.5 else 0
+    voll = max(-3, min(3, raw['sent'] + raw['soc'])) + mom          # mit Social
+    if not social_gate:
+        return voll
+    ohne = max(-3, min(3, raw['sent'])) + mom                       # ohne Social
+    social_kippt = abs(voll) >= 3 and abs(ohne) < 3                 # Social gibt den Ausschlag
+    if social_kippt and raw['n_soc'] < SOCIAL_MIN_POSTS_V2:
+        return ohne                                                 # zu duennes Volumen -> ohne Social
+    return voll
 
 
-def regime_filter(dirs, regime, on):
-    if not on or regime == 0:
-        return dirs
-    keep = -1 if regime < 0 else 1
-    return {t: d for t, d in dirs.items() if d == keep}
+def regime_scale(direction, eff_sign, strength, on):
+    """Gleitender Exposure-Faktor 0..1 fuer EINE Position.
+    Mit dem Regime laufende Seite: 1.0. Gegen das Regime: 1 - strength
+    (nahe der MA ~1 = fast wie baseline, weit weg ~0 = wie der alte harte Filter).
+    strength = min(1, |ratio| / REGIME_FULL_OFF)."""
+    if not on or eff_sign == 0:
+        return 1.0
+    return 1.0 if direction == eff_sign else max(0.0, 1.0 - strength)
 
 
 def weights(dirs, scores, on):
@@ -66,10 +83,26 @@ def weights(dirs, scores, on):
     return {t: abs(scores.get(t, 0)) / tot for t in dirs}
 
 
-def step_variant(stv, scores, mark, close_s, handelstage, regime, cfg, neuer_tag):
+def confirm_regime(mem, regime, confirm_days=REGIME_CONFIRM_DAYS):
+    """Aktualisiert das bestaetigte Regime-Vorzeichen (mutiert mem). Einmal je Handelstag aufrufen.
+    Ein neues Vorzeichen kippt erst, nachdem es confirm_days Tage in Folge gemeldet wurde -> daempft
+    Ein-Tages-Whipsaws wie am 24.07. (Regime kippte bei nur -0,88 %% Abstand zur MA)."""
+    if regime == 0:
+        return                                       # unklar -> bestaetigtes Vorzeichen halten
+    if regime == mem['conf_sign']:
+        mem['pend_sign'], mem['pend_days'] = regime, 0
+    else:
+        mem['pend_days'] = mem['pend_days'] + 1 if regime == mem['pend_sign'] else 1
+        mem['pend_sign'] = regime
+        if mem['pend_days'] >= confirm_days:
+            mem['conf_sign'], mem['pend_days'] = regime, 0
+
+
+def step_variant(stv, scores, mark, close_s, handelstage, regime_eff, cfg, neuer_tag):
     """Ein Handels-/Bewertungsschritt fuer EINE Variant. Mutiert stv (cash/pos).
     cfg = (regime_on, social_on, confidence_on). Rueckgabe: Zahl der Trades."""
     reg_on, _soc_on, conf_on = cfg
+    eff_sign, strength = regime_eff        # geglaettetes Vorzeichen + Staerke 0..1
 
     def px(t):
         return (mark.get(t) or close_s.get(t)
@@ -90,9 +123,8 @@ def step_variant(stv, scores, mark, close_s, handelstage, regime, cfg, neuer_tag
     aged = {t for t, p in stv['pos'].items() if handelstage - p['tag'] >= nb.MAXTAGE}
     dirs = {t: (1 if scores[t] >= 3 else -1)
             for t in scores if abs(scores[t]) >= 3 and t not in aged}
-    dirs = regime_filter(dirs, regime, reg_on)
     eq = equity()
-    gew = weights(dirs, scores, conf_on)
+    gew = weights(dirs, scores, conf_on)   # dirs enthaelt jetzt BEIDE Seiten; Regime skaliert unten
 
     trades = 0
     manage = list(dict.fromkeys(list(scores) + list(stv['pos'])))
@@ -101,6 +133,8 @@ def step_variant(stv, scores, mark, close_s, handelstage, regime, cfg, neuer_tag
         if mk <= 0:
             continue
         nt = eq * gew.get(t, 0.0)
+        if t in dirs:
+            nt *= regime_scale(dirs[t], eff_sign, strength, reg_on)  # gleitendes Exposure
         cur = stv['pos'][t]['stk'] if t in stv['pos'] else 0.0
         tgt = (nt * dirs[t]) / mk if t in dirs else 0.0
         delta = tgt - cur
@@ -244,7 +278,17 @@ def main():
             soc, n_soc, _shl = soc_all.get(t, (0, 0, ''))
             raw[t] = {'sent': sent, 'soc': soc, 'n_soc': n_soc, 'mom': mom}
 
-    regime, _ratio = nb.market_regime(settled)
+    regime, ratio = nb.market_regime(settled)
+
+    # --- Regime glaetten: bestaetigtes Vorzeichen kippt erst nach REGIME_CONFIRM_DAYS Tagen ---
+    mem = st.setdefault('regime_mem',
+                        {'conf_sign': regime, 'pend_sign': regime, 'pend_days': 0, 'letzter_tag': None})
+    if handelstag and mem.get('letzter_tag') != heute:
+        confirm_regime(mem, regime)
+        mem['letzter_tag'] = heute
+    eff_sign = mem['conf_sign'] if mem['conf_sign'] in (-1, 1) else regime
+    strength = min(1.0, abs(ratio) / REGIME_FULL_OFF) if REGIME_FULL_OFF > 0 else 1.0
+    regime_eff = (eff_sign, strength)
 
     total_trades, werte = 0, {}
     for name, reg_on, soc_on, conf_on in VARIANTS:
@@ -259,7 +303,7 @@ def main():
         if offen and raw is not None:
             scores = {t: score_from_raw(raw[t], soc_on) for t in manage}
         total_trades += step_variant(v, scores, mark, close_s, v['handelstage'],
-                                     regime, (reg_on, soc_on, conf_on), neuer_tag)
+                                     regime_eff, (reg_on, soc_on, conf_on), neuer_tag)
         werte[name] = v['cash'] + sum(p['stk'] * (mark.get(t) or close_s.get(t)
                                       or p.get('einstieg', 0.0)) for t, p in v['pos'].items())
 
