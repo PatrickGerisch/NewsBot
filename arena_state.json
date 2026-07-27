@@ -3,284 +3,428 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 7962.142162740987,
+      "cash": 3556.329473427015,
       "pos": {
         "SMCI": {
-          "stk": 19.476247432935136,
+          "stk": 15.482260747501332,
           "einstieg": 31.095539923667907,
           "tag": 1,
           "richtung": "LONG"
         },
         "TRV": {
-          "stk": 1.7088753758974913,
+          "stk": 1.1407564464446704,
           "einstieg": 378.9168911328029,
           "tag": 1,
           "richtung": "LONG"
         },
         "LITE": {
-          "stk": 0.8485231885298883,
+          "stk": 0.6348371115349098,
           "einstieg": 837.7913607571978,
           "tag": 1,
           "richtung": "LONG"
         },
-        "CVNA": {
-          "stk": -10.892811794336058,
-          "einstieg": 60.82482933485462,
-          "tag": 1,
-          "richtung": "SHORT"
-        },
         "EQT": {
-          "stk": 12.383535772188315,
+          "stk": 8.503424846731232,
           "einstieg": 54.04733995929565,
           "tag": 1,
           "richtung": "LONG"
         },
         "PTC": {
-          "stk": -5.585584501701373,
+          "stk": -3.5870187615941727,
           "einstieg": 113.83809821838759,
           "tag": 1,
           "richtung": "SHORT"
         },
-        "AXON": {
-          "stk": -1.3164699462295972,
-          "einstieg": 491.0564553387204,
-          "tag": 1,
-          "richtung": "SHORT"
-        },
         "MU": {
-          "stk": 0.700576708233438,
+          "stk": 0.5137606639447008,
           "einstieg": 926.1786420370637,
           "tag": 2,
           "richtung": "LONG"
         },
         "COHR": {
-          "stk": 2.2803107401665446,
+          "stk": 1.7302714117476026,
           "einstieg": 286.581633111618,
           "tag": 2,
           "richtung": "LONG"
         },
         "ALLE": {
-          "stk": 4.264653309416459,
+          "stk": 2.8485182435731202,
           "einstieg": 154.6327085990057,
           "tag": 2,
           "richtung": "LONG"
         },
         "DELL": {
-          "stk": 1.470345738000244,
+          "stk": 1.0656991953187944,
           "einstieg": 443.9739532956952,
           "tag": 2,
           "richtung": "LONG"
         },
         "WDAY": {
-          "stk": -4.93296241880423,
+          "stk": -3.016582862981358,
           "einstieg": 132.77990520539484,
           "tag": 2,
           "richtung": "SHORT"
         },
         "TSLA": {
-          "stk": -2.12731035798839,
+          "stk": -1.4450210279335116,
           "einstieg": 312.2864265199972,
           "tag": 2,
           "richtung": "SHORT"
         },
-        "ROL": {
-          "stk": -16.984545210540542,
-          "einstieg": 38.51196966227137,
-          "tag": 2,
-          "richtung": "SHORT"
-        },
         "SNDK": {
-          "stk": 0.4493981214009364,
+          "stk": 0.35156416933164686,
           "einstieg": 1461.4655971069335,
           "tag": 2,
           "richtung": "LONG"
+        },
+        "WDC": {
+          "stk": 0.924189472613754,
+          "einstieg": 482.37106988525386,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "T": {
+          "stk": 18.253075752038917,
+          "einstieg": 24.423405169486998,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "LMT": {
+          "stk": 0.7657912880370096,
+          "einstieg": 582.1459079589844,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "DLR": {
+          "stk": 2.298163795900167,
+          "einstieg": 193.98193700408933,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "WAB": {
+          "stk": 1.513106011683082,
+          "einstieg": 294.62725099182126,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "IP": {
+          "stk": 10.571280161646968,
+          "einstieg": 42.17107652664184,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "SLB": {
+          "stk": 8.493699632484319,
+          "einstieg": 52.48622908401489,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "CHRW": {
+          "stk": -2.5148408023657143,
+          "einstieg": 177.09140267944338,
+          "tag": 3,
+          "richtung": "SHORT"
+        },
+        "RTX": {
+          "stk": 2.0441769123397058,
+          "einstieg": 218.08399360656736,
+          "tag": 3,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 2,
-      "letzter_tag": "2026-07-24"
+      "handelstage": 3,
+      "letzter_tag": "2026-07-27"
     },
     "regime": {
-      "cash": 19379.43455102719,
+      "cash": 4654.6866877194025,
       "pos": {
         "WDAY": {
-          "stk": -12.071499026264169,
+          "stk": -2.994365704762238,
           "einstieg": 132.91464949688105,
           "tag": 2,
           "richtung": "SHORT"
         },
         "PTC": {
-          "stk": -13.668536702484909,
+          "stk": -3.5606003381723386,
           "einstieg": 116.88301670553729,
           "tag": 2,
           "richtung": "SHORT"
         },
         "TSLA": {
-          "stk": -5.20576131233601,
+          "stk": -1.4343784358795924,
           "einstieg": 311.98837868444747,
           "tag": 2,
           "richtung": "SHORT"
         },
-        "CVNA": {
-          "stk": -26.655902843971166,
-          "einstieg": 59.82991285170672,
-          "tag": 2,
+        "WDC": {
+          "stk": 0.7792823126118817,
+          "einstieg": 482.37106988525386,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "T": {
+          "stk": 15.391107024948232,
+          "einstieg": 24.423405169486998,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "SNDK": {
+          "stk": 0.29644109463118734,
+          "einstieg": 1268.053753967285,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "LITE": {
+          "stk": 0.5352986017138162,
+          "einstieg": 702.2309448852538,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "EQT": {
+          "stk": 7.170140729845219,
+          "einstieg": 52.42620152664184,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "COHR": {
+          "stk": 1.4589756182566047,
+          "einstieg": 257.6487490081787,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "SMCI": {
+          "stk": 13.054738576118082,
+          "einstieg": 28.79439068698883,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "LMT": {
+          "stk": 0.6457199779951608,
+          "einstieg": 582.1459079589844,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "DLR": {
+          "stk": 1.9378260093841824,
+          "einstieg": 193.98193700408933,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "ALLE": {
+          "stk": 2.401888303370143,
+          "einstieg": 156.5032155532837,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "DELL": {
+          "stk": 0.8986041911166998,
+          "einstieg": 418.31904034423826,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "TRV": {
+          "stk": 0.9618929321908025,
+          "einstieg": 390.79530610656735,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "MU": {
+          "stk": 0.4332061878994876,
+          "einstieg": 867.7236230163574,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "WAB": {
+          "stk": 1.2758604019547506,
+          "einstieg": 294.62725099182126,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "IP": {
+          "stk": 8.913769195333893,
+          "einstieg": 42.17107652664184,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "SLB": {
+          "stk": 7.161940368692494,
+          "einstieg": 52.48622908401489,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "CHRW": {
+          "stk": -2.496318978653291,
+          "einstieg": 177.09140267944338,
+          "tag": 3,
           "richtung": "SHORT"
         },
-        "ROL": {
-          "stk": -41.563041345909895,
-          "einstieg": 38.558397163742995,
-          "tag": 2,
-          "richtung": "SHORT"
-        },
-        "AXON": {
-          "stk": -3.2215460659983806,
-          "einstieg": 493.7859165818585,
-          "tag": 2,
-          "richtung": "SHORT"
+        "RTX": {
+          "stk": 1.7236626891352396,
+          "einstieg": 218.08399360656736,
+          "tag": 3,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 2,
-      "letzter_tag": "2026-07-24"
+      "handelstage": 3,
+      "letzter_tag": "2026-07-27"
     },
     "social": {
-      "cash": 7955.24449615087,
+      "cash": 3731.8379004783556,
       "pos": {
         "SMCI": {
-          "stk": 19.45760764909871,
+          "stk": 16.242193221815512,
           "einstieg": 31.095539923667907,
           "tag": 1,
           "richtung": "LONG"
         },
         "TRV": {
-          "stk": 1.7073840709426076,
+          "stk": 1.1967494233796738,
           "einstieg": 378.91752921036976,
           "tag": 1,
           "richtung": "LONG"
         },
         "LITE": {
-          "stk": 0.8477826975302308,
+          "stk": 0.6659975050215685,
           "einstieg": 837.7863399555073,
           "tag": 1,
           "richtung": "LONG"
         },
-        "CVNA": {
-          "stk": -10.883305832444028,
-          "einstieg": 60.82480779065887,
-          "tag": 1,
-          "richtung": "SHORT"
-        },
         "EQT": {
-          "stk": 12.372728882161976,
+          "stk": 8.920807604282581,
           "einstieg": 54.047279524018876,
           "tag": 1,
           "richtung": "LONG"
         },
         "PTC": {
-          "stk": -5.580710062078218,
+          "stk": -3.763084265680814,
           "einstieg": 113.83845987491918,
           "tag": 1,
           "richtung": "SHORT"
         },
-        "AXON": {
-          "stk": -1.315321086469864,
-          "einstieg": 491.0573093051069,
-          "tag": 1,
-          "richtung": "SHORT"
-        },
         "MU": {
-          "stk": 0.6999653274791708,
+          "stk": 0.5389781317889756,
           "einstieg": 926.1800372542895,
           "tag": 2,
           "richtung": "LONG"
         },
         "COHR": {
-          "stk": 2.278320753796884,
+          "stk": 1.8152001864665435,
           "einstieg": 286.58189008377445,
           "tag": 2,
           "richtung": "LONG"
         },
         "WDAY": {
-          "stk": -4.928657510792109,
+          "stk": -3.164649047657207,
           "einstieg": 132.77998696292573,
           "tag": 2,
           "richtung": "SHORT"
         },
         "DELL": {
-          "stk": 1.4690625935911206,
+          "stk": 1.1180080563812167,
           "einstieg": 443.97439202521866,
           "tag": 2,
           "richtung": "LONG"
         },
         "ALLE": {
-          "stk": 4.260931622802621,
+          "stk": 2.9883351315761826,
           "einstieg": 154.63272799467526,
           "tag": 2,
           "richtung": "LONG"
         },
         "TSLA": {
-          "stk": -2.1254538923138364,
+          "stk": -1.5159485509291928,
           "einstieg": 312.28624567630544,
           "tag": 2,
           "richtung": "SHORT"
         },
-        "ROL": {
-          "stk": -16.96972310192679,
-          "einstieg": 38.5119978326513,
-          "tag": 2,
-          "richtung": "SHORT"
-        },
         "SNDK": {
-          "stk": 0.44900597193401065,
+          "stk": 0.36882037199077883,
           "einstieg": 1461.4655971069335,
           "tag": 2,
           "richtung": "LONG"
+        },
+        "WDC": {
+          "stk": 0.9695524595904352,
+          "einstieg": 482.37106988525386,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "T": {
+          "stk": 19.149011122610023,
+          "einstieg": 24.423405169486998,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "LMT": {
+          "stk": 0.8033794463697729,
+          "einstieg": 582.1459079589844,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "DLR": {
+          "stk": 2.410967043970998,
+          "einstieg": 193.98193700408933,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "WAB": {
+          "stk": 1.58737542324454,
+          "einstieg": 294.62725099182126,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "SLB": {
+          "stk": 8.910605036873465,
+          "einstieg": 52.48622908401489,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "CHRW": {
+          "stk": -2.638279441245147,
+          "einstieg": 177.09140267944338,
+          "tag": 3,
+          "richtung": "SHORT"
+        },
+        "RTX": {
+          "stk": 2.1445134487322313,
+          "einstieg": 218.08399360656736,
+          "tag": 3,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 2,
-      "letzter_tag": "2026-07-24"
+      "handelstage": 3,
+      "letzter_tag": "2026-07-27"
     },
     "confidence": {
-      "cash": 7320.038600905253,
+      "cash": 2913.8179103776943,
       "pos": {
         "SMCI": {
-          "stk": 21.171391934803665,
+          "stk": 15.699837201981952,
           "einstieg": 31.133058313622143,
           "tag": 1,
           "richtung": "LONG"
         },
         "TRV": {
-          "stk": 1.7108444769696274,
+          "stk": 1.1567878095053528,
           "einstieg": 380.54766740006255,
           "tag": 1,
           "richtung": "LONG"
         },
         "LITE": {
-          "stk": 0.9828818831185878,
+          "stk": 0.8046983143662564,
           "einstieg": 845.4975497131347,
           "tag": 1,
           "richtung": "LONG"
         },
-        "CVNA": {
-          "stk": -7.659359058943877,
-          "einstieg": 60.85455582237244,
-          "tag": 1,
-          "richtung": "SHORT"
-        },
         "EQT": {
-          "stk": 12.397805059410649,
+          "stk": 10.778657258962848,
           "einstieg": 54.03647886157759,
           "tag": 1,
           "richtung": "LONG"
         },
         "PTC": {
-          "stk": -5.224948337724478,
+          "stk": -3.6374281195704667,
           "einstieg": 113.32830963516236,
-          "tag": 1,
-          "richtung": "SHORT"
-        },
-        "AXON": {
-          "stk": -1.3179868867971294,
-          "einstieg": 493.23899267998945,
           "tag": 1,
           "richtung": "SHORT"
         },
@@ -291,38 +435,32 @@
           "richtung": "LONG"
         },
         "COHR": {
-          "stk": 2.6613775061174096,
+          "stk": 2.193234237776367,
           "einstieg": 286.2130423278808,
           "tag": 2,
           "richtung": "LONG"
         },
         "ALLE": {
-          "stk": 4.926971769871332,
+          "stk": 2.8885492513224262,
           "einstieg": 154.6022563934326,
           "tag": 2,
           "richtung": "LONG"
         },
         "DELL": {
-          "stk": 1.3744775109396763,
+          "stk": 1.080675758253748,
           "einstieg": 443.35156988525387,
           "tag": 2,
           "richtung": "LONG"
         },
         "WDAY": {
-          "stk": -4.588978701262848,
+          "stk": -2.2942317966744286,
           "einstieg": 132.65864360046388,
           "tag": 2,
           "richtung": "SHORT"
         },
         "TSLA": {
-          "stk": -2.129761612869678,
+          "stk": -1.0989962284250758,
           "einstieg": 311.82423255495183,
-          "tag": 2,
-          "richtung": "SHORT"
-        },
-        "ROL": {
-          "stk": -11.868125478832333,
-          "einstieg": 38.47075667762756,
           "tag": 2,
           "richtung": "SHORT"
         },
@@ -331,53 +469,197 @@
           "einstieg": 1461.4655971069335,
           "tag": 2,
           "richtung": "LONG"
+        },
+        "WDC": {
+          "stk": 1.1714717007788404,
+          "einstieg": 482.37106988525386,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "T": {
+          "stk": 23.13698903668708,
+          "einstieg": 24.423405169486998,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "LMT": {
+          "stk": 0.7765531629363281,
+          "einstieg": 582.1459079589844,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "DLR": {
+          "stk": 2.330460521726102,
+          "einstieg": 193.98193700408933,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "WAB": {
+          "stk": 1.1507775789429753,
+          "einstieg": 294.62725099182126,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "IP": {
+          "stk": 8.03988094477017,
+          "einstieg": 42.17107652664184,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "SLB": {
+          "stk": 6.459797941366166,
+          "einstieg": 52.48622908401489,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "CHRW": {
+          "stk": -1.912636912171343,
+          "einstieg": 177.09140267944338,
+          "tag": 3,
+          "richtung": "SHORT"
+        },
+        "RTX": {
+          "stk": 1.5546782181486163,
+          "einstieg": 218.08399360656736,
+          "tag": 3,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 2,
-      "letzter_tag": "2026-07-24"
+      "handelstage": 3,
+      "letzter_tag": "2026-07-27"
     },
     "all": {
-      "cash": 19419.43560117782,
+      "cash": 4158.505415073047,
       "pos": {
         "WDAY": {
-          "stk": -13.661329545413011,
+          "stk": -2.34947819052739,
           "einstieg": 132.65864360046388,
           "tag": 2,
           "richtung": "SHORT"
         },
         "PTC": {
-          "stk": -14.888808830230943,
+          "stk": -3.7250194374124206,
           "einstieg": 116.77598613398753,
           "tag": 2,
           "richtung": "SHORT"
         },
         "TSLA": {
-          "stk": -5.670510800259423,
+          "stk": -1.1254606765974446,
           "einstieg": 311.6470404306615,
           "tag": 2,
           "richtung": "SHORT"
         },
-        "CVNA": {
-          "stk": -21.776726193134397,
-          "einstieg": 59.765949617624365,
-          "tag": 2,
+        "WDC": {
+          "stk": 1.0190843839556685,
+          "einstieg": 482.37106988525386,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "T": {
+          "stk": 20.127284511751643,
+          "einstieg": 24.423405169486998,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "SNDK": {
+          "stk": 0.3876624496825022,
+          "einstieg": 1268.053753967285,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "LITE": {
+          "stk": 0.7000215928569987,
+          "einstieg": 702.2309448852538,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "EQT": {
+          "stk": 9.376548563073793,
+          "einstieg": 52.42620152664184,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "COHR": {
+          "stk": 1.907934063271723,
+          "einstieg": 257.6487490081787,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "SMCI": {
+          "stk": 13.657571849622139,
+          "einstieg": 28.79439068698883,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "LMT": {
+          "stk": 0.6755376174547433,
+          "einstieg": 582.1459079589844,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "DLR": {
+          "stk": 2.0273096853618395,
+          "einstieg": 193.98193700408933,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "ALLE": {
+          "stk": 2.5128011477805656,
+          "einstieg": 156.5032155532837,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "DELL": {
+          "stk": 0.9400993541915337,
+          "einstieg": 418.31904034423826,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "TRV": {
+          "stk": 1.0063106018126038,
+          "einstieg": 390.79530610656735,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "MU": {
+          "stk": 0.4532105030246793,
+          "einstieg": 867.7236230163574,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "WAB": {
+          "stk": 1.0010821937289773,
+          "einstieg": 294.62725099182126,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "SLB": {
+          "stk": 5.619494863750055,
+          "einstieg": 52.48622908401489,
+          "tag": 3,
+          "richtung": "LONG"
+        },
+        "CHRW": {
+          "stk": -1.9586942862783085,
+          "einstieg": 177.09140267944338,
+          "tag": 3,
           "richtung": "SHORT"
         },
-        "ROL": {
-          "stk": -33.955217215556225,
-          "einstieg": 38.53356773996059,
-          "tag": 2,
-          "richtung": "SHORT"
-        },
-        "AXON": {
-          "stk": -3.5091527760767924,
-          "einstieg": 495.15297732387876,
-          "tag": 2,
-          "richtung": "SHORT"
+        "RTX": {
+          "stk": 1.3524426523815658,
+          "einstieg": 218.08399360656736,
+          "tag": 3,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 2,
-      "letzter_tag": "2026-07-24"
+      "handelstage": 3,
+      "letzter_tag": "2026-07-27"
     }
+  },
+  "regime_mem": {
+    "conf_sign": -1,
+    "pend_sign": -1,
+    "pend_days": 0,
+    "letzter_tag": "2026-07-27"
   }
 }
