@@ -103,6 +103,8 @@ def step_variant(stv, scores, mark, close_s, handelstage, regime_eff, cfg, neuer
     eq = equity()
     # (2) Sektor-Cap GLOBAL: Cluster-Konzentration deckeln (Rest bleibt Cash)
     gew = nb.sector_cap_weights(weights(dirs, scores, conf_on))
+    # (5) Einzelpositions-Cap GLOBAL: kein Titel ueber POS_CAP Depotanteil
+    gew = nb.pos_cap_weights(gew)
 
     trades = 0
     manage = list(dict.fromkeys(list(scores) + list(stv['pos'])))

@@ -81,6 +81,11 @@ MOM_VETO_SHORT    =  12.0   #     Short nur, wenn Mom(20d) <= +12 %
 USE_SECTOR_CAP    = True    # (2) Cluster-Konzentration deckeln (U.SEMI_CLUSTER)
 SECTOR_CAP        = 0.30    #     max. Depotanteil im Cluster; Rest bleibt Cash (weniger Brutto)
 
+USE_POS_CAP       = True    # (5) Einzelpositions-Cap: kein Name ueber POS_CAP Depotanteil
+POS_CAP           = 0.12    #     max. Depotanteil je Einzeltitel; Ueberschuss bleibt Cash. Bei
+                            #     Gleichgewichtung greift er nur bei wenigen Signalen (N < 1/cap),
+                            #     bei |Score|-Gewichtung verhindert er, dass ein Name dominiert.
+
 USE_REGIME_SCALE    = True  # (3) gleitendes Regime-Exposure statt hartem Ein/Aus-Filter
 REGIME_FULL_OFF     = 0.03  #     |Abstand Benchmark<->MA|, ab dem die Gegen-Regime-Seite auf 0 skaliert
 REGIME_BASE_CUT     = 0.40  #     gegen ein bestaetigtes Regime SOFORT mind. 40 % Exposure weg
@@ -223,6 +228,18 @@ def sector_cap_weights(gew, cap=None):
         return gew
     f = cap / clus
     return {t: (w * f if t in U.SEMI_CLUSTER else w) for t, w in gew.items()}
+
+
+def pos_cap_weights(gew, cap=None):
+    """(5) Einzelpositions-Cap: deckelt jeden Titel auf hoechstens 'cap' Depotanteil.
+    Ueberschuss bleibt Cash (konsistent zum Sektor-Cap -> weniger Brutto, keine
+    Umschichtung in andere Namen). NACH dem Sektor-Cap anzuwenden, dann gilt beides:
+    kein Name > POS_CAP und kein Cluster > SECTOR_CAP. Gewichte sind Betraege (>=0);
+    die Richtung (Long/Short) haengt an ziel_dir, nicht am Gewicht."""
+    cap = POS_CAP if cap is None else cap
+    if not USE_POS_CAP or not gew:
+        return gew
+    return {t: min(w, cap) for t, w in gew.items()}
 
 
 def _features_log(ts, heute, sig, settled, mark, ziel_set, regime, regime_ratio):
@@ -542,6 +559,7 @@ def main():
         equity = _equity()
         gew = confidence_weights(ziel_dir, {t: sig[t]['score'] for t in ziel_dir})
         gew = sector_cap_weights(gew)                  # (2) Cluster-Konzentration deckeln
+        gew = pos_cap_weights(gew)                      # (5) Einzelpositions-Cap
         N = len(ziel_dir)
 
         for t in sorted(manage, key=lambda x: -abs(sig[x]['score'])):

@@ -87,6 +87,7 @@ def plan_orders(sig, equity, positions, prices, entry_dates, today,
     ziel_dir = {t: d for t, d in ziel_dir.items() if not nb.mom_veto(d, mom20.get(t))}
     gew = nb.confidence_weights(ziel_dir, {t: sig[t]['score'] for t in ziel_dir})  # gated
     gew = nb.sector_cap_weights(gew)                             # (2) Cluster-Konzentration deckeln
+    gew = nb.pos_cap_weights(gew)                                # (5) Einzelpositions-Cap
     N = len(ziel_dir)
     orders = []
     for t in assets:
