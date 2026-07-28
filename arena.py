@@ -38,39 +38,25 @@ VARIANTS = [
     ('all',        True,  True,  True),
 ]
 
-# --- v2-Verbesserungen (in-place; Varianten-Namen unveraendert) ------------- #
-REGIME_FULL_OFF     = 0.05   # |Abstand SPY<->MA|, ab dem die Gegen-Regime-Seite auf 0 skaliert
-REGIME_CONFIRM_DAYS = 2      # so viele Handelstage muss ein neues Vorzeichen halten, bevor es kippt
-SOCIAL_MIN_POSTS_V2 = 8      # v2: hoehere Volumen-Schwelle - aber nur fuer rein social-getriebene Trades
+# --- v3-Verbesserungen: zentrale Logik + Konstanten aus news_bot.py beziehen -- #
+#     Alle Bots teilen dieselbe Logik. Momentum-Veto (1) und Sektor-Cap (2) wirken
+#     hier GLOBAL (alle Varianten, auch baseline) als neue "Hausregeln" gegen
+#     Klumpenrisiko; Regime (3) und Social-Confirm (4) bleiben die Ablations-
+#     Schalter je Variante. So misst die Arena weiter, ob Regime/Social/Confidence
+#     ON DER neuen Basis noch etwas bringen.
+REGIME_FULL_OFF     = nb.REGIME_FULL_OFF
+REGIME_CONFIRM_DAYS = nb.REGIME_CONFIRM_DAYS
+regime_scale        = nb.regime_scale          # (3) gleitendes Exposure inkl. Base-Cut
 
 
 # --------------------------------------------------------------------------- #
 #  Reine, guenstige Logik (pro Variant unterschiedlich) – ohne Netzzugriff
 # --------------------------------------------------------------------------- #
 def score_from_raw(raw, social_gate):
-    """Score aus den einmal geholten Rohdaten.
-    social_gate=False -> Social zaehlt voll (wie baseline/confidence).
-    social_gate=True  -> v2: Social wird nur verworfen, wenn es den Trade ALLEIN ueber
-    die |Score|>=3-Schwelle hebt UND das StockTwits-Volumen zu duenn ist (< V2-Schwelle)."""
-    mom  = 2 if raw['mom'] > 1.5 else -2 if raw['mom'] < -1.5 else 0
-    voll = max(-3, min(3, raw['sent'] + raw['soc'])) + mom          # mit Social
-    if not social_gate:
-        return voll
-    ohne = max(-3, min(3, raw['sent'])) + mom                       # ohne Social
-    social_kippt = abs(voll) >= 3 and abs(ohne) < 3                 # Social gibt den Ausschlag
-    if social_kippt and raw['n_soc'] < SOCIAL_MIN_POSTS_V2:
-        return ohne                                                 # zu duennes Volumen -> ohne Social
-    return voll
-
-
-def regime_scale(direction, eff_sign, strength, on):
-    """Gleitender Exposure-Faktor 0..1 fuer EINE Position.
-    Mit dem Regime laufende Seite: 1.0. Gegen das Regime: 1 - strength
-    (nahe der MA ~1 = fast wie baseline, weit weg ~0 = wie der alte harte Filter).
-    strength = min(1, |ratio| / REGIME_FULL_OFF)."""
-    if not on or eff_sign == 0:
-        return 1.0
-    return 1.0 if direction == eff_sign else max(0.0, 1.0 - strength)
+    """(4) Score aus den einmal geholten Rohdaten – zentrale Logik in news_bot.py.
+    social_gate = Social-Confirm-Schalter der Variante (False -> Social zaehlt voll;
+    True -> Social nur als Bestaetigung, nicht als Solo-Kaufgrund gegen das Momentum)."""
+    return nb.kombi_score(raw['sent'], raw['soc'], raw['n_soc'], raw['mom'], social_gate)
 
 
 def weights(dirs, scores, on):
@@ -83,24 +69,13 @@ def weights(dirs, scores, on):
     return {t: abs(scores.get(t, 0)) / tot for t in dirs}
 
 
-def confirm_regime(mem, regime, confirm_days=REGIME_CONFIRM_DAYS):
-    """Aktualisiert das bestaetigte Regime-Vorzeichen (mutiert mem). Einmal je Handelstag aufrufen.
-    Ein neues Vorzeichen kippt erst, nachdem es confirm_days Tage in Folge gemeldet wurde -> daempft
-    Ein-Tages-Whipsaws wie am 24.07. (Regime kippte bei nur -0,88 %% Abstand zur MA)."""
-    if regime == 0:
-        return                                       # unklar -> bestaetigtes Vorzeichen halten
-    if regime == mem['conf_sign']:
-        mem['pend_sign'], mem['pend_days'] = regime, 0
-    else:
-        mem['pend_days'] = mem['pend_days'] + 1 if regime == mem['pend_sign'] else 1
-        mem['pend_sign'] = regime
-        if mem['pend_days'] >= confirm_days:
-            mem['conf_sign'], mem['pend_days'] = regime, 0
+# Regime-Glaettung (confirm_regime / regime_effektiv) liegt zentral in news_bot.py.
 
 
-def step_variant(stv, scores, mark, close_s, handelstage, regime_eff, cfg, neuer_tag):
+def step_variant(stv, scores, mark, close_s, handelstage, regime_eff, cfg, neuer_tag, mom20map):
     """Ein Handels-/Bewertungsschritt fuer EINE Variant. Mutiert stv (cash/pos).
-    cfg = (regime_on, social_on, confidence_on). Rueckgabe: Zahl der Trades."""
+    cfg = (regime_on, social_on, confidence_on). mom20map = {ticker: Mom(20d)} fuers
+    globale Momentum-Veto. Rueckgabe: Zahl der Trades."""
     reg_on, _soc_on, conf_on = cfg
     eff_sign, strength = regime_eff        # geglaettetes Vorzeichen + Staerke 0..1
 
@@ -123,8 +98,11 @@ def step_variant(stv, scores, mark, close_s, handelstage, regime_eff, cfg, neuer
     aged = {t for t, p in stv['pos'].items() if handelstage - p['tag'] >= nb.MAXTAGE}
     dirs = {t: (1 if scores[t] >= 3 else -1)
             for t in scores if abs(scores[t]) >= 3 and t not in aged}
+    # (1) Momentum-Veto GLOBAL: keine neuen Longs in fallende Messer / Shorts in Raketen
+    dirs = {t: d for t, d in dirs.items() if not nb.mom_veto(d, (mom20map or {}).get(t))}
     eq = equity()
-    gew = weights(dirs, scores, conf_on)   # dirs enthaelt jetzt BEIDE Seiten; Regime skaliert unten
+    # (2) Sektor-Cap GLOBAL: Cluster-Konzentration deckeln (Rest bleibt Cash)
+    gew = nb.sector_cap_weights(weights(dirs, scores, conf_on))
 
     trades = 0
     manage = list(dict.fromkeys(list(scores) + list(stv['pos'])))
@@ -276,19 +254,13 @@ def main():
             mom = (s.iloc[-1] / s.iloc[-6] - 1) * 100 if len(s) > 6 else 0.0
             sent, _hl = nb.sentiment(news.get(t, []))
             soc, n_soc, _shl = soc_all.get(t, (0, 0, ''))
-            raw[t] = {'sent': sent, 'soc': soc, 'n_soc': n_soc, 'mom': mom}
+            raw[t] = {'sent': sent, 'soc': soc, 'n_soc': n_soc, 'mom': mom,
+                      'mom20': nb._mom(s, nb.MOM_VETO_TAGE)}       # (1) 20-Tage-Momentum fuers Veto
 
-    regime, ratio = nb.market_regime(settled)
-
-    # --- Regime glaetten: bestaetigtes Vorzeichen kippt erst nach REGIME_CONFIRM_DAYS Tagen ---
-    mem = st.setdefault('regime_mem',
-                        {'conf_sign': regime, 'pend_sign': regime, 'pend_days': 0, 'letzter_tag': None})
-    if handelstag and mem.get('letzter_tag') != heute:
-        confirm_regime(mem, regime)
-        mem['letzter_tag'] = heute
-    eff_sign = mem['conf_sign'] if mem['conf_sign'] in (-1, 1) else regime
-    strength = min(1.0, abs(ratio) / REGIME_FULL_OFF) if REGIME_FULL_OFF > 0 else 1.0
+    # --- Regime glaetten (zentral in news_bot.py): Anti-Whipsaw + gleitende Staerke ---
+    eff_sign, strength, regime, ratio = nb.regime_effektiv(st, settled, handelstag, heute)
     regime_eff = (eff_sign, strength)
+    mom20map = {t: raw[t]['mom20'] for t in raw} if raw else {}    # (1) Veto-Datenbasis
 
     total_trades, werte = 0, {}
     for name, reg_on, soc_on, conf_on in VARIANTS:
@@ -303,7 +275,7 @@ def main():
         if offen and raw is not None:
             scores = {t: score_from_raw(raw[t], soc_on) for t in manage}
         total_trades += step_variant(v, scores, mark, close_s, v['handelstage'],
-                                     regime_eff, (reg_on, soc_on, conf_on), neuer_tag)
+                                     regime_eff, (reg_on, soc_on, conf_on), neuer_tag, mom20map)
         werte[name] = v['cash'] + sum(p['stk'] * (mark.get(t) or close_s.get(t)
                                       or p.get('einstieg', 0.0)) for t, p in v['pos'].items())
 

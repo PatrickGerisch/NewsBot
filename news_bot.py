@@ -61,11 +61,33 @@ BAND = 0.10                  # Rebalancing-Deadband: nur handeln, wenn Abweichun
 #  Begruendung/Details siehe News-Bot-Effizienz-Upgrades.md. Zum Aktivieren auf
 #  True setzen – am besten einzeln, dann gegen den Ausgangsstand A/B vergleichen.
 # ----------------------------------------------------------------------------- #
-USE_REGIME_FILTER = False      # Baisse -> keine neuen Longs, Hausse -> keine neuen Shorts
-USE_SOCIAL_VOLUME_GATE = False # StockTwits nur werten, wenn genug Posts (Volumen-Spike)
+USE_REGIME_FILTER = False      # (v1, ersetzt) harter Baisse/Hausse-Filter -> jetzt gleitend, s.u.
+USE_SOCIAL_VOLUME_GATE = False # (v1, ersetzt) reines Volumen-Gate -> jetzt Social-Confirm, s.u.
 USE_CONFIDENCE_SIZING = False  # Positionsgroesse ~ |Score| statt strikt gleichgewichtet
 SOCIAL_MIN_POSTS = 5           # Schwelle fuers Volume-Gate (v1: absolute Postzahl)
 ENRICH_LOGGING = True          # additive Features -> news_bot_features.csv (fuers Lernen)
+
+# ----------------------------------------------------------------------------- #
+#  v3-VERBESSERUNGEN – Lehre aus dem Halbleiter-Selloff 27.07.2026
+#  Bewusst als LIVE-Verbesserung eingezogen (Standard AN). Alle Bots teilen diese
+#  Logik (news_bot.py = Quelle; arena.py und news_bot_alpaca.py rufen sie auf).
+#  Ehrlich bleiben: kleine Stichprobe, kurze Historie -> Overfitting moeglich.
+# ----------------------------------------------------------------------------- #
+USE_MOM_VETO      = True    # (1) keine Longs in fallende Messer / keine Shorts in Raketen
+MOM_VETO_TAGE     = 20      #     Momentum-Fenster (Handelstage) fuers Veto
+MOM_VETO_LONG     = -12.0   #     Long nur, wenn Mom(20d) >= -12 %  (am 27.07.: SNDK -31, MRVL -27 ...)
+MOM_VETO_SHORT    =  12.0   #     Short nur, wenn Mom(20d) <= +12 %
+
+USE_SECTOR_CAP    = True    # (2) Cluster-Konzentration deckeln (U.SEMI_CLUSTER)
+SECTOR_CAP        = 0.30    #     max. Depotanteil im Cluster; Rest bleibt Cash (weniger Brutto)
+
+USE_REGIME_SCALE    = True  # (3) gleitendes Regime-Exposure statt hartem Ein/Aus-Filter
+REGIME_FULL_OFF     = 0.03  #     |Abstand Benchmark<->MA|, ab dem die Gegen-Regime-Seite auf 0 skaliert
+REGIME_BASE_CUT     = 0.40  #     gegen ein bestaetigtes Regime SOFORT mind. 40 % Exposure weg
+REGIME_CONFIRM_DAYS = 2     #     neues Regime-Vorzeichen kippt erst nach N Handelstagen (Anti-Whipsaw)
+
+USE_SOCIAL_CONFIRM  = True  # (4) Social darf einen Trade nicht ALLEIN gegen negatives Momentum tragen
+SOCIAL_MIN_POSTS_V2 = 8     #     Mindest-Postzahl, damit ein rein social-getriebener Trade zaehlt
 
 
 # ----------------------------------------------------------------------------- #
@@ -109,6 +131,98 @@ def confidence_weights(ziel_dir, scores):
 def _mom(series, tage):
     s = series.dropna()
     return (s.iloc[-1] / s.iloc[-1 - tage] - 1) * 100 if len(s) > tage else 0.0
+
+
+# ----------------------------------------------------------------------------- #
+#  v3-Helfer (zentral; auch von arena.py und news_bot_alpaca.py genutzt)
+# ----------------------------------------------------------------------------- #
+def mom_veto(direction, mom20):
+    """True -> Signal verwerfen: (1) Momentum-Veto gegen 'fallende Messer'.
+    Keine neuen Longs in Titel mit stark negativem 20-Tage-Momentum und keine
+    neuen Shorts in stark gestiegene Titel. mom20=None -> kein Veto (unbekannt)."""
+    if not USE_MOM_VETO or mom20 is None:
+        return False
+    if direction > 0 and mom20 < MOM_VETO_LONG:
+        return True
+    if direction < 0 and mom20 > MOM_VETO_SHORT:
+        return True
+    return False
+
+
+def kombi_score(sent, soc, n_soc, mom5, social_confirm):
+    """(4) Score aus den Rohkomponenten. social_confirm=False -> Social zaehlt voll.
+    social_confirm=True -> Social wird verworfen, wenn es den Trade ALLEIN ueber die
+    |Score|>=3-Schwelle hebt UND dabei entweder das StockTwits-Volumen zu duenn ist
+    ODER das (kurze) Momentum dagegen laeuft (Social soll nicht in fallende Messer
+    hineinkaufen)."""
+    mtilt = 2 if mom5 > 1.5 else -2 if mom5 < -1.5 else 0
+    voll = max(-3, min(3, sent + soc)) + mtilt                 # mit Social
+    if not social_confirm:
+        return voll
+    ohne = max(-3, min(3, sent)) + mtilt                       # ohne Social
+    social_kippt = abs(voll) >= 3 and abs(ohne) < 3            # Social gibt den Ausschlag
+    duenn    = n_soc < SOCIAL_MIN_POSTS_V2
+    gegen_mom = (voll > 0 and mom5 < 0) or (voll < 0 and mom5 > 0)
+    return ohne if (social_kippt and (duenn or gegen_mom)) else voll
+
+
+def confirm_regime(mem, regime, confirm_days=None):
+    """(3) Bestaetigtes Regime-Vorzeichen aktualisieren (mutiert mem). Einmal je
+    Handelstag aufrufen. Ein neues Vorzeichen kippt erst nach 'confirm_days' Tagen
+    in Folge -> daempft Ein-Tages-Whipsaws (wie am 24.07. bei nur -0,88 % zur MA)."""
+    confirm_days = REGIME_CONFIRM_DAYS if confirm_days is None else confirm_days
+    if regime == 0:
+        return
+    if regime == mem['conf_sign']:
+        mem['pend_sign'], mem['pend_days'] = regime, 0
+    else:
+        mem['pend_days'] = mem['pend_days'] + 1 if regime == mem['pend_sign'] else 1
+        mem['pend_sign'] = regime
+        if mem['pend_days'] >= confirm_days:
+            mem['conf_sign'], mem['pend_days'] = regime, 0
+
+
+def regime_strength(ratio):
+    """Staerke 0..1 des Regimes aus |Abstand Benchmark<->MA|."""
+    return min(1.0, abs(ratio) / REGIME_FULL_OFF) if REGIME_FULL_OFF > 0 else 1.0
+
+
+def regime_scale(direction, eff_sign, strength, on=True):
+    """(3) Gleitender Exposure-Faktor 0..1 fuer EINE Position. Mit dem Regime laufende
+    Seite: 1.0. Gegen ein bestaetigtes Regime: SOFORT REGIME_BASE_CUT weg, dann gleitend
+    bis 0, je weiter der Benchmark von seiner MA entfernt ist. 'on' = Schalter (Arena-Variante)."""
+    if not on or not USE_REGIME_SCALE or eff_sign == 0:
+        return 1.0
+    if direction == eff_sign:
+        return 1.0
+    return max(0.0, (1.0 - REGIME_BASE_CUT) * (1.0 - strength))
+
+
+def regime_effektiv(state, settled, handelstag, heute):
+    """(3) Liefert (eff_sign, strength, regime_roh, ratio) mit geglaettetem, bestaetigtem
+    Vorzeichen. Mutiert state['regime_mem'] (persistiert den Anti-Whipsaw-Speicher)."""
+    regime, ratio = market_regime(settled)
+    mem = state.setdefault('regime_mem',
+                           {'conf_sign': regime, 'pend_sign': regime, 'pend_days': 0, 'letzter_tag': None})
+    if handelstag and mem.get('letzter_tag') != heute:
+        confirm_regime(mem, regime)
+        mem['letzter_tag'] = heute
+    eff = mem['conf_sign'] if mem['conf_sign'] in (-1, 1) else regime
+    return eff, regime_strength(ratio), regime, ratio
+
+
+def sector_cap_weights(gew, cap=None):
+    """(2) Skaliert Cluster-Titel (U.SEMI_CLUSTER) so herunter, dass ihr Summengewicht
+    <= cap bleibt. Frei werdendes Gewicht bleibt Cash -> geringeres Brutto, weniger
+    Klumpenrisiko (statt es in andere Namen umzuschichten)."""
+    cap = SECTOR_CAP if cap is None else cap
+    if not USE_SECTOR_CAP or not gew:
+        return gew
+    clus = sum(w for t, w in gew.items() if t in U.SEMI_CLUSTER)
+    if clus <= cap or clus <= 0:
+        return gew
+    f = cap / clus
+    return {t: (w * f if t in U.SEMI_CLUSTER else w) for t, w in gew.items()}
 
 
 def _features_log(ts, heute, sig, settled, mark, ziel_set, regime, regime_ratio):
@@ -324,15 +438,15 @@ def signale_rechnen(settled, news, tickers):
     for t in tickers:
         s = settled[t].dropna() if t in settled.columns else settled.iloc[0:0]
         mom = (s.iloc[-1] / s.iloc[-6] - 1) * 100 if len(s) > 6 else 0
+        mom20 = _mom(s, MOM_VETO_TAGE)                    # (1) 20-Tage-Momentum fuers Veto
         sent, hl = sentiment(news[t])
         soc, n_soc, soc_hl = soc_all.get(t, (0, 0, ''))
-        # Volume-Gate (gated): Social nur werten, wenn genug Posts -> sonst neutral
-        soc_eff = soc if (not USE_SOCIAL_VOLUME_GATE or n_soc >= SOCIAL_MIN_POSTS) else 0
-        stimmung = max(-3, min(3, sent + soc_eff))
-        score = stimmung + (2 if mom > 1.5 else -2 if mom < -1.5 else 0)
-        treiber = f'[StockTwits] {soc_hl}' if (abs(soc_eff) >= abs(sent) and soc_hl) else hl
-        sig[t] = {'score': score, 'mom': mom, 'stimmung': stimmung, 'sent': sent,
-                  'treiber': treiber, 'soc': soc, 'n_soc': n_soc}
+        # (4) Social-Confirm: Social zaehlt nur als Bestaetigung, nicht als Solo-Kaufgrund
+        score = kombi_score(sent, soc, n_soc, mom, USE_SOCIAL_CONFIRM)
+        stimmung = max(-3, min(3, sent + soc))
+        treiber = f'[StockTwits] {soc_hl}' if (abs(soc) >= abs(sent) and soc_hl) else hl
+        sig[t] = {'score': score, 'mom': mom, 'mom20': mom20, 'stimmung': stimmung,
+                  'sent': sent, 'treiber': treiber, 'soc': soc, 'n_soc': n_soc}
     return sig
 
 
@@ -421,10 +535,13 @@ def main():
         aged = {t for t, p in s['pos'].items() if s['handelstage'] - p['tag'] >= MAXTAGE}
         ziel_dir = {t: (1 if sig[t]['score'] >= 3 else -1)
                     for t in manage if abs(sig[t]['score']) >= 3 and t not in aged}
-        regime, regime_ratio = market_regime(settled)
-        ziel_dir = apply_regime(ziel_dir, regime)      # gated: Regime-Filter
+        # (1) Momentum-Veto: keine neuen Longs in fallende Messer / Shorts in Raketen
+        ziel_dir = {t: d for t, d in ziel_dir.items() if not mom_veto(d, sig[t].get('mom20'))}
+        # (3) geglaettetes, bestaetigtes Regime-Vorzeichen + Staerke (Anti-Whipsaw)
+        eff_sign, reg_strength, regime, regime_ratio = regime_effektiv(s, settled, handelstag, heute)
         equity = _equity()
         gew = confidence_weights(ziel_dir, {t: sig[t]['score'] for t in ziel_dir})
+        gew = sector_cap_weights(gew)                  # (2) Cluster-Konzentration deckeln
         N = len(ziel_dir)
 
         for t in sorted(manage, key=lambda x: -abs(sig[x]['score'])):
@@ -432,6 +549,8 @@ def main():
             if mk <= 0:                                # ohne Kurs nicht handelbar
                 continue
             nt = equity * gew.get(t, 0.0)              # Ziel-Notional je Titel (gated: ~|Score|)
+            if t in ziel_dir:
+                nt *= regime_scale(ziel_dir[t], eff_sign, reg_strength)   # (3) gleitendes Regime-Exposure
             cur_stk = s['pos'][t]['stk'] if t in s['pos'] else 0.0
             tgt_stk = (nt * ziel_dir[t]) / mk if t in ziel_dir else 0.0
             delta = tgt_stk - cur_stk

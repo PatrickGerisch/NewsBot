@@ -71,16 +71,22 @@ def load_keys():
 #  Reine Planungsfunktion (ohne Netz -> testbar): Ziel-Orderliste bestimmen
 # ----------------------------------------------------------------------------- #
 def plan_orders(sig, equity, positions, prices, entry_dates, today,
-                assets=ALPACA_ASSETS, maxtage=MAXTAGE, band=BAND, regime=0):
+                assets=ALPACA_ASSETS, maxtage=MAXTAGE, band=BAND,
+                regime_eff=(0, 0.0), mom20=None):
     """positions/prices: {sym: signed_qty}/{sym: kurs}. entry_dates: {sym:'YYYY-MM-DD'}.
     Liefert (orders, ziel_dir, N). orders = Liste {sym,cur,tgt,delta,flip,aged}.
-    regime (gated): -1/0/+1 fuer den Regime-Filter aus news_bot.py."""
+    v3: regime_eff=(eff_sign, strength) fuer gleitendes Regime-Exposure (3),
+    mom20={sym: Mom(20d)} fuers Momentum-Veto (1); Sektor-Cap (2) global."""
+    eff_sign, strength = regime_eff
+    mom20 = mom20 or {}
     aged = {sym for sym in positions if positions[sym] != 0 and sym in entry_dates
             and np.busday_count(entry_dates[sym], today) >= maxtage}
     ziel_dir = {t: (1 if sig[t]['score'] >= 3 else -1)
                 for t in assets if abs(sig[t]['score']) >= 3 and t not in aged}
-    ziel_dir = nb.apply_regime(ziel_dir, regime)                 # gated: Regime-Filter
+    # (1) Momentum-Veto: keine neuen Longs in fallende Messer / Shorts in Raketen
+    ziel_dir = {t: d for t, d in ziel_dir.items() if not nb.mom_veto(d, mom20.get(t))}
     gew = nb.confidence_weights(ziel_dir, {t: sig[t]['score'] for t in ziel_dir})  # gated
+    gew = nb.sector_cap_weights(gew)                             # (2) Cluster-Konzentration deckeln
     N = len(ziel_dir)
     orders = []
     for t in assets:
@@ -88,6 +94,8 @@ def plan_orders(sig, equity, positions, prices, entry_dates, today,
         if price <= 0:
             continue
         nt = equity * gew.get(t, 0.0)                            # Ziel-Notional je Titel
+        if t in ziel_dir:
+            nt *= nb.regime_scale(ziel_dir[t], eff_sign, strength)   # (3) gleitendes Regime-Exposure
         cur = positions.get(t, 0.0)
         tgt = int((nt * ziel_dir[t]) / price) if t in ziel_dir else 0  # ganze Stücke
         delta = tgt - cur
@@ -143,9 +151,12 @@ def run():
             sig.setdefault(t, {'score': 0, 'mom': 0, 'stimmung': 0,
                                'treiber': '', 'soc': 0, 'n_soc': 0})
         prices = {t: mark.get(t, 0) for t in manage}
-        regime, _ = nb.market_regime(settled)            # gated: Regime-Filter (siehe news_bot.py)
-        orders, ziel_dir, N = plan_orders(sig, equity, positions, prices,
-                                          entry_dates, heute, assets=manage, regime=regime)
+        # (3) geglaettetes Regime (Anti-Whipsaw) – Zustand im State persistieren
+        eff_sign, strength, _reg, _ratio = nb.regime_effektiv(st, settled, True, heute)
+        # (1) 20-Tage-Momentum je verwaltetem Titel fuers Veto
+        mom20 = {t: nb._mom(settled[t], nb.MOM_VETO_TAGE) for t in manage if t in settled.columns}
+        orders, ziel_dir, N = plan_orders(sig, equity, positions, prices, entry_dates, heute,
+                                          assets=manage, regime_eff=(eff_sign, strength), mom20=mom20)
 
         for o in orders:
             sym, delta, tgt = o['sym'], o['delta'], o['tgt']

@@ -90,6 +90,21 @@ BENCH = 'SPY'                       # Benchmark Buy & Hold (nur Bewertung)
 US_UNIVERSE   = sorted(set(SP500))                 # Alpaca handelt NUR US-Titel
 FULL_UNIVERSE = sorted(set(SP500 + DAX))           # Simulator: US + DAX
 
+# --------------------------------------------------------------------------- #
+#  Konzentrations-Cluster: Halbleiter + Tech-Hardware (Storage/Networking/EMS)
+#  Genau die stark korrelierte Gruppe, in der sich am 27.07.2026 ALLE
+#  Sentiment-/Momentum-Varianten gleichzeitig verkauften (SNDK -12 %, COHR -9 %,
+#  WDC/STX -7 %, MU/MRVL -5 % bei SPY -0,3 %). Dient dem Sektor-Cap in news_bot.py.
+#  Hinweis: bewusst kuratiert (kein GICS im Universum) -> gezielt gegen genau
+#  dieses Klumpenrisiko; mit Vorsicht als moegliches Overfitting zu lesen.
+# --------------------------------------------------------------------------- #
+SEMI_CLUSTER = {
+    'AMD', 'AMAT', 'ADI', 'ANET', 'AVGO', 'CIEN', 'COHR', 'DELL', 'FLEX', 'GLW',
+    'HPE', 'HPQ', 'INTC', 'JBL', 'KLAC', 'KEYS', 'LITE', 'LRCX', 'MCHP', 'MPWR',
+    'MRVL', 'MU', 'NTAP', 'NVDA', 'NXPI', 'ON', 'QCOM', 'SMCI', 'SNDK', 'STX',
+    'SWKS', 'TER', 'TXN', 'WDC', 'IFX.DE',
+}
+
 
 # --------------------------------------------------------------------------- #
 #  Tages-Cache der abgeschlossenen Schlusskurse (intraday konstant)
