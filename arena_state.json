@@ -3,7 +3,7 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 2088.0139128722954,
+      "cash": 2087.8930157731106,
       "pos": {
         "SMCI": {
           "stk": 17.756699718674387,
@@ -114,11 +114,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 3,
-      "letzter_tag": "2026-07-27"
+      "handelstage": 4,
+      "letzter_tag": "2026-07-28"
     },
     "regime": {
-      "cash": 3314.7799111645754,
+      "cash": 3314.660113061255,
       "pos": {
         "PTC": {
           "stk": -4.160779470725685,
@@ -229,11 +229,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 3,
-      "letzter_tag": "2026-07-27"
+      "handelstage": 4,
+      "letzter_tag": "2026-07-28"
     },
     "social": {
-      "cash": 2216.029948702924,
+      "cash": 2215.8978345696173,
       "pos": {
         "SMCI": {
           "stk": 18.790194843152566,
@@ -338,11 +338,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 3,
-      "letzter_tag": "2026-07-27"
+      "handelstage": 4,
+      "letzter_tag": "2026-07-28"
     },
     "confidence": {
-      "cash": 1588.6250311694253,
+      "cash": 1588.5359446697903,
       "pos": {
         "SMCI": {
           "stk": 17.564537972450033,
@@ -453,11 +453,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 3,
-      "letzter_tag": "2026-07-27"
+      "handelstage": 4,
+      "letzter_tag": "2026-07-28"
     },
     "all": {
-      "cash": 2968.4969552654297,
+      "cash": 2968.405502059588,
       "pos": {
         "PTC": {
           "stk": -2.9548205882660508,
@@ -562,14 +562,14 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 3,
-      "letzter_tag": "2026-07-27"
+      "handelstage": 4,
+      "letzter_tag": "2026-07-28"
     }
   },
   "regime_mem": {
     "conf_sign": -1,
     "pend_sign": -1,
     "pend_days": 0,
-    "letzter_tag": "2026-07-27"
+    "letzter_tag": "2026-07-28"
   }
 }
