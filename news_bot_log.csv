@@ -225,3 +225,7 @@ Datum,Asset,Mom5%,Stimmung,Score,Aktion,Schlagzeile,StockTwits,ST-Posts
 2026-07-29,LMT,14.4,0,2,EXIT LONG,[StockTwits] $AVEX wow! Nice! $STX $SPY $NOC $LMT,2,16
 2026-07-29,DELL,5.6,-1,1,EXIT LONG,The Volatility Warning Embedded in Cisco Stock,2,14
 2026-07-29,SMCI,16.9,-2,0,EXIT LONG,[StockTwits] $SMCI probably 📉$25 today maybe 🤷‍♂️,-1,15
+2026-07-29,SMCI,16.9,1,3,LONG,[StockTwits] $SMCI and will be again after 2,2,20
+2026-07-29,IP,16.7,1,3,REDUZIEREN LONG,JPMorgan upgrades International Paper as linerboard pricing cycle gains momentum,0,1
+2026-07-29,IFX.DE,-14.5,-1,-3,SHORT,Japan's Power-Chip Giants Target September Deal to Challenge Infineon,0,0
+2026-07-29,SNDK,-19.6,1,-1,EXIT SHORT,[StockTwits] $SNDK PERFECT Printing off the lows. This is so good,2,17
