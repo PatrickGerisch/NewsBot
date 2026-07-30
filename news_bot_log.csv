@@ -254,3 +254,5 @@ Datum,Asset,Mom5%,Stimmung,Score,Aktion,Schlagzeile,StockTwits,ST-Posts
 2026-07-30,NUE,8.5,0,2,EXIT LONG,[StockTwits] $NUE yep,1,3
 2026-07-30,BKR,3.7,1,2,EXIT LONG,[StockTwits] $BKR,1,3
 2026-07-30,EQT,-2.7,3,1,EXIT LONG (Haltedauer),Baker Hughes Q2 Earnings Beat Estimates on IET Segment Strength,0,1
+2026-07-30,SW,8.4,2,4,AUFSTOCKEN LONG,[StockTwits] Materials up and to the right. $CCK $CTVA $GEF $SW $XLB,1,1
+2026-07-30,TSLA,-20.2,-1,-3,EXIT SHORT,Wall St advances as Microsoft results ease AI spending fears,0,15
