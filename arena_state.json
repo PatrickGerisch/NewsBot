@@ -3,7 +3,7 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 2018.4697162546302,
+      "cash": 2018.3340231022155,
       "pos": {
         "TRV": {
           "stk": 0.9982696229897347,
@@ -150,11 +150,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 5,
-      "letzter_tag": "2026-07-29"
+      "handelstage": 6,
+      "letzter_tag": "2026-07-30"
     },
     "regime": {
-      "cash": 6428.285812113651,
+      "cash": 6428.150302615992,
       "pos": {
         "T": {
           "stk": 7.289020270805762,
@@ -301,11 +301,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 5,
-      "letzter_tag": "2026-07-29"
+      "handelstage": 6,
+      "letzter_tag": "2026-07-30"
     },
     "social": {
-      "cash": 2332.555000027139,
+      "cash": 2332.398699402039,
       "pos": {
         "TRV": {
           "stk": 1.1530682056654307,
@@ -434,11 +434,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 5,
-      "letzter_tag": "2026-07-29"
+      "handelstage": 6,
+      "letzter_tag": "2026-07-30"
     },
     "confidence": {
-      "cash": 1828.1082977397996,
+      "cash": 1827.9809645207893,
       "pos": {
         "TRV": {
           "stk": 0.7661463617215333,
@@ -585,11 +585,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 5,
-      "letzter_tag": "2026-07-29"
+      "handelstage": 6,
+      "letzter_tag": "2026-07-30"
     },
     "all": {
-      "cash": 6432.9027011182525,
+      "cash": 6432.759371286905,
       "pos": {
         "T": {
           "stk": 11.043299606255948,
@@ -718,14 +718,14 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 5,
-      "letzter_tag": "2026-07-29"
+      "handelstage": 6,
+      "letzter_tag": "2026-07-30"
     }
   },
   "regime_mem": {
     "conf_sign": -1,
     "pend_sign": -1,
     "pend_days": 0,
-    "letzter_tag": "2026-07-29"
+    "letzter_tag": "2026-07-30"
   }
 }

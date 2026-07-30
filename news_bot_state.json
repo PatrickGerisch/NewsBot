@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 6769.047561810901,
+  "cash": 6768.894366253137,
   "pos": {
     "TRV": {
       "stk": 0.518317508028847,
@@ -158,8 +158,8 @@
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 10,
-  "letzter_tag": "2026-07-29",
+  "handelstage": 11,
+  "letzter_tag": "2026-07-30",
   "regime_mem": {
     "conf_sign": -1,
     "pend_sign": -1,
