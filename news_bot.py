@@ -56,6 +56,14 @@ MAXTAGE = 5                  # max. Haltedauer in Handelstagen
 BAND = 0.10                  # Rebalancing-Deadband: nur handeln, wenn Abweichung
                              # > 10 % des Zielgewichts (bremst stündlichen Mikro-Churn)
 
+# (v5 30.07.2026) Mindest-|Score| fuer eine NEUE Position (vorher hart 3). Konviktion
+# konzentrieren: da der Score bei ±3 gekappt wird und der Momentum-Tilt ±2 addiert,
+# verlangt >=4 faktisch Momentum-Bestaetigung (mtilt=+2), nicht nur Sentiment/Social.
+# Zentral fuer news_bot, arena (alle Varianten) und alpaca (nb.SCORE_MIN). Ehrlich:
+# kleine Stichprobe (~5 Handelstage) -> Overfitting moeglich; leicht reversibel (-> 3).
+# NICHT die interne ±3-Kappung in kombi_score (Score-Bau) -> die bleibt bewusst 3.
+SCORE_MIN = 4
+
 # ----------------------------------------------------------------------------- #
 #  UPGRADE-SCHALTER (Standard: AUS -> laufende Strategie bleibt unveraendert)
 #  Begruendung/Details siehe News-Bot-Effizienz-Upgrades.md. Zum Aktivieren auf
@@ -557,8 +565,8 @@ def main():
         # --- Ziel-Portfolio: alle klaren Signale (gleichgewichtet, kein Hebel) ---
         # Haltedauer erreicht -> raus und diesen Lauf nicht neu eröffnen
         aged = {t for t, p in s['pos'].items() if s['handelstage'] - p['tag'] >= MAXTAGE}
-        ziel_dir = {t: (1 if sig[t]['score'] >= 3 else -1)
-                    for t in manage if abs(sig[t]['score']) >= 3 and t not in aged}
+        ziel_dir = {t: (1 if sig[t]['score'] >= SCORE_MIN else -1)
+                    for t in manage if abs(sig[t]['score']) >= SCORE_MIN and t not in aged}
         # (1) Momentum-Veto: keine neuen Longs in fallende Messer / Shorts in Raketen
         ziel_dir = {t: d for t, d in ziel_dir.items() if not mom_veto(d, sig[t].get('mom20'))}
         # (3) geglaettetes, bestaetigtes Regime-Vorzeichen + Staerke (Anti-Whipsaw)

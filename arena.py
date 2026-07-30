@@ -96,8 +96,8 @@ def step_variant(stv, scores, mark, close_s, handelstage, regime_eff, cfg, neuer
         return 0
 
     aged = {t for t, p in stv['pos'].items() if handelstage - p['tag'] >= nb.MAXTAGE}
-    dirs = {t: (1 if scores[t] >= 3 else -1)
-            for t in scores if abs(scores[t]) >= 3 and t not in aged}
+    dirs = {t: (1 if scores[t] >= nb.SCORE_MIN else -1)
+            for t in scores if abs(scores[t]) >= nb.SCORE_MIN and t not in aged}
     # (1) Momentum-Veto GLOBAL: keine neuen Longs in fallende Messer / Shorts in Raketen
     dirs = {t: d for t, d in dirs.items() if not nb.mom_veto(d, (mom20map or {}).get(t))}
     eq = equity()

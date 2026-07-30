@@ -15,7 +15,7 @@ WICHTIG
 * Universum: alle S&P-500-Titel (nur US-Aktien – Alpaca handelt keine Frankfurt/
   Ausland-Titel; DAX/MSCI-World laufen daher nur im Simulator). Pro Lauf werden
   per Momentum-Vorfilter die staerksten Bewegungen fuer News/Social ausgewaehlt.
-* Sizing wie im Simulator: alle Assets mit |Score| >= 3 gleichgewichtet
+* Sizing wie im Simulator: alle Assets mit |Score| >= nb.SCORE_MIN gleichgewichtet
   (Depotwert ÷ Anzahl), kein Hebel; Haltedauer <= 5 Handelstage.
 * Kein Anlagerat – reines Mess-Experiment.
 
@@ -81,8 +81,8 @@ def plan_orders(sig, equity, positions, prices, entry_dates, today,
     mom20 = mom20 or {}
     aged = {sym for sym in positions if positions[sym] != 0 and sym in entry_dates
             and np.busday_count(entry_dates[sym], today) >= maxtage}
-    ziel_dir = {t: (1 if sig[t]['score'] >= 3 else -1)
-                for t in assets if abs(sig[t]['score']) >= 3 and t not in aged}
+    ziel_dir = {t: (1 if sig[t]['score'] >= nb.SCORE_MIN else -1)
+                for t in assets if abs(sig[t]['score']) >= nb.SCORE_MIN and t not in aged}
     # (1) Momentum-Veto: keine neuen Longs in fallende Messer / Shorts in Raketen
     ziel_dir = {t: d for t, d in ziel_dir.items() if not nb.mom_veto(d, mom20.get(t))}
     gew = nb.confidence_weights(ziel_dir, {t: sig[t]['score'] for t in ziel_dir})  # gated
