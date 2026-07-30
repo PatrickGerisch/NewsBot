@@ -87,8 +87,15 @@ POS_CAP           = 0.12    #     max. Depotanteil je Einzeltitel; Ueberschuss b
                             #     bei |Score|-Gewichtung verhindert er, dass ein Name dominiert.
 
 USE_REGIME_SCALE    = True  # (3) gleitendes Regime-Exposure statt hartem Ein/Aus-Filter
-REGIME_FULL_OFF     = 0.03  #     |Abstand Benchmark<->MA|, ab dem die Gegen-Regime-Seite auf 0 skaliert
-REGIME_BASE_CUT     = 0.40  #     gegen ein bestaetigtes Regime SOFORT mind. 40 % Exposure weg
+# v4 (30.07.2026): Regime-Antwort GESCHAERFT. Grund: 24.-29.07. lag das Regime
+# durchgehend im Risk-off (Benchmark unter MA), doch die 'regime'-Arena-Variante
+# (-9,69 %) schuetzte kaum besser als 'baseline' (-9,90 %). Ein bestaetigtes
+# Gegen-Regime schneidet jetzt FRUEHER (FULL_OFF 0.03->0.02, volle Wirkung schon
+# bei 2 % Abstand) und SOFORT MEHR (BASE_CUT 0.40->0.55) von der Gegenseite weg.
+# Ehrlich: nur ~5 Handelstage Datenbasis -> hohe Overfitting-Gefahr, daher bewusst
+# moderat; Kern-Leck bleibt die Titelauswahl (alle Arena-Varianten ~8 pp unter SPY).
+REGIME_FULL_OFF     = 0.02  #     |Abstand Benchmark<->MA|, ab dem die Gegen-Regime-Seite auf 0 skaliert (v4: 0.03->0.02)
+REGIME_BASE_CUT     = 0.55  #     gegen ein bestaetigtes Regime SOFORT mind. 55 % Exposure weg (v4: 0.40->0.55)
 REGIME_CONFIRM_DAYS = 2     #     neues Regime-Vorzeichen kippt erst nach N Handelstagen (Anti-Whipsaw)
 
 USE_SOCIAL_CONFIRM  = True  # (4) Social darf einen Trade nicht ALLEIN gegen negatives Momentum tragen
