@@ -1,78 +1,99 @@
 {
   "start": "2026-07-17",
-  "cash": 9044.308754982745,
+  "cash": 7733.322888610758,
   "pos": {
-    "ALLE": {
-      "stk": 0.12040948881283607,
-      "einstieg": 154.6327963876784,
-      "tag": 7,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-07-24 10:50 ET"
-    },
     "DLR": {
-      "stk": 0.09640534871173007,
-      "einstieg": 193.96693011474608,
+      "stk": 1.579476954047653,
+      "einstieg": 190.91377210801338,
       "tag": 8,
       "richtung": "LONG",
       "einstieg_ts": "2026-07-27 11:39 ET"
-    },
-    "HON": {
-      "stk": 0.07783608177686739,
-      "einstieg": 243.68177755737304,
-      "tag": 8,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-07-27 11:39 ET"
-    },
-    "T": {
-      "stk": 0.7974049256877087,
-      "einstieg": 24.50224477100372,
-      "tag": 8,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-07-27 13:38 ET"
     },
     "PKG": {
-      "stk": 0.07536746127969902,
-      "einstieg": 250.93540255737304,
+      "stk": 1.2306807169990743,
+      "einstieg": 245.145062613233,
       "tag": 8,
       "richtung": "LONG",
       "einstieg_ts": "2026-07-27 13:38 ET"
     },
     "SW": {
-      "stk": 0.43586742581453114,
-      "einstieg": 51.044688142515604,
+      "stk": 6.60697588950105,
+      "einstieg": 45.95245107780119,
       "tag": 9,
       "richtung": "LONG",
       "einstieg_ts": "2026-07-28 11:15 ET"
     },
     "TRMB": {
-      "stk": 0.3313362417293678,
-      "einstieg": 58.18907984733581,
+      "stk": 5.369714480238641,
+      "einstieg": 56.22706186077514,
       "tag": 10,
       "richtung": "LONG",
       "einstieg_ts": "2026-07-29 11:06 ET"
     },
     "ACN": {
-      "stk": 0.11413975244428276,
-      "einstieg": 162.26609005737305,
+      "stk": 1.86110277006672,
+      "einstieg": 161.88103912040273,
       "tag": 11,
       "richtung": "LONG",
       "einstieg_ts": "2026-07-30 11:07 ET"
     },
     "GRMN": {
-      "stk": 0.06390967029579751,
-      "einstieg": 289.7998262786865,
+      "stk": 1.0251272616769265,
+      "einstieg": 293.59455721460927,
       "tag": 11,
       "richtung": "LONG",
       "einstieg_ts": "2026-07-30 11:07 ET"
+    },
+    "NOW": {
+      "stk": 2.751095418053109,
+      "einstieg": 109.49472244262695,
+      "tag": 12,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-31 11:15 ET"
+    },
+    "MU": {
+      "stk": -0.9143786030039525,
+      "einstieg": 839.2301994018555,
+      "tag": 12,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-07-31 11:15 ET"
+    },
+    "CTSH": {
+      "stk": 5.615067050835742,
+      "einstieg": 53.646808931350705,
+      "tag": 12,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-31 11:15 ET"
+    },
+    "BAX": {
+      "stk": 11.441378801364936,
+      "einstieg": 26.328158034324645,
+      "tag": 12,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-31 11:15 ET"
+    },
+    "CMG": {
+      "stk": 8.024517206688202,
+      "einstieg": 37.53876045799255,
+      "tag": 12,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-07-31 11:15 ET"
+    },
+    "LII": {
+      "stk": -1.8230254101659058,
+      "einstieg": 420.93441651916504,
+      "tag": 12,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-07-31 11:15 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 11,
-  "letzter_tag": "2026-07-30",
+  "handelstage": 12,
+  "letzter_tag": "2026-07-31",
   "regime_mem": {
     "conf_sign": -1,
     "pend_sign": -1,
     "pend_days": 0,
-    "letzter_tag": "2026-07-30"
+    "letzter_tag": "2026-07-31"
   }
 }
