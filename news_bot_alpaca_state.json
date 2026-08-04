@@ -7,13 +7,19 @@
     "CHTR": "2026-08-03",
     "ZBRA": "2026-08-03",
     "AMZN": "2026-08-03",
-    "ORCL": "2026-08-03"
+    "ORCL": "2026-08-03",
+    "DXCM": "2026-08-04",
+    "GOOGL": "2026-08-04",
+    "GOOG": "2026-08-04",
+    "FSLR": "2026-08-04",
+    "CMG": "2026-08-04",
+    "CRWD": "2026-08-04"
   },
-  "letzter_lauf": "2026-08-03 18:10 ET",
+  "letzter_lauf": "2026-08-04 11:22 ET",
   "regime_mem": {
-    "conf_sign": -1,
+    "conf_sign": 1,
     "pend_sign": 1,
-    "pend_days": 1,
-    "letzter_tag": "2026-08-03"
+    "pend_days": 0,
+    "letzter_tag": "2026-08-04"
   }
 }
