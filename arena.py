@@ -59,14 +59,19 @@ def score_from_raw(raw, social_gate):
     return nb.kombi_score(raw['sent'], raw['soc'], raw['n_soc'], raw['mom'], social_gate)
 
 
-def weights(dirs, scores, on):
+def weights(dirs, scores, on, mom20map=None):
+    """Zielgewichte. Off -> gleichgewichtet. On (Confidence-Sizing) -> proportional
+    zum Rang aus nb.rank_score: |Score| + Mom20-Tie-Breaker (6c, 05.08.2026), weil
+    der Score bei +-5 saettigt und sonst quasi zufaellig gewichtet wuerde."""
     n = len(dirs)
     if n == 0:
         return {}
     if not on:
         return {t: 1.0 / n for t in dirs}
-    tot = sum(abs(scores.get(t, 0)) for t in dirs) or 1.0
-    return {t: abs(scores.get(t, 0)) / tot for t in dirs}
+    m = mom20map or {}
+    rang = {t: nb.rank_score(scores.get(t, 0), d, m.get(t)) for t, d in dirs.items()}
+    tot = sum(rang.values()) or 1.0
+    return {t: rang[t] / tot for t in dirs}
 
 
 # Regime-Glaettung (confirm_regime / regime_effektiv) liegt zentral in news_bot.py.
@@ -102,13 +107,19 @@ def step_variant(stv, scores, mark, close_s, handelstage, regime_eff, cfg, neuer
     dirs = {t: d for t, d in dirs.items() if not nb.mom_veto(d, (mom20map or {}).get(t))}
     eq = equity()
     # (2) Sektor-Cap GLOBAL: Cluster-Konzentration deckeln (Rest bleibt Cash)
-    gew = nb.sector_cap_weights(weights(dirs, scores, conf_on))
+    gew = nb.sector_cap_weights(weights(dirs, scores, conf_on, mom20map))
     # (5) Einzelpositions-Cap GLOBAL: kein Titel ueber POS_CAP Depotanteil
     gew = nb.pos_cap_weights(gew)
 
     trades = 0
     manage = list(dict.fromkeys(list(scores) + list(stv['pos'])))
-    for t in sorted(manage, key=lambda x: -abs(scores.get(x, 0))):
+    # (6c) Abarbeitungs-Reihenfolge: bei Confidence-Sizing bricht der Mom20-Rang
+    # die Score-Gleichstaende (+-5-Saettigung); sonst wie bisher reiner |Score|.
+    if conf_on:
+        sortkey = lambda x: -nb.rank_score(scores.get(x, 0), dirs.get(x, 1), (mom20map or {}).get(x))
+    else:
+        sortkey = lambda x: -abs(scores.get(x, 0))
+    for t in sorted(manage, key=sortkey):
         mk = px(t)
         if mk <= 0:
             continue

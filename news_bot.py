@@ -109,6 +109,27 @@ REGIME_CONFIRM_DAYS = 2     #     neues Regime-Vorzeichen kippt erst nach N Hand
 USE_SOCIAL_CONFIRM  = True  # (4) Social darf einen Trade nicht ALLEIN gegen negatives Momentum tragen
 SOCIAL_MIN_POSTS_V2 = 8     #     Mindest-Postzahl, damit ein rein social-getriebener Trade zaehlt
 
+# ----------------------------------------------------------------------------- #
+#  v6-VERBESSERUNGEN (05.08.2026) – Lehre aus 9 Arena-Handelstagen (23.07.-04.08.)
+#  Beobachtung: (a) RegimeRatio pendelte tagelang um die Nulllinie (03.08. +0,4 %,
+#  04.08. +1,8 %) -> das Regime-Gate stand in der Whipsaw-Zone und bremste die
+#  'regime'/'all'-Varianten in der Erholung (04.08. +0,9 % vs. baseline +2,7 %).
+#  (b) Social-Daten duenn: Median 0 Posts-Score, ST_Posts-Median 2. (c) Gekaufte
+#  Kandidaten hatten Score-Median 5 = Saettigung -> Reihenfolge/Gewichtung quasi
+#  zufaellig. Ehrlich: 9 Handelstage sind eine Mini-Stichprobe, Overfitting-Gefahr;
+#  alle drei Aenderungen haengen an den bestehenden Schaltern (baseline unberuehrt).
+# ----------------------------------------------------------------------------- #
+REGIME_NEUTRAL_ZONE  = 0.01  # (6a) Hysterese: |Benchmark<->MA| unter 1 % = neutrale Zone.
+                             #      Dort zaehlt der Tag NICHT fuer die Regime-Bestaetigung
+                             #      (Speicher haelt) und das Gate ist AUS (eff_sign 0 ->
+                             #      regime_scale = 1.0). Erst ein klarer Abstand schaltet.
+SOCIAL_NEUTRAL_POSTS = 5     # (6b) Unter 5 StockTwits-Posts ist der Social-Beitrag Rauschen
+                             #      -> bei aktivem Social-Confirm komplett neutral (soc=0).
+                             #      Staffel: <5 neutral, 5-7 zaehlt (kein Solo-Grund), >=8 voll.
+RANK_MOM_FAKTOR      = 0.03  # (6c) Tie-Breaker gegen Score-Saettigung (Kappe +-5): Rang =
+RANK_MOM_MAX         = 0.9   #      |Score| + clip(Richtung*Mom20*FAKTOR, +-MAX). MAX < 1 haelt
+                             #      die Integer-Abstufung des Scores intakt (bricht nur Ties).
+
 
 # ----------------------------------------------------------------------------- #
 #  Helfer fuer die Upgrades (nur wirksam, wenn der jeweilige Schalter True ist)
@@ -169,6 +190,16 @@ def mom_veto(direction, mom20):
     return False
 
 
+def rank_score(score, direction, mom20):
+    """(6c) Rang fuer Sortierung/Confidence-Sizing: |Score| + kleiner Mom20-Bonus in
+    Trade-Richtung (Long: hoch = gut, Short: tief = gut). Bonus < 1 -> bricht nur
+    Gleichstaende beim gesaettigten Score (+-5), kippt nie eine Integer-Stufe.
+    mom20=None -> reiner |Score|. Untergrenze 0.1 haelt Gewichte positiv."""
+    bonus = 0.0 if mom20 is None else max(-RANK_MOM_MAX,
+                                          min(RANK_MOM_MAX, direction * mom20 * RANK_MOM_FAKTOR))
+    return max(0.1, abs(score) + bonus)
+
+
 def kombi_score(sent, soc, n_soc, mom5, social_confirm):
     """(4) Score aus den Rohkomponenten. social_confirm=False -> Social zaehlt voll.
     social_confirm=True -> Social wird verworfen, wenn es den Trade ALLEIN ueber die
@@ -176,6 +207,8 @@ def kombi_score(sent, soc, n_soc, mom5, social_confirm):
     ODER das (kurze) Momentum dagegen laeuft (Social soll nicht in fallende Messer
     hineinkaufen)."""
     mtilt = 2 if mom5 > 1.5 else -2 if mom5 < -1.5 else 0
+    if social_confirm and n_soc < SOCIAL_NEUTRAL_POSTS:        # (6b) duennes Social = Rauschen
+        soc = 0                                                #      -> gar nicht werten
     voll = max(-3, min(3, sent + soc)) + mtilt                 # mit Social
     if not social_confirm:
         return voll
@@ -224,9 +257,13 @@ def regime_effektiv(state, settled, handelstag, heute):
     regime, ratio = market_regime(settled)
     mem = state.setdefault('regime_mem',
                            {'conf_sign': regime, 'pend_sign': regime, 'pend_days': 0, 'letzter_tag': None})
+    neutral = abs(ratio) < REGIME_NEUTRAL_ZONE                 # (6a) Whipsaw-Zone um die Nulllinie
     if handelstag and mem.get('letzter_tag') != heute:
-        confirm_regime(mem, regime)
+        if not neutral:                                        # (6a) nur klare Tage bestaetigen,
+            confirm_regime(mem, regime)                        #      sonst Speicher halten
         mem['letzter_tag'] = heute
+    if neutral:                                                # (6a) Gate aus: eff_sign 0 ->
+        return 0, regime_strength(ratio), regime, ratio        #      regime_scale liefert 1.0
     eff = mem['conf_sign'] if mem['conf_sign'] in (-1, 1) else regime
     return eff, regime_strength(ratio), regime, ratio
 
