@@ -85,7 +85,19 @@ def plan_orders(sig, equity, positions, prices, entry_dates, today,
                 for t in assets if abs(sig[t]['score']) >= nb.SCORE_MIN and t not in aged}
     # (1) Momentum-Veto: keine neuen Longs in fallende Messer / Shorts in Raketen
     ziel_dir = {t: d for t, d in ziel_dir.items() if not nb.mom_veto(d, mom20.get(t))}
-    gew = nb.confidence_weights(ziel_dir, {t: sig[t]['score'] for t in ziel_dir})  # gated
+    # (7a) Mindesthaltedauer: ein nur WEGGEFALLENES Signal (Titel nicht mehr unter den
+    # TOPN-Kandidaten) schliesst eine Position juenger als nb.MIN_HALT Handelstage NICHT.
+    # Echte Gegensignale stehen bereits mit gedrehter Richtung in ziel_dir und werden
+    # hier nicht angefasst; 'aged' (MAXTAGE) bleibt ebenfalls ein harter Exit.
+    # Hier auf Kalender-/Busday-Basis, weil das Alpaca-Konto Einstiegsdaten statt eines
+    # Handelstage-Zaehlers fuehrt - inhaltlich dieselbe Regel wie nb.min_halt_dirs.
+    if nb.USE_MIN_HALT:
+        for sym, qty in positions.items():
+            if qty == 0 or sym in ziel_dir or sym in aged or sym not in entry_dates:
+                continue
+            if np.busday_count(entry_dates[sym], today) < nb.MIN_HALT:
+                ziel_dir[sym] = 1 if qty > 0 else -1
+    gew = nb.confidence_weights(ziel_dir, {t: sig.get(t, {}).get('score', 0) for t in ziel_dir})  # gated
     gew = nb.sector_cap_weights(gew)                             # (2) Cluster-Konzentration deckeln
     gew = nb.pos_cap_weights(gew)                                # (5) Einzelpositions-Cap
     N = len(ziel_dir)
