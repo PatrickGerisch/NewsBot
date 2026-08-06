@@ -103,7 +103,8 @@ USE_REGIME_SCALE    = True  # (3) gleitendes Regime-Exposure statt hartem Ein/Au
 # Ehrlich: nur ~5 Handelstage Datenbasis -> hohe Overfitting-Gefahr, daher bewusst
 # moderat; Kern-Leck bleibt die Titelauswahl (alle Arena-Varianten ~8 pp unter SPY).
 REGIME_FULL_OFF     = 0.02  #     |Abstand Benchmark<->MA|, ab dem die Gegen-Regime-Seite auf 0 skaliert (v4: 0.03->0.02)
-REGIME_BASE_CUT     = 0.55  #     gegen ein bestaetigtes Regime SOFORT mind. 55 % Exposure weg (v4: 0.40->0.55)
+REGIME_BASE_CUT     = 0.35  #     gegen ein bestaetigtes Regime sofort Exposure weg (v7: 0.55->0.35,
+                            #     v4-Verschaerfung zurueckgenommen; Untergrenze s. REGIME_MIN_SCALE)
 REGIME_CONFIRM_DAYS = 2     #     neues Regime-Vorzeichen kippt erst nach N Handelstagen (Anti-Whipsaw)
 
 USE_SOCIAL_CONFIRM  = True  # (4) Social darf einen Trade nicht ALLEIN gegen negatives Momentum tragen
@@ -126,9 +127,67 @@ REGIME_NEUTRAL_ZONE  = 0.01  # (6a) Hysterese: |Benchmark<->MA| unter 1 % = neut
 SOCIAL_NEUTRAL_POSTS = 5     # (6b) Unter 5 StockTwits-Posts ist der Social-Beitrag Rauschen
                              #      -> bei aktivem Social-Confirm komplett neutral (soc=0).
                              #      Staffel: <5 neutral, 5-7 zaehlt (kein Solo-Grund), >=8 voll.
-RANK_MOM_FAKTOR      = 0.03  # (6c) Tie-Breaker gegen Score-Saettigung (Kappe +-5): Rang =
-RANK_MOM_MAX         = 0.9   #      |Score| + clip(Richtung*Mom20*FAKTOR, +-MAX). MAX < 1 haelt
-                             #      die Integer-Abstufung des Scores intakt (bricht nur Ties).
+RANK_MOM_FAKTOR      = 0.06  # (6c/v7) Tie-Breaker gegen Score-Saettigung (Kappe +-5): Rang =
+RANK_MOM_MAX         = 2.5   #      |Score| + clip(Richtung*Mom20*FAKTOR, +-MAX). v7: MAX 0.9->2.5,
+                             #      FAKTOR 0.03->0.06. EHRLICH: damit kann Mom20 die Score-
+                             #      Stufe ueberschreiben (Score 4 mit Mom20 +40 rangiert vor
+                             #      Score 5 mit Mom20 0). Das ist gewollt - bei SCORE_MIN=4 und
+                             #      Kappe +-5 gibt es real nur ZWEI Score-Stufen, der Score
+                             #      differenziert also kaum. 'confidence' wird dadurch de facto
+                             #      zu einer momentum-gewichteten Variante; genau das soll die
+                             #      Arena jetzt gegen die gleichgewichtete baseline messen.
+                             #      Begruendung s. v7-Block (7c).
+
+# ----------------------------------------------------------------------------- #
+#  v7-VERBESSERUNGEN (06.08.2026) – Lehre aus 10 Arena-Handelstagen (23.07.-05.08.)
+#  Datenbasis: letzte 500 Zeilen news_bot_features.csv (29.07.-05.08.).
+#  (a) TURNOVER ist das Kern-Leck, nicht die Auswahl: am 05.08. wurden im Alpaca-
+#      Depot 14 von 17 Positionen an EINEM Tag getauscht; Alpaca -2,96 % gegen
+#      -0,65 % im Simulator bei nominell gleicher Strategie. Bisher gab es nur eine
+#      MAX-Haltedauer (MAXTAGE=5), keine MINDEST-Haltedauer -> ein Titel flog schon
+#      raus, wenn er nur aus den TOPN-Kandidaten fiel (Signal weg != Signal gedreht).
+#  (b) REGIME-GATE kostet mehr als es schuetzt: Regime stand in 253 von 500 Zeilen
+#      auf -1 (ca. die Haelfte der Zeit blockierend); genau die beiden Varianten mit
+#      aktivem Gate liegen hinten (regime -9,79 %, all -9,86 % vs. baseline -8,43 %).
+#      v4 hatte das Gate GESCHAERFT - das war die falsche Richtung.
+#  (c) CONFIDENCE-SIZING war faktisch wirkungslos (confidence -8,25 % ~ baseline
+#      -8,43 %): der Score saettigt bei +-5, und der Mom20-Tie-Breaker war mit
+#      MAX=0.9 bewusst so klein, dass er die Integer-Stufe nie kippt -> im
+#      gesaettigten +-5-Cluster differenziert er kaum.
+#  (d) SOCIAL bleibt unveraendert MESSGROESSE, keine Code-Aenderung: die Features
+#      zeigen KEINE Trennschaerfe (Social 1,00 vs. 0,79; ST_Posts bei gekauften
+#      Titeln sogar NIEDRIGER: 5,71 vs. 6,29). Dass 'social' vorne liegt, erklaert
+#      sich ebenso gut durch die kleinere Positionszahl (15 statt 18 = mehr
+#      Konzentration) wie durch Signalqualitaet. Bei 10 Handelstagen ist das nicht
+#      unterscheidbar -> bewusst NICHT angefasst, weiter beobachten.
+#  Ehrlich: 10 Handelstage sind eine Mini-Stichprobe, Overfitting-Gefahr hoch.
+#  (7a) wirkt GLOBAL (Hausregel, auch baseline), (7b)/(7c) haengen an den
+#  bestehenden Arena-Schaltern -> baseline bleibt als Referenz sauber vergleichbar.
+#  ACHTUNG Auswertung: ab 06.08.2026 messen die Arena-Kurven eine geaenderte
+#  Mechanik. Vergleiche vor/nach diesem Datum nicht ueber den Bruch hinweg lesen.
+# ----------------------------------------------------------------------------- #
+USE_MIN_HALT   = True   # (7a) Mindesthaltedauer GLOBAL gegen Turnover
+MIN_HALT       = 2      #      Handelstage. Faellt das Signal nur WEG (Titel nicht mehr
+                        #      unter den TOPN-Kandidaten), bleibt eine juengere Position
+                        #      offen. Dreht das Signal aktiv (|Score|>=SCORE_MIN in die
+                        #      Gegenrichtung) oder ist MAXTAGE erreicht, wird normal
+                        #      geschlossen - die Mindesthaltedauer blockiert also nie
+                        #      einen echten Ausstieg, nur das Rauschen dazwischen.
+                        #      MIN_HALT < MAXTAGE ist Pflicht (sonst nie ein Exit).
+                        #      WARUM 2 UND NICHT 3: Auswertung news_bot_trades.csv
+                        #      (17.07.-05.08., 98 Exits) zeigt 92 Signal-Exits, davon
+                        #      28 am SELBEN Handelstag wieder zu (reine Kosten, null
+                        #      Information - Flackern zwischen den stuendlichen Laeufen)
+                        #      und 36 nach einem Tag. MIN_HALT=2 entfernt diese 64
+                        #      (70 %), MIN_HALT=3 haette 82 (89 %) entfernt. Bei
+                        #      MAXTAGE=5 waere 3 ein Halte-Fenster von starr 3-5 Tagen,
+                        #      also faktisch eine andere Strategie. Bei 14 Handelstagen
+                        #      Datenbasis bewusst der kleinere Schritt; 3 bleibt eine
+                        #      Option, wenn 2 sich als zu schwach erweist.
+REGIME_MIN_SCALE = 0.50 # (7b) Untergrenze fuers Gegen-Regime-Exposure: statt Ein/Aus
+                        #      (bisher bis auf 0) bleibt gegen ein bestaetigtes Regime
+                        #      immer mind. die HALBE Position stehen. Gate daempft
+                        #      damit, statt den Wiederanstieg komplett zu verpassen.
 
 
 # ----------------------------------------------------------------------------- #
@@ -219,6 +278,26 @@ def kombi_score(sent, soc, n_soc, mom5, social_confirm):
     return ohne if (social_kippt and (duenn or gegen_mom)) else voll
 
 
+def min_halt_dirs(dirs, pos, handelstage, aged):
+    """(7a) Mindesthaltedauer: haelt Positionen offen, deren Signal nur WEGGEFALLEN
+    ist (Titel nicht mehr unter den Kandidaten), solange sie juenger als MIN_HALT
+    Handelstage sind. Mutiert dirs NICHT, liefert eine erweiterte Kopie.
+    Bewusst NICHT geschuetzt: (a) Titel in 'aged' (MAXTAGE erreicht -> Zwangsexit),
+    (b) Titel, deren Signal aktiv in die Gegenrichtung gedreht hat - die stehen dann
+    naemlich schon mit neuer Richtung in dirs und werden hier gar nicht angefasst.
+    Ergebnis: das Deadband/Sizing greift weiter normal, nur der Komplett-Exit aus
+    reinem Signal-Rauschen faellt weg."""
+    if not USE_MIN_HALT or not pos:
+        return dirs
+    out = dict(dirs)
+    for t, p in pos.items():
+        if t in out or t in aged:
+            continue
+        if handelstage - p.get('tag', handelstage) < MIN_HALT:
+            out[t] = 1 if p.get('richtung', 'LONG') == 'LONG' else -1
+    return out
+
+
 def confirm_regime(mem, regime, confirm_days=None):
     """(3) Bestaetigtes Regime-Vorzeichen aktualisieren (mutiert mem). Einmal je
     Handelstag aufrufen. Ein neues Vorzeichen kippt erst nach 'confirm_days' Tagen
@@ -248,7 +327,9 @@ def regime_scale(direction, eff_sign, strength, on=True):
         return 1.0
     if direction == eff_sign:
         return 1.0
-    return max(0.0, (1.0 - REGIME_BASE_CUT) * (1.0 - strength))
+    # (7b) gegen das Regime gleitend herunter, aber NIE unter REGIME_MIN_SCALE:
+    # das Gate soll daempfen, nicht die Gegenseite komplett abschalten.
+    return max(REGIME_MIN_SCALE, (1.0 - REGIME_BASE_CUT) * (1.0 - strength))
 
 
 def regime_effektiv(state, settled, handelstag, heute):
@@ -606,6 +687,8 @@ def main():
                     for t in manage if abs(sig[t]['score']) >= SCORE_MIN and t not in aged}
         # (1) Momentum-Veto: keine neuen Longs in fallende Messer / Shorts in Raketen
         ziel_dir = {t: d for t, d in ziel_dir.items() if not mom_veto(d, sig[t].get('mom20'))}
+        # (7a) Mindesthaltedauer: weggefallenes Signal schliesst eine junge Position nicht
+        ziel_dir = min_halt_dirs(ziel_dir, s['pos'], s['handelstage'], aged)
         # (3) geglaettetes, bestaetigtes Regime-Vorzeichen + Staerke (Anti-Whipsaw)
         eff_sign, reg_strength, regime, regime_ratio = regime_effektiv(s, settled, handelstag, heute)
         equity = _equity()
