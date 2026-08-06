@@ -46,7 +46,19 @@ VARIANTS = [
 #     ON DER neuen Basis noch etwas bringen.
 REGIME_FULL_OFF     = nb.REGIME_FULL_OFF
 REGIME_CONFIRM_DAYS = nb.REGIME_CONFIRM_DAYS
-regime_scale        = nb.regime_scale          # (3) gleitendes Exposure inkl. Base-Cut
+regime_scale        = nb.regime_scale          # (3) gleitendes Exposure inkl. Base-Cut + v7-Floor
+min_halt_dirs       = nb.min_halt_dirs         # (7a) Mindesthaltedauer – GLOBALE Hausregel
+
+# --- v7 (06.08.2026): was sich hier aendert, und was bewusst NICHT --------------- #
+#  (7a) Mindesthaltedauer MIN_HALT wirkt GLOBAL (alle Varianten inkl. baseline) –
+#       wie Momentum-Veto und Sektor-Cap eine Hausregel, kein Ablations-Schalter.
+#       Sie zielt auf den Turnover, nicht auf die Signalqualitaet; als Schalter
+#       wuerde sie die Varianten unterschiedlich stark treffen und die Messung
+#       der drei eigentlichen Gates verwaessern.
+#  (7b) Regime-Floor + entschaerfter Base-Cut treffen nur 'regime'/'all'
+#       (regime_scale wird nur mit reg_on=True aufgerufen) -> baseline unberuehrt.
+#  (7c) Schaerferer Mom20-Tie-Breaker trifft nur 'confidence'/'all' (weights()).
+#  Begruendung im Detail: v7-Block in news_bot.py.
 
 
 # --------------------------------------------------------------------------- #
@@ -105,6 +117,8 @@ def step_variant(stv, scores, mark, close_s, handelstage, regime_eff, cfg, neuer
             for t in scores if abs(scores[t]) >= nb.SCORE_MIN and t not in aged}
     # (1) Momentum-Veto GLOBAL: keine neuen Longs in fallende Messer / Shorts in Raketen
     dirs = {t: d for t, d in dirs.items() if not nb.mom_veto(d, (mom20map or {}).get(t))}
+    # (7a) Mindesthaltedauer GLOBAL: weggefallenes Signal schliesst keine junge Position
+    dirs = min_halt_dirs(dirs, stv['pos'], handelstage, aged)
     eq = equity()
     # (2) Sektor-Cap GLOBAL: Cluster-Konzentration deckeln (Rest bleibt Cash)
     gew = nb.sector_cap_weights(weights(dirs, scores, conf_on, mom20map))
