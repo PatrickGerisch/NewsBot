@@ -22,6 +22,11 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
+    # Haerte-Grenze gegen haengende Laeufe: yfinance-Downloads haben keinen
+    # eigenen Timeout. Blieb ein Download haengen, hielt der Lauf stundenlang
+    # die concurrency-Gruppe "news-bot" besetzt -> die naechsten geplanten
+    # Laeufe standen pending und wurden von GitHub als "cancelled" verworfen.
+    timeout-minutes: 40
     env:
       # Aus den Repository-Secrets (Settings -> Secrets and variables -> Actions).
       # Die Skripte lesen genau diese beiden Variablennamen.
@@ -43,26 +48,31 @@ jobs:
 
       - name: Simulator (news_bot.py)
         id: sim
+        timeout-minutes: 7
         continue-on-error: true      # ein Fehler hier stoppt den Alpaca-Bot nicht
         run: python news_bot.py | tee sim_out.txt
 
       - name: Alpaca Paper (news_bot_alpaca.py)
         id: alp
+        timeout-minutes: 7
         continue-on-error: true
         run: python news_bot_alpaca.py | tee alp_out.txt
 
       - name: Arena A/B-Vergleich (arena.py)
         id: arena
+        timeout-minutes: 7
         continue-on-error: true      # reiner Simulator-Vergleich, beeinflusst die Bots nicht
         run: python arena.py | tee arena_out.txt
 
       - name: Strategie-Pruefstand (pruefstand.py)
         id: pruef
+        timeout-minutes: 7
         continue-on-error: true      # Literatur-Strategien, beeinflusst die Bots nicht
         run: python pruefstand.py | tee pruef_out.txt
 
       - name: Dual Momentum (paper_trading_bot.py)
         id: dual
+        timeout-minutes: 7
         continue-on-error: true      # evidenzbasierter Monatsstratege, unabhaengig von den News-Bots
         run: python paper_trading_bot.py | tee dual_out.txt
 
