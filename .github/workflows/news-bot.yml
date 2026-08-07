@@ -22,10 +22,11 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    # Haerte-Grenze gegen haengende Laeufe: yfinance-Downloads haben keinen
-    # eigenen Timeout. Blieb ein Download haengen, hielt der Lauf stundenlang
-    # die concurrency-Gruppe "news-bot" besetzt -> die naechsten geplanten
-    # Laeufe standen pending und wurden von GitHub als "cancelled" verworfen.
+    # Sicherheitsnetz: yfinance-Downloads haben keinen eigenen Timeout.
+    # Ohne Limit liefe ein haengender Download bis zum GitHub-Default von
+    # 6 Stunden und wuerde die concurrency-Gruppe "news-bot" blockieren.
+    # (Nicht die Ursache des Abbruchs vom 06.08. - der lag an GitHub selbst:
+    #  "job was not acquired by Runner of type hosted".)
     timeout-minutes: 40
     env:
       # Aus den Repository-Secrets (Settings -> Secrets and variables -> Actions).
