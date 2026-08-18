@@ -1,17 +1,17 @@
 {
   "start": "2026-07-17",
-  "cash": 2310.807847641656,
+  "cash": 3613.9841867733535,
   "pos": {
     "PSX": {
-      "stk": 1.8511185494822933,
-      "einstieg": 225.62274950408934,
+      "stk": 2.3065049529550437,
+      "einstieg": 228.54033359418807,
       "tag": 21,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-13 10:19 ET"
     },
     "ENR.DE": {
-      "stk": 2.6943852232112513,
-      "einstieg": 161.00045816802978,
+      "stk": 3.5408062365993085,
+      "einstieg": 159.94812455601362,
       "tag": 21,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-13 10:19 ET"
@@ -24,113 +24,43 @@
       "einstieg_ts": "2026-08-13 10:19 ET"
     },
     "MPC": {
-      "stk": 1.2119663825634717,
-      "einstieg": 350.9763953704834,
+      "stk": 1.542527524476601,
+      "einstieg": 352.79541372225134,
       "tag": 21,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-13 12:50 ET"
     },
-    "DELL": {
-      "stk": 0.5442824587185234,
-      "einstieg": 494.59426500413485,
-      "tag": 22,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-14 10:12 ET"
-    },
-    "SNDK": {
-      "stk": 0.16012750074081641,
-      "einstieg": 1637.1031766967772,
-      "tag": 22,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-14 10:12 ET"
-    },
-    "PANW": {
-      "stk": 1.2510544755540518,
-      "einstieg": 385.237504216978,
-      "tag": 22,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-14 10:12 ET"
-    },
-    "KKR": {
-      "stk": 4.248054350776086,
-      "einstieg": 115.14664529276082,
-      "tag": 22,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-14 10:12 ET"
-    },
-    "HOOD": {
-      "stk": 4.513418407310421,
-      "einstieg": 97.5077582558569,
-      "tag": 22,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-14 10:12 ET"
-    },
-    "PSKY": {
-      "stk": 42.81858436882813,
-      "einstieg": 10.095387852726276,
-      "tag": 22,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-14 10:12 ET"
-    },
-    "PLTR": {
-      "stk": 2.7378800708987834,
-      "einstieg": 177.12635369127273,
-      "tag": 22,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-14 11:44 ET"
-    },
     "GDDY": {
-      "stk": 5.072315507173135,
-      "einstieg": 96.58272486930531,
+      "stk": 5.805646475965935,
+      "einstieg": 96.44693849238094,
       "tag": 22,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-14 11:44 ET"
-    },
-    "LRCX": {
-      "stk": 0.7602679662845225,
-      "einstieg": 328.1339862213135,
-      "tag": 22,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-14 11:44 ET"
-    },
-    "AXON": {
-      "stk": 0.7758202589528738,
-      "einstieg": 612.0544826103796,
-      "tag": 22,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-14 12:48 ET"
-    },
-    "TTD": {
-      "stk": -17.13436890950834,
-      "einstieg": 14.031934560573566,
-      "tag": 22,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-08-14 13:48 ET"
     },
     "STX": {
-      "stk": 0.26204663930957756,
-      "einstieg": 984.5790185852051,
+      "stk": 0.3003289433648151,
+      "einstieg": 979.0993688018523,
       "tag": 23,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-17 09:35 ET"
     },
     "WDC": {
-      "stk": 0.49134362366858925,
-      "einstieg": 527.9038346557617,
+      "stk": 0.5598549436220196,
+      "einstieg": 525.1141634933198,
       "tag": 23,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-17 09:35 ET"
     },
     "JBL": {
-      "stk": 0.7033879515869315,
-      "einstieg": 365.75279232788085,
+      "stk": 0.7993935203417185,
+      "einstieg": 364.31149703053075,
       "tag": 23,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-17 09:35 ET"
     },
     "TER": {
-      "stk": 0.5929400629522553,
-      "einstieg": 422.29102656555176,
+      "stk": 0.679175248043615,
+      "einstieg": 421.5389878555468,
       "tag": 23,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-17 09:35 ET"
@@ -155,15 +85,50 @@
       "tag": 23,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-17 14:30 ET"
+    },
+    "FOX": {
+      "stk": 8.982285258144898,
+      "einstieg": 61.730850763320916,
+      "tag": 24,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-08-18 09:37 ET"
+    },
+    "FOXA": {
+      "stk": 7.972480934280317,
+      "einstieg": 69.54975688934326,
+      "tag": 24,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-08-18 09:37 ET"
+    },
+    "LITE": {
+      "stk": 0.30496274517104827,
+      "einstieg": 927.2834173278808,
+      "tag": 24,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-08-18 09:37 ET"
+    },
+    "LULU": {
+      "stk": -2.3856356295673273,
+      "einstieg": 116.09692127990724,
+      "tag": 24,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-08-18 09:37 ET"
+    },
+    "AMD": {
+      "stk": 0.5776529343234666,
+      "einstieg": 489.5446377868652,
+      "tag": 24,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-08-18 09:37 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 23,
-  "letzter_tag": "2026-08-17",
+  "handelstage": 24,
+  "letzter_tag": "2026-08-18",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-08-17"
+    "letzter_tag": "2026-08-18"
   }
 }
