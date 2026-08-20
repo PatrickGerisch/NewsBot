@@ -3,428 +3,266 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 2972.071797416542,
+      "cash": 1835.4529828335221,
       "pos": {
-        "PSX": {
-          "stk": 1.944439097224509,
-          "einstieg": 229.42202919015693,
-          "tag": 16,
-          "richtung": "LONG"
-        },
         "GDDY": {
-          "stk": 4.818892464406589,
-          "einstieg": 96.05050643645998,
+          "stk": 7.980426209187913,
+          "einstieg": 96.18427412490932,
           "tag": 17,
           "richtung": "LONG"
         },
-        "STX": {
-          "stk": 0.34765507969098586,
-          "einstieg": 967.6199557519901,
-          "tag": 18,
-          "richtung": "LONG"
-        },
-        "TER": {
-          "stk": 0.7854449635447694,
-          "einstieg": 417.0158173265933,
-          "tag": 18,
-          "richtung": "LONG"
-        },
         "MU": {
-          "stk": 0.330169692734081,
-          "einstieg": 1003.067343210193,
+          "stk": 0.727068193459944,
+          "einstieg": 975.2862455234269,
           "tag": 18,
-          "richtung": "LONG"
-        },
-        "FOX": {
-          "stk": 8.390789152943803,
-          "einstieg": 61.6442759048113,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "FOXA": {
-          "stk": 7.427831752283508,
-          "einstieg": 69.47197711581684,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 0.6480205493011396,
-          "einstieg": 489.0270625878976,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "SMCI": {
-          "stk": 8.368345953890179,
-          "einstieg": 37.25945726881739,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "CIEN": {
-          "stk": 0.7728660040896503,
-          "einstieg": 412.1705856300172,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "FIX": {
-          "stk": 0.3031327150631189,
-          "einstieg": 1774.461712140886,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "VRT": {
-          "stk": 1.947127540644444,
-          "einstieg": 276.0037486977122,
-          "tag": 19,
           "richtung": "LONG"
         },
         "MRVL": {
-          "stk": 1.3211101792939572,
-          "einstieg": 216.12766157062248,
+          "stk": 2.8453679936586225,
+          "einstieg": 230.68735796993408,
           "tag": 19,
           "richtung": "LONG"
         },
         "SNDK": {
-          "stk": 0.18989453131114586,
-          "einstieg": 1624.732003967285,
+          "stk": 0.4286802338808687,
+          "einstieg": 1619.2827136267717,
           "tag": 20,
           "richtung": "LONG"
         },
         "LITE": {
-          "stk": 0.36567043735342947,
-          "einstieg": 843.731652557373,
+          "stk": 0.8219212142070154,
+          "einstieg": 842.9319034788521,
           "tag": 20,
           "richtung": "LONG"
         },
         "TRGP": {
-          "stk": 1.6487109538664644,
-          "einstieg": 295.4726747131347,
+          "stk": 2.508431425017846,
+          "einstieg": 299.3046189941306,
           "tag": 20,
           "richtung": "LONG"
         },
         "CVNA": {
-          "stk": -7.109148748186011,
-          "einstieg": 68.45575286483765,
+          "stk": -11.002207526995354,
+          "einstieg": 68.94734908663918,
           "tag": 20,
           "richtung": "SHORT"
         },
         "VLO": {
-          "stk": 1.4066521198642807,
-          "einstieg": 346.3180615081787,
+          "stk": 2.196575002761534,
+          "einstieg": 347.7104793920926,
           "tag": 20,
+          "richtung": "LONG"
+        },
+        "MRK": {
+          "stk": 5.151490883592308,
+          "einstieg": 149.31961761474608,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "MRNA": {
+          "stk": 5.345437127026226,
+          "einstieg": 143.9019168319702,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "EL": {
+          "stk": 8.084482062081078,
+          "einstieg": 95.14754847335814,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "CSGP": {
+          "stk": 23.206586386376742,
+          "einstieg": 33.14656606864929,
+          "tag": 21,
           "richtung": "LONG"
         }
       },
-      "handelstage": 20,
-      "letzter_tag": "2026-08-19"
+      "handelstage": 21,
+      "letzter_tag": "2026-08-20"
     },
     "regime": {
-      "cash": 2686.615244194331,
+      "cash": 1429.5501892928194,
       "pos": {
-        "PSX": {
-          "stk": 1.9141942219233012,
-          "einstieg": 229.4115805892712,
-          "tag": 16,
-          "richtung": "LONG"
-        },
         "GDDY": {
-          "stk": 4.743936760273739,
-          "einstieg": 96.05108156639804,
+          "stk": 7.86152043221911,
+          "einstieg": 96.1847567228794,
           "tag": 17,
           "richtung": "LONG"
         },
-        "STX": {
-          "stk": 0.342272986985014,
-          "einstieg": 967.6022661225196,
-          "tag": 18,
-          "richtung": "LONG"
-        },
-        "TER": {
-          "stk": 0.7732853897137354,
-          "einstieg": 417.0129494663612,
-          "tag": 18,
-          "richtung": "LONG"
-        },
         "MU": {
-          "stk": 0.32505829353756543,
-          "einstieg": 1003.0504761586868,
+          "stk": 0.7162351118441871,
+          "einstieg": 975.2649497488504,
           "tag": 18,
-          "richtung": "LONG"
-        },
-        "FOX": {
-          "stk": 8.262136058682342,
-          "einstieg": 61.64410602728821,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "FOXA": {
-          "stk": 7.313943353806764,
-          "einstieg": 69.47182216606095,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 0.6379884603846954,
-          "einstieg": 489.02609911977146,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "SMCI": {
-          "stk": 8.23879452101736,
-          "einstieg": 37.25945520022721,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "CIEN": {
-          "stk": 0.76090116673706,
-          "einstieg": 412.1696182873886,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "FIX": {
-          "stk": 0.29848488503737386,
-          "einstieg": 1774.44165630325,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "VRT": {
-          "stk": 1.9172729014133139,
-          "einstieg": 276.0006822520329,
-          "tag": 19,
           "richtung": "LONG"
         },
         "MRVL": {
-          "stk": 1.3006579038199926,
-          "einstieg": 216.13106554218706,
+          "stk": 2.8029729281346007,
+          "einstieg": 230.696385942896,
           "tag": 19,
           "richtung": "LONG"
         },
         "SNDK": {
-          "stk": 0.1869547498105215,
-          "einstieg": 1624.732003967285,
+          "stk": 0.4222930366379335,
+          "einstieg": 1619.2801557702328,
           "tag": 20,
           "richtung": "LONG"
         },
         "LITE": {
-          "stk": 0.3600094465937986,
-          "einstieg": 843.731652557373,
+          "stk": 0.80967485317057,
+          "einstieg": 842.9315251477204,
           "tag": 20,
           "richtung": "LONG"
         },
         "TRGP": {
-          "stk": 1.623187048946255,
-          "einstieg": 295.4726747131347,
+          "stk": 2.4710566057104124,
+          "einstieg": 299.3089564846392,
           "tag": 20,
           "richtung": "LONG"
         },
         "CVNA": {
-          "stk": -3.499545554066429,
-          "einstieg": 68.45575286483765,
+          "stk": -5.4191390914314645,
+          "einstieg": 68.94787895412823,
           "tag": 20,
           "richtung": "SHORT"
         },
         "VLO": {
-          "stk": 1.3848755586792965,
-          "einstieg": 346.3180615081787,
+          "stk": 2.1638467435774684,
+          "einstieg": 347.7119429290691,
           "tag": 20,
+          "richtung": "LONG"
+        },
+        "MRK": {
+          "stk": 5.074735330692636,
+          "einstieg": 149.31961761474608,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "MRNA": {
+          "stk": 5.2657918376436665,
+          "einstieg": 143.9019168319702,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "EL": {
+          "stk": 7.964025886460362,
+          "einstieg": 95.14754847335814,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "CSGP": {
+          "stk": 22.8608157329386,
+          "einstieg": 33.14656606864929,
+          "tag": 21,
           "richtung": "LONG"
         }
       },
-      "handelstage": 20,
-      "letzter_tag": "2026-08-19"
+      "handelstage": 21,
+      "letzter_tag": "2026-08-20"
     },
     "social": {
-      "cash": 4124.606085180647,
+      "cash": 2777.487229356709,
       "pos": {
         "GDDY": {
-          "stk": 5.705278022954016,
-          "einstieg": 96.06686309007448,
+          "stk": 9.639837409203256,
+          "einstieg": 96.19800500135983,
           "tag": 17,
           "richtung": "LONG"
         },
-        "STX": {
-          "stk": 0.3356301491112889,
-          "einstieg": 980.3487388009363,
-          "tag": 18,
-          "richtung": "LONG"
-        },
-        "TER": {
-          "stk": 0.7679108382210023,
-          "einstieg": 420.498620785269,
-          "tag": 18,
-          "richtung": "LONG"
-        },
-        "LITE": {
-          "stk": 0.36863273492232407,
-          "einstieg": 932.4934783960532,
-          "tag": 18,
-          "richtung": "LONG"
-        },
         "MU": {
-          "stk": 0.3328443986391786,
-          "einstieg": 1003.6183015034097,
+          "stk": 0.7318760287814894,
+          "einstieg": 975.5709825569601,
           "tag": 18,
-          "richtung": "LONG"
-        },
-        "FOX": {
-          "stk": 10.145942460181288,
-          "einstieg": 61.67969641478524,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "FOXA": {
-          "stk": 9.009467067503662,
-          "einstieg": 69.48756216122742,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 0.653270166173868,
-          "einstieg": 489.0313253202101,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "SMCI": {
-          "stk": 8.436137955492207,
-          "einstieg": 37.29835820652673,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "VRT": {
-          "stk": 2.3142385658443048,
-          "einstieg": 276.8332850814565,
-          "tag": 19,
           "richtung": "LONG"
         },
         "MRVL": {
-          "stk": 1.312794489328238,
-          "einstieg": 214.11699950408934,
+          "stk": 2.8641833687028897,
+          "einstieg": 229.92758156133092,
           "tag": 19,
           "richtung": "LONG"
         },
         "SNDK": {
-          "stk": 0.1914328676134204,
-          "einstieg": 1624.732003967285,
+          "stk": 0.4315149390552112,
+          "einstieg": 1619.289121187732,
           "tag": 20,
           "richtung": "LONG"
         },
         "CIEN": {
-          "stk": 0.7791269944545435,
-          "einstieg": 399.1995,
+          "stk": 1.7427320868179448,
+          "einstieg": 399.57290615367526,
           "tag": 20,
           "richtung": "LONG"
         },
         "TRGP": {
-          "stk": 2.105285078728333,
-          "einstieg": 295.4726747131347,
+          "stk": 3.0300225145204003,
+          "einstieg": 298.8848924349203,
           "tag": 20,
           "richtung": "LONG"
         },
         "CVNA": {
-          "stk": -9.077870652170384,
-          "einstieg": 68.45575286483765,
+          "stk": -13.289953308563963,
+          "einstieg": 68.89607532418025,
           "tag": 20,
           "richtung": "SHORT"
-        }
-      },
-      "handelstage": 20,
-      "letzter_tag": "2026-08-19"
-    },
-    "confidence": {
-      "cash": 3728.8728103746753,
-      "pos": {
-        "PSX": {
-          "stk": 2.5681754553985714,
-          "einstieg": 234.06959528684766,
-          "tag": 16,
+        },
+        "MRK": {
+          "stk": 6.222666964284357,
+          "einstieg": 149.31961761474608,
+          "tag": 21,
           "richtung": "LONG"
         },
+        "MRNA": {
+          "stk": 6.456941450862058,
+          "einstieg": 143.9019168319702,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "EL": {
+          "stk": 9.765530132508088,
+          "einstieg": 95.14754847335814,
+          "tag": 21,
+          "richtung": "LONG"
+        }
+      },
+      "handelstage": 21,
+      "letzter_tag": "2026-08-20"
+    },
+    "confidence": {
+      "cash": 840.663719876814,
+      "pos": {
         "GDDY": {
-          "stk": 5.298956450068289,
-          "einstieg": 96.63929676630245,
+          "stk": 8.398141232104239,
+          "einstieg": 96.54662154374968,
           "tag": 17,
           "richtung": "LONG"
         },
-        "STX": {
-          "stk": 0.3108827028814627,
-          "einstieg": 960.2205619443839,
-          "tag": 18,
-          "richtung": "LONG"
-        },
-        "TER": {
-          "stk": 0.7593129712682828,
-          "einstieg": 413.2168764950978,
-          "tag": 18,
-          "richtung": "LONG"
-        },
         "MU": {
-          "stk": 0.32473114191074126,
-          "einstieg": 952.7938127799775,
+          "stk": 0.7257064834221341,
+          "einstieg": 952.4523759246684,
           "tag": 18,
-          "richtung": "LONG"
-        },
-        "FOXA": {
-          "stk": 5.908278530494934,
-          "einstieg": 69.5645162784008,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "FOX": {
-          "stk": 6.54735170516968,
-          "einstieg": 61.73558214143339,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 0.32056902185880826,
-          "einstieg": 476.3187729447231,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "SMCI": {
-          "stk": 12.729408403126351,
-          "einstieg": 37.28050068309442,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "CIEN": {
-          "stk": 0.7800492452150914,
-          "einstieg": 410.6357330306426,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "FIX": {
-          "stk": 0.2153146800810262,
-          "einstieg": 1773.7262138000283,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "VRT": {
-          "stk": 0.047081584986634714,
-          "einstieg": 275.25124400103437,
-          "tag": 19,
           "richtung": "LONG"
         },
         "MRVL": {
-          "stk": 1.4427261718448057,
-          "einstieg": 217.73288635335393,
+          "stk": 4.228543987123158,
+          "einstieg": 234.58116311203472,
           "tag": 19,
           "richtung": "LONG"
         },
         "LITE": {
-          "stk": 0.43769111092906404,
+          "stk": 0.20930045490133317,
           "einstieg": 841.5226796320684,
           "tag": 20,
           "richtung": "LONG"
         },
         "SNDK": {
-          "stk": 0.16902416217913127,
-          "einstieg": 1596.0299119688111,
+          "stk": 0.5415870445050477,
+          "einstieg": 1609.044643359711,
           "tag": 20,
           "richtung": "LONG"
         },
         "VLO": {
-          "stk": 1.3074253916427885,
-          "einstieg": 346.3180615081787,
+          "stk": 1.904897591361445,
+          "einstieg": 347.5325041405945,
           "tag": 20,
           "richtung": "LONG"
         },
@@ -435,92 +273,68 @@
           "richtung": "LONG"
         },
         "CVNA": {
-          "stk": -7.580426512996323,
+          "stk": -5.827738846979556,
           "einstieg": 68.68361258474695,
           "tag": 20,
           "richtung": "SHORT"
+        },
+        "MRNA": {
+          "stk": 7.701802154921655,
+          "einstieg": 143.9019168319702,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "MRK": {
+          "stk": 7.422360911834897,
+          "einstieg": 149.31961761474608,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "CSGP": {
+          "stk": 28.814759961572385,
+          "einstieg": 33.14656606864929,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "EL": {
+          "stk": 9.675175371863899,
+          "einstieg": 95.14754847335814,
+          "tag": 21,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 20,
-      "letzter_tag": "2026-08-19"
+      "handelstage": 21,
+      "letzter_tag": "2026-08-20"
     },
     "all": {
-      "cash": 4434.193828265093,
+      "cash": 1808.747995594508,
       "pos": {
         "GDDY": {
-          "stk": 5.956317200440539,
-          "einstieg": 96.37287078027295,
+          "stk": 9.903618117804712,
+          "einstieg": 96.37896715441317,
           "tag": 17,
           "richtung": "LONG"
         },
-        "STX": {
-          "stk": 0.3091851038620261,
-          "einstieg": 967.0420295033858,
-          "tag": 18,
-          "richtung": "LONG"
-        },
-        "TER": {
-          "stk": 0.801774537948367,
-          "einstieg": 405.45816396409543,
-          "tag": 18,
-          "richtung": "LONG"
-        },
-        "LITE": {
-          "stk": 0.4268675427703803,
-          "einstieg": 915.7242319033678,
-          "tag": 18,
-          "richtung": "LONG"
-        },
         "MU": {
-          "stk": 0.3313490706374809,
-          "einstieg": 952.8342178779089,
+          "stk": 0.7040432873924564,
+          "einstieg": 952.4857089819034,
           "tag": 18,
-          "richtung": "LONG"
-        },
-        "FOXA": {
-          "stk": 7.1402149103790915,
-          "einstieg": 69.57300236206852,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "FOX": {
-          "stk": 7.894728026724891,
-          "einstieg": 61.75934900388209,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 0.3200745344082119,
-          "einstieg": 472.63233695547643,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "SMCI": {
-          "stk": 12.98883014213716,
-          "einstieg": 37.28285500979125,
-          "tag": 19,
-          "richtung": "LONG"
-        },
-        "VRT": {
-          "stk": 0.0587511559643035,
-          "einstieg": 275.64848228182126,
-          "tag": 19,
           "richtung": "LONG"
         },
         "MRVL": {
-          "stk": 1.4069781891249726,
-          "einstieg": 217.8032992089307,
+          "stk": 4.1023169526323,
+          "einstieg": 234.55968571307451,
           "tag": 19,
           "richtung": "LONG"
         },
         "SNDK": {
-          "stk": 0.16876343727639267,
-          "einstieg": 1595.991496892926,
+          "stk": 0.5254200312837781,
+          "einstieg": 1608.860012496602,
           "tag": 20,
           "richtung": "LONG"
         },
         "CIEN": {
-          "stk": 0.6362411002605146,
+          "stk": 0.44945894257905794,
           "einstieg": 398.84565567648514,
           "tag": 20,
           "richtung": "LONG"
@@ -532,20 +346,38 @@
           "richtung": "LONG"
         },
         "CVNA": {
-          "stk": -4.098059158755286,
+          "stk": -3.4362187081438145,
           "einstieg": 68.45575286483765,
           "tag": 20,
           "richtung": "SHORT"
+        },
+        "MRNA": {
+          "stk": 7.496071733943521,
+          "einstieg": 143.9019168319702,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "MRK": {
+          "stk": 7.224094921054071,
+          "einstieg": 149.31961761474608,
+          "tag": 21,
+          "richtung": "LONG"
+        },
+        "EL": {
+          "stk": 11.33711912216493,
+          "einstieg": 95.14754847335814,
+          "tag": 21,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 20,
-      "letzter_tag": "2026-08-19"
+      "handelstage": 21,
+      "letzter_tag": "2026-08-20"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-08-19"
+    "letzter_tag": "2026-08-20"
   }
 }
