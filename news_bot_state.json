@@ -1,45 +1,10 @@
 {
   "start": "2026-07-17",
-  "cash": 3255.2470108528873,
+  "cash": 5473.354802248454,
   "pos": {
-    "GDDY": {
-      "stk": 9.593106412261985,
-      "einstieg": 96.59723419204063,
-      "tag": 22,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-14 11:44 ET"
-    },
-    "MRVL": {
-      "stk": 3.822041474119171,
-      "einstieg": 233.41075846382518,
-      "tag": 24,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-18 11:25 ET"
-    },
-    "SNDK": {
-      "stk": 0.6522477452297736,
-      "einstieg": 1610.461650078089,
-      "tag": 25,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-19 09:39 ET"
-    },
-    "TRGP": {
-      "stk": 3.3651561465531765,
-      "einstieg": 300.09861939839635,
-      "tag": 25,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-19 09:39 ET"
-    },
-    "CVNA": {
-      "stk": -6.70923363129913,
-      "einstieg": 69.01402737602845,
-      "tag": 25,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-08-19 09:39 ET"
-    },
     "MRK": {
-      "stk": 6.2027585667888845,
-      "einstieg": 149.50470767211914,
+      "stk": 7.42098872918518,
+      "einstieg": 149.64999843516222,
       "tag": 26,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-20 09:41 ET"
@@ -59,20 +24,48 @@
       "einstieg_ts": "2026-08-20 09:41 ET"
     },
     "STLD": {
-      "stk": -2.107619060418157,
-      "einstieg": 220.93947805023194,
+      "stk": -2.4595029629382523,
+      "einstieg": 221.75743598486332,
       "tag": 26,
       "richtung": "SHORT",
       "einstieg_ts": "2026-08-20 10:29 ET"
+    },
+    "DVN": {
+      "stk": 22.633316389993826,
+      "einstieg": 49.30964234733581,
+      "tag": 27,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-08-21 09:40 ET"
+    },
+    "NUE": {
+      "stk": -2.25468532329241,
+      "einstieg": 247.24631011962893,
+      "tag": 27,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-08-21 09:40 ET"
+    },
+    "NEM": {
+      "stk": 8.51318785941655,
+      "einstieg": 131.09551377868652,
+      "tag": 27,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-08-21 09:40 ET"
+    },
+    "UAL": {
+      "stk": -4.91077712877077,
+      "einstieg": 113.51820944976808,
+      "tag": 27,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-08-21 09:40 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 26,
-  "letzter_tag": "2026-08-20",
+  "handelstage": 27,
+  "letzter_tag": "2026-08-21",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-08-20"
+    "letzter_tag": "2026-08-21"
   }
 }
