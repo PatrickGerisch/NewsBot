@@ -3,7 +3,7 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 5114.152723919138,
+      "cash": 4495.720615929807,
       "pos": {
         "MRK": {
           "stk": 5.534932706862859,
@@ -18,13 +18,13 @@
           "richtung": "LONG"
         },
         "EL": {
-          "stk": 8.567098778942606,
+          "stk": 7.758640956176262,
           "einstieg": 96.01323987918776,
           "tag": 21,
           "richtung": "LONG"
         },
         "CSGP": {
-          "stk": 26.323805247586552,
+          "stk": 23.78840850323806,
           "einstieg": 32.90412581975773,
           "tag": 21,
           "richtung": "LONG"
@@ -70,13 +70,19 @@
           "einstieg": 113.0433493423462,
           "tag": 22,
           "richtung": "SHORT"
+        },
+        "MRVL": {
+          "stk": 3.3388842019311564,
+          "einstieg": 234.4471668319702,
+          "tag": 22,
+          "richtung": "LONG"
         }
       },
       "handelstage": 22,
       "letzter_tag": "2026-08-21"
     },
     "regime": {
-      "cash": 3784.5386799009557,
+      "cash": 3252.9599185434254,
       "pos": {
         "MRK": {
           "stk": 5.461519277466669,
@@ -91,19 +97,19 @@
           "richtung": "LONG"
         },
         "EL": {
-          "stk": 8.453467749506919,
+          "stk": 7.651430663290054,
           "einstieg": 96.01576805247038,
           "tag": 21,
           "richtung": "LONG"
         },
         "CSGP": {
-          "stk": 25.97465541680603,
+          "stk": 23.45969600612235,
           "einstieg": 32.90353359007073,
           "tag": 21,
           "richtung": "LONG"
         },
         "COIN": {
-          "stk": 4.49001183436897,
+          "stk": 4.080540495351883,
           "einstieg": 185.77203881835936,
           "tag": 22,
           "richtung": "LONG"
@@ -143,13 +149,19 @@
           "einstieg": 113.0433493423462,
           "tag": 22,
           "richtung": "SHORT"
+        },
+        "MRVL": {
+          "stk": 3.292746900923921,
+          "einstieg": 234.4471668319702,
+          "tag": 22,
+          "richtung": "LONG"
         }
       },
       "handelstage": 22,
       "letzter_tag": "2026-08-21"
     },
     "social": {
-      "cash": 6832.574918106289,
+      "cash": 6210.391203597367,
       "pos": {
         "MRK": {
           "stk": 5.544778547649866,
@@ -164,7 +176,7 @@
           "richtung": "LONG"
         },
         "EL": {
-          "stk": 8.582338402448677,
+          "stk": 7.763468871762732,
           "einstieg": 95.86025775331092,
           "tag": 21,
           "richtung": "LONG"
@@ -182,7 +194,7 @@
           "richtung": "LONG"
         },
         "COIN": {
-          "stk": 4.558460756628727,
+          "stk": 4.14029094815189,
           "einstieg": 185.77203881835936,
           "tag": 22,
           "richtung": "LONG"
@@ -216,13 +228,19 @@
           "einstieg": 113.0433493423462,
           "tag": 22,
           "richtung": "SHORT"
+        },
+        "MRVL": {
+          "stk": 3.340961866198774,
+          "einstieg": 234.4471668319702,
+          "tag": 22,
+          "richtung": "LONG"
         }
       },
       "handelstage": 22,
       "letzter_tag": "2026-08-21"
     },
     "confidence": {
-      "cash": 4581.998789222174,
+      "cash": 4001.023196101528,
       "pos": {
         "MRNA": {
           "stk": 7.723892762598046,
@@ -237,13 +255,13 @@
           "richtung": "LONG"
         },
         "CSGP": {
-          "stk": 10.847544999784338,
+          "stk": 9.776157608524889,
           "einstieg": 33.05619880184647,
           "tag": 21,
           "richtung": "LONG"
         },
         "EL": {
-          "stk": 8.641539304646058,
+          "stk": 7.804822045127357,
           "einstieg": 95.57844333012116,
           "tag": 21,
           "richtung": "LONG"
@@ -255,7 +273,7 @@
           "richtung": "LONG"
         },
         "COIN": {
-          "stk": 4.764175487370819,
+          "stk": 4.320381577357491,
           "einstieg": 185.77203881835936,
           "tag": 22,
           "richtung": "LONG"
@@ -289,13 +307,19 @@
           "einstieg": 113.0433493423462,
           "tag": 22,
           "richtung": "SHORT"
+        },
+        "MRVL": {
+          "stk": 3.343660517785225,
+          "einstieg": 234.4471668319702,
+          "tag": 22,
+          "richtung": "LONG"
         }
       },
       "handelstage": 22,
       "letzter_tag": "2026-08-21"
     },
     "all": {
-      "cash": 4217.788503780958,
+      "cash": 3606.706532678885,
       "pos": {
         "MRNA": {
           "stk": 7.010699828625192,
@@ -310,7 +334,7 @@
           "richtung": "LONG"
         },
         "EL": {
-          "stk": 8.642824931718692,
+          "stk": 7.789017761241756,
           "einstieg": 95.4033871842504,
           "tag": 21,
           "richtung": "LONG"
@@ -334,7 +358,7 @@
           "richtung": "LONG"
         },
         "COIN": {
-          "stk": 4.76488426768986,
+          "stk": 4.311633070787082,
           "einstieg": 185.77203881835936,
           "tag": 22,
           "richtung": "LONG"
@@ -362,6 +386,12 @@
           "einstieg": 113.0433493423462,
           "tag": 22,
           "richtung": "SHORT"
+        },
+        "MRVL": {
+          "stk": 3.336889811197093,
+          "einstieg": 234.4471668319702,
+          "tag": 22,
+          "richtung": "LONG"
         }
       },
       "handelstage": 22,
