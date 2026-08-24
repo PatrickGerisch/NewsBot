@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 5033.2498333454605,
+  "cash": 7130.547457572757,
   "pos": {
     "MRK": {
       "stk": 6.117330186275297,
@@ -8,27 +8,6 @@
       "tag": 26,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-20 09:41 ET"
-    },
-    "MRNA": {
-      "stk": 6.013894356840696,
-      "einstieg": 142.4706127598515,
-      "tag": 26,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-20 09:41 ET"
-    },
-    "EL": {
-      "stk": 8.491086222259602,
-      "einstieg": 95.05164786395665,
-      "tag": 26,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-20 09:41 ET"
-    },
-    "STLD": {
-      "stk": -1.867090689024001,
-      "einstieg": 221.75743598486332,
-      "tag": 26,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-08-20 10:29 ET"
     },
     "DVN": {
       "stk": 17.417567877966622,
@@ -66,27 +45,41 @@
       "einstieg_ts": "2026-08-21 10:28 ET"
     },
     "INTC": {
-      "stk": -4.702847232484459,
-      "einstieg": 90.80457347488404,
+      "stk": -5.354271979648946,
+      "einstieg": 90.24033259666318,
       "tag": 27,
       "richtung": "SHORT",
       "einstieg_ts": "2026-08-21 10:28 ET"
     },
     "MRVL": {
-      "stk": 3.651663188272725,
-      "einstieg": 234.52720866394043,
+      "stk": 4.144855127894034,
+      "einstieg": 233.1367219441174,
       "tag": 27,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-21 11:27 ET"
+    },
+    "CRWD": {
+      "stk": -2.426620647152612,
+      "einstieg": 190.1248912200928,
+      "tag": 28,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-08-24 09:45 ET"
+    },
+    "TER": {
+      "stk": -1.3093130377184345,
+      "einstieg": 352.3687409210205,
+      "tag": 28,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-08-24 09:45 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 27,
-  "letzter_tag": "2026-08-21",
+  "handelstage": 28,
+  "letzter_tag": "2026-08-24",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-08-21"
+    "letzter_tag": "2026-08-24"
   }
 }
