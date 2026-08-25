@@ -770,3 +770,9 @@ Datum,Asset,Mom5%,Stimmung,Score,Aktion,Schlagzeile,StockTwits,ST-Posts
 2026-08-25,DVN,1.4,3,3,EXIT LONG,EOG Stock Is Up 14.8% in 3 Months: Can Its Strong Rally Keep Going?,0,0
 2026-08-25,INTC,-15.7,3,1,EXIT SHORT,[StockTwits] $INTC This should not close below $91.6. Closing range &gt; $91.6 to $96.,2,21
 2026-08-25,MRVL,-2.2,3,1,EXIT LONG,"[StockTwits] $MRVL After a sharp rise from 76 to 330 and then a good fall till 164, this one is again r",2,18
+2026-08-25,TER,-17.7,-2,-5,AUFSTOCKEN SHORT,3 High-Flying Stocks with Warning Signs,1,4
+2026-08-25,NUE,-10.3,-3,-5,AUFSTOCKEN SHORT,"Fresh Tariffs Boost Domestic Steel, Dent Automakers",0,0
+2026-08-25,MRK,10.8,3,5,AUFSTOCKEN LONG,Merck (MRK) Surges on a Melanoma Win. Can Intismeran Extend Keytruda’s Growth Runway?,2,13
+2026-08-25,STLD,-11.2,-2,-5,AUFSTOCKEN SHORT,"Fresh Tariffs Boost Domestic Steel, Dent Automakers",1,2
+2026-08-25,CRWD,-10.9,-2,-4,AUFSTOCKEN SHORT,"Warsh Speech, Nvidia Earnings: What to Watch This Week",1,5
+2026-08-25,UAL,-7.1,-1,-3,EXIT SHORT,33 Stocks That Could Rally 33% or More,0,2
