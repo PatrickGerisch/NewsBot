@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 6639.571041381092,
+  "cash": 4895.339283791653,
   "pos": {
     "MRK": {
       "stk": 6.796649048138169,
@@ -17,36 +17,22 @@
       "einstieg_ts": "2026-08-21 09:40 ET"
     },
     "NEM": {
-      "stk": 7.095858889727664,
-      "einstieg": 131.05465758245953,
+      "stk": 8.457132256183877,
+      "einstieg": 131.3454729985541,
       "tag": 27,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-21 09:40 ET"
     },
     "COIN": {
-      "stk": 5.182178917793212,
-      "einstieg": 185.86493769094125,
+      "stk": 6.077190713898009,
+      "einstieg": 185.72170868698169,
       "tag": 27,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-21 10:28 ET"
     },
-    "CRWD": {
-      "stk": -2.790054039720018,
-      "einstieg": 190.01332053377925,
-      "tag": 28,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-08-24 09:45 ET"
-    },
-    "TER": {
-      "stk": -1.4233293045449162,
-      "einstieg": 357.90127299051306,
-      "tag": 28,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-08-24 09:45 ET"
-    },
     "HOOD": {
-      "stk": 8.742406617131925,
-      "einstieg": 106.71877935933882,
+      "stk": 10.1685442127544,
+      "einstieg": 107.24912644544395,
       "tag": 28,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-24 10:35 ET"
@@ -58,21 +44,21 @@
       "richtung": "SHORT",
       "einstieg_ts": "2026-08-24 10:35 ET"
     },
-    "MRNA": {
-      "stk": 6.11905097131455,
-      "einstieg": 141.46849882908788,
-      "tag": 28,
+    "MRVL": {
+      "stk": 4.682363284951381,
+      "einstieg": 239.96993110656737,
+      "tag": 30,
       "richtung": "LONG",
-      "einstieg_ts": "2026-08-24 14:31 ET"
+      "einstieg_ts": "2026-08-26 09:50 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 29,
-  "letzter_tag": "2026-08-25",
+  "handelstage": 30,
+  "letzter_tag": "2026-08-26",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-08-25"
+    "letzter_tag": "2026-08-26"
   }
 }
