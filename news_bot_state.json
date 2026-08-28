@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 6542.761171683907,
+  "cash": 6542.56726358248,
   "pos": {
     "MRK": {
       "stk": 6.796649048138169,
@@ -53,8 +53,8 @@
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 31,
-  "letzter_tag": "2026-08-27",
+  "handelstage": 32,
+  "letzter_tag": "2026-08-28",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
