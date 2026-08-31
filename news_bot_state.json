@@ -1,64 +1,29 @@
 {
   "start": "2026-07-17",
-  "cash": 6542.56726358248,
+  "cash": 6856.050628253243,
   "pos": {
-    "MRK": {
-      "stk": 6.796649048138169,
-      "einstieg": 150.57475079824127,
-      "tag": 26,
+    "SLB": {
+      "stk": 18.03139183474201,
+      "einstieg": 60.135052042007445,
+      "tag": 33,
       "richtung": "LONG",
-      "einstieg_ts": "2026-08-20 09:41 ET"
+      "einstieg_ts": "2026-08-31 15:20 ET"
     },
-    "NUE": {
-      "stk": -2.131436312583349,
-      "einstieg": 246.71614263358464,
-      "tag": 27,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-08-21 09:40 ET"
-    },
-    "NEM": {
-      "stk": 8.457132256183877,
-      "einstieg": 131.3454729985541,
-      "tag": 27,
+    "GEN": {
+      "stk": 34.83132913210063,
+      "einstieg": 31.13055727100372,
+      "tag": 33,
       "richtung": "LONG",
-      "einstieg_ts": "2026-08-21 09:40 ET"
-    },
-    "STLD": {
-      "stk": -2.294144907647913,
-      "einstieg": 233.18245932543107,
-      "tag": 28,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-08-24 10:35 ET"
-    },
-    "MRVL": {
-      "stk": 4.682363284951381,
-      "einstieg": 239.96993110656737,
-      "tag": 30,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-26 09:50 ET"
-    },
-    "WDC": {
-      "stk": -1.2113347296706245,
-      "einstieg": 463.0933497009278,
-      "tag": 30,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-08-26 10:38 ET"
-    },
-    "MRNA": {
-      "stk": 7.62994291250604,
-      "einstieg": 146.6782982254028,
-      "tag": 30,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-08-26 14:54 ET"
+      "einstieg_ts": "2026-08-31 15:20 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 32,
-  "letzter_tag": "2026-08-28",
+  "handelstage": 33,
+  "letzter_tag": "2026-08-31",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-08-26"
+    "letzter_tag": "2026-08-31"
   }
 }

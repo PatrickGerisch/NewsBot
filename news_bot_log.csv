@@ -787,3 +787,12 @@ Datum,Asset,Mom5%,Stimmung,Score,Aktion,Schlagzeile,StockTwits,ST-Posts
 2026-08-26,COIN,28.0,1,3,EXIT LONG,[StockTwits] $IBKR CC $HOOD $COIN,1,13
 2026-08-26,HOOD,22.5,1,3,EXIT LONG,[StockTwits] $IBKR CC $HOOD $COIN,1,13
 2026-08-26,MRNA,152.3,3,5,LONG,"Moderna Drops 7% Despite a Fresh Wolfe Research Upgrade, BioNTech Slips",1,6
+2026-08-31,SLB,6.4,3,5,LONG,SLB Advances Strategy to Cash In on AI With $4 Billion Data Center Deal,0,1
+2026-08-31,GEN,7.2,2,4,LONG,"Gen Digital Q1 Earnings Beat Estimates, Revenues Increase Y/Y",0,0
+2026-08-31,MRNA,-4.9,0,-2,EXIT LONG,[StockTwits] $MRNA,-1,8
+2026-08-31,MRVL,-8.6,3,1,EXIT LONG,[StockTwits] $POET I keep buying $MU $MRVL,2,14
+2026-08-31,WDC,0.0,0,-1,EXIT SHORT,[StockTwits] $WDC One of the easier plays at these prices. 60-80% return over the next 12 months imo.,1,2
+2026-08-31,NUE,2.8,-3,-1,EXIT SHORT (Haltedauer),U.S. steel and materials stocks swing amid U.S.-Canada trade war,0,0
+2026-08-31,STLD,2.6,-3,-1,EXIT SHORT (Haltedauer),U.S. steel and materials stocks swing amid U.S.-Canada trade war,0,1
+2026-08-31,MRK,-2.8,1,-1,EXIT LONG (Haltedauer),[StockTwits] $SLS Looks like the cancer vaccine space is going to get similar hype on us like the quant,1,5
+2026-08-31,NEM,-2.7,2,-1,EXIT LONG (Haltedauer),[StockTwits] $NEM good looking pull back,1,4
