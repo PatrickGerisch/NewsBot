@@ -1,13 +1,14 @@
 {
   "entry_dates": {
     "GEN": "2026-08-31",
-    "SLB": "2026-08-31"
+    "SLB": "2026-08-31",
+    "LITE": "2026-09-01"
   },
-  "letzter_lauf": "2026-08-31 19:34 ET",
+  "letzter_lauf": "2026-09-01 13:06 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-08-31"
+    "letzter_tag": "2026-09-01"
   }
 }

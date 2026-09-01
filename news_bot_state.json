@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 6856.050628253243,
+  "cash": 5780.018316701406,
   "pos": {
     "SLB": {
       "stk": 18.03139183474201,
@@ -15,15 +15,22 @@
       "tag": 33,
       "richtung": "LONG",
       "einstieg_ts": "2026-08-31 15:20 ET"
+    },
+    "LITE": {
+      "stk": 1.2480199090073312,
+      "einstieg": 861.7607431640624,
+      "tag": 34,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-01 13:06 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 33,
-  "letzter_tag": "2026-08-31",
+  "handelstage": 34,
+  "letzter_tag": "2026-09-01",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-08-31"
+    "letzter_tag": "2026-09-01"
   }
 }
