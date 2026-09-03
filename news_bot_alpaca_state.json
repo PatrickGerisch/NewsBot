@@ -1,14 +1,15 @@
 {
   "entry_dates": {
     "GEN": "2026-08-31",
-    "LITE": "2026-09-01",
-    "HAL": "2026-09-02"
+    "HAL": "2026-09-02",
+    "DE": "2026-09-03",
+    "BG": "2026-09-03"
   },
-  "letzter_lauf": "2026-09-02 18:15 ET",
+  "letzter_lauf": "2026-09-03 12:51 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-02"
+    "letzter_tag": "2026-09-03"
   }
 }
