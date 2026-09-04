@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 4670.8003041509,
+  "cash": 3061.7576581676612,
   "pos": {
     "GEN": {
       "stk": 34.83132913210063,
@@ -29,15 +29,36 @@
       "tag": 36,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-03 12:51 ET"
+    },
+    "DELL": {
+      "stk": 2.0350413967881145,
+      "einstieg": 526.4981028442382,
+      "tag": 37,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-04 12:41 ET"
+    },
+    "CDNS": {
+      "stk": -1.8162714773873507,
+      "einstieg": 294.66259255981447,
+      "tag": 37,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-09-04 12:41 ET"
+    },
+    "HOOD": {
+      "stk": 8.636022768018721,
+      "einstieg": 124.06699975204467,
+      "tag": 37,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-04 12:41 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 36,
-  "letzter_tag": "2026-09-03",
+  "handelstage": 37,
+  "letzter_tag": "2026-09-04",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-03"
+    "letzter_tag": "2026-09-04"
   }
 }
