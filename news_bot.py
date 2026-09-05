@@ -105,10 +105,10 @@ USE_REGIME_SCALE    = True  # (3) gleitendes Regime-Exposure statt hartem Ein/Au
 REGIME_FULL_OFF     = 0.02  #     |Abstand Benchmark<->MA|, ab dem die Gegen-Regime-Seite auf 0 skaliert (v4: 0.03->0.02)
 REGIME_BASE_CUT     = 0.35  #     gegen ein bestaetigtes Regime sofort Exposure weg (v7: 0.55->0.35,
                             #     v4-Verschaerfung zurueckgenommen; Untergrenze s. REGIME_MIN_SCALE)
-REGIME_CONFIRM_DAYS = 2     #     neues Regime-Vorzeichen kippt erst nach N Handelstagen (Anti-Whipsaw)
+REGIME_CONFIRM_DAYS = 3     #     neues Regime-Vorzeichen kippt erst nach N Handelstagen (Anti-Whipsaw)
 
 USE_SOCIAL_CONFIRM  = True  # (4) Social darf einen Trade nicht ALLEIN gegen negatives Momentum tragen
-SOCIAL_MIN_POSTS_V2 = 8     #     Mindest-Postzahl, damit ein rein social-getriebener Trade zaehlt
+SOCIAL_MIN_POSTS_V2 = 12    #     Mindest-Postzahl, damit ein rein social-getriebener Trade zaehlt
 
 # ----------------------------------------------------------------------------- #
 #  v6-VERBESSERUNGEN (05.08.2026) – Lehre aus 9 Arena-Handelstagen (23.07.-04.08.)
@@ -120,11 +120,11 @@ SOCIAL_MIN_POSTS_V2 = 8     #     Mindest-Postzahl, damit ein rein social-getrie
 #  zufaellig. Ehrlich: 9 Handelstage sind eine Mini-Stichprobe, Overfitting-Gefahr;
 #  alle drei Aenderungen haengen an den bestehenden Schaltern (baseline unberuehrt).
 # ----------------------------------------------------------------------------- #
-REGIME_NEUTRAL_ZONE  = 0.01  # (6a) Hysterese: |Benchmark<->MA| unter 1 % = neutrale Zone.
+REGIME_NEUTRAL_ZONE  = 0.015 # (6a) Hysterese: |Benchmark<->MA| unter 1 % = neutrale Zone.
                              #      Dort zaehlt der Tag NICHT fuer die Regime-Bestaetigung
                              #      (Speicher haelt) und das Gate ist AUS (eff_sign 0 ->
                              #      regime_scale = 1.0). Erst ein klarer Abstand schaltet.
-SOCIAL_NEUTRAL_POSTS = 5     # (6b) Unter 5 StockTwits-Posts ist der Social-Beitrag Rauschen
+SOCIAL_NEUTRAL_POSTS = 4     # (6b) Unter 5 StockTwits-Posts ist der Social-Beitrag Rauschen
                              #      -> bei aktivem Social-Confirm komplett neutral (soc=0).
                              #      Staffel: <5 neutral, 5-7 zaehlt (kein Solo-Grund), >=8 voll.
 RANK_MOM_FAKTOR      = 0.06  # (6c/v7) Tie-Breaker gegen Score-Saettigung (Kappe +-5): Rang =
