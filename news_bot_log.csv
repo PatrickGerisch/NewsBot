@@ -825,3 +825,5 @@ Datum,Asset,Mom5%,Stimmung,Score,Aktion,Schlagzeile,StockTwits,ST-Posts
 2026-09-09,STX,10.3,2,4,LONG,[StockTwits] $STX,2,12
 2026-09-09,AMD,10.0,2,4,LONG,[StockTwits] $PLTR hold to 2030. $ORCL $INTC $AMD $MSFT,2,18
 2026-09-09,CDNS,-9.2,1,-1,EXIT SHORT,[StockTwits] $CDNS average 12-month analyst price target for Cadence Design Systems Inc (CDNS) is appro,2,6
+2026-09-09,LRCX,10.4,3,5,LONG,[StockTwits] $LRCX,2,7
+2026-09-09,DELL,25.6,0,2,EXIT LONG,[StockTwits] $DELL probably damaged after today and. The bews that dell foundation selling massive amou,0,11
