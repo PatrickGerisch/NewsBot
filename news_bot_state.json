@@ -1,120 +1,85 @@
 {
   "start": "2026-07-17",
-  "cash": 6508.14811936635,
+  "cash": 9464.80832348874,
   "pos": {
-    "VRT": {
-      "stk": 2.5328946121804883,
-      "einstieg": 293.13147784423825,
-      "tag": 38,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-08 13:00 ET"
-    },
     "PTC": {
-      "stk": -4.432228050542475,
-      "einstieg": 132.52919330644713,
+      "stk": -6.6751977172874755,
+      "einstieg": 131.31326264145463,
       "tag": 38,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-08 13:00 ET"
     },
     "GLW": {
-      "stk": 1.5643358506323388,
-      "einstieg": 169.07949261474607,
-      "tag": 39,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-09 12:58 ET"
-    },
-    "LITE": {
-      "stk": 0.2733954245487645,
-      "einstieg": 1018.438957672119,
+      "stk": 2.57911288645034,
+      "einstieg": 168.25675207480023,
       "tag": 39,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-09 12:58 ET"
     },
     "COHR": {
-      "stk": 0.8699928032635209,
-      "einstieg": 307.84885482788087,
+      "stk": 1.40801970584935,
+      "einstieg": 307.0957093944134,
       "tag": 39,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-09 12:58 ET"
-    },
-    "ORCL": {
-      "stk": 3.6927594182198433,
-      "einstieg": 162.67129133605957,
-      "tag": 39,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-09 12:58 ET"
-    },
-    "SMCI": {
-      "stk": 6.723167830866807,
-      "einstieg": 39.54976377868652,
-      "tag": 39,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-09 12:58 ET"
-    },
-    "STX": {
-      "stk": 0.3014043001230673,
-      "einstieg": 914.4119945983887,
-      "tag": 39,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-09 12:58 ET"
-    },
-    "AMD": {
-      "stk": 0.508776661034727,
-      "einstieg": 523.7723754272461,
-      "tag": 39,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-09 12:58 ET"
-    },
-    "LRCX": {
-      "stk": 0.8550094056058424,
-      "einstieg": 315.1975285491943,
-      "tag": 39,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-09 15:37 ET"
     },
     "INTC": {
-      "stk": 2.5437575194172073,
-      "einstieg": 101.14554872131347,
+      "stk": 4.219435868741706,
+      "einstieg": 101.5130788481174,
       "tag": 40,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-10 12:51 ET"
     },
     "MRVL": {
-      "stk": 1.1218932933401686,
-      "einstieg": 229.33531347656248,
+      "stk": 1.8124919291143697,
+      "einstieg": 232.4914819928015,
       "tag": 40,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-10 12:51 ET"
     },
     "HPE": {
-      "stk": 4.602840843520062,
-      "einstieg": 55.89803316307068,
+      "stk": 7.087623756297368,
+      "einstieg": 57.604426042317385,
       "tag": 40,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-10 12:51 ET"
     },
     "DLTR": {
-      "stk": -4.829401186133684,
-      "einstieg": 118.23085591506958,
+      "stk": -7.355263937486899,
+      "einstieg": 117.80524258422905,
       "tag": 40,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-10 15:26 ET"
     },
     "CHTR": {
-      "stk": -4.099532441389609,
-      "einstieg": 139.28033110046388,
+      "stk": -6.012736536710258,
+      "einstieg": 140.4999842071521,
       "tag": 40,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-10 15:26 ET"
+    },
+    "COO": {
+      "stk": -16.145028673448596,
+      "einstieg": 53.298338262557984,
+      "tag": 41,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-09-11 12:51 ET"
+    },
+    "SWKS": {
+      "stk": 4.774476660159794,
+      "einstieg": 90.20508366394043,
+      "tag": 41,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-11 12:51 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 40,
-  "letzter_tag": "2026-09-10",
+  "handelstage": 41,
+  "letzter_tag": "2026-09-11",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-10"
+    "letzter_tag": "2026-09-11"
   }
 }
