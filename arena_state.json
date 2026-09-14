@@ -3,302 +3,164 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 8788.572157433166,
+      "cash": 10226.415898363977,
       "pos": {
         "PTC": {
-          "stk": -5.497855477406483,
-          "einstieg": 132.362303628289,
+          "stk": -7.226769078022874,
+          "einstieg": 133.45542638697268,
           "tag": 33,
           "richtung": "SHORT"
         },
         "GLW": {
-          "stk": 1.9130016118202577,
-          "einstieg": 168.5431260754407,
+          "stk": 6.7952462898186665,
+          "einstieg": 152.18314891621407,
           "tag": 34,
-          "richtung": "LONG"
-        },
-        "COHR": {
-          "stk": 1.043506616963557,
-          "einstieg": 307.21140005223936,
-          "tag": 34,
-          "richtung": "LONG"
-        },
-        "INTC": {
-          "stk": 3.1255626029561046,
-          "einstieg": 101.3826573169697,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 0.6225148543660599,
-          "einstieg": 507.44635994556694,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "MRVL": {
-          "stk": 1.3430505531602313,
-          "einstieg": 231.2747675552608,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "HPE": {
-          "stk": 5.253309856109105,
-          "einstieg": 56.91312380631247,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "WDC": {
-          "stk": 0.7120607831975718,
-          "einstieg": 456.124420586005,
-          "tag": 35,
           "richtung": "LONG"
         },
         "DLTR": {
-          "stk": -6.057715961779333,
-          "einstieg": 117.90996436192215,
+          "stk": -8.267440911831143,
+          "einstieg": 118.38710141719851,
           "tag": 35,
           "richtung": "SHORT"
         },
         "CHTR": {
-          "stk": -4.952236308587971,
-          "einstieg": 140.16796387453275,
+          "stk": -6.854523310401951,
+          "einstieg": 141.33350958874667,
           "tag": 35,
           "richtung": "SHORT"
         },
         "COO": {
-          "stk": -13.294946206555446,
-          "einstieg": 53.30833158493042,
+          "stk": -18.383945262364424,
+          "einstieg": 53.45220487545175,
           "tag": 36,
           "richtung": "SHORT"
         },
         "SWKS": {
-          "stk": 3.537568575226598,
-          "einstieg": 90.2450969467163,
+          "stk": 12.403750532128013,
+          "einstieg": 82.82178094284919,
           "tag": 36,
           "richtung": "LONG"
         }
       },
-      "handelstage": 36,
-      "letzter_tag": "2026-09-11"
+      "handelstage": 37,
+      "letzter_tag": "2026-09-14"
     },
     "regime": {
-      "cash": 8649.557125820582,
+      "cash": 10064.657480160364,
       "pos": {
         "PTC": {
-          "stk": -5.410892028675761,
-          "einstieg": 132.11000211594424,
+          "stk": -7.112458184900183,
+          "einstieg": 133.2634848371832,
           "tag": 33,
           "richtung": "SHORT"
         },
         "GLW": {
-          "stk": 1.8827423192151713,
-          "einstieg": 168.54313810434735,
+          "stk": 6.687761096367551,
+          "einstieg": 152.18315230385713,
           "tag": 34,
-          "richtung": "LONG"
-        },
-        "COHR": {
-          "stk": 1.027000738524699,
-          "einstieg": 307.2112996681432,
-          "tag": 34,
-          "richtung": "LONG"
-        },
-        "INTC": {
-          "stk": 3.076123379918351,
-          "einstieg": 101.3826573776195,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 0.6126680988730775,
-          "einstieg": 507.446360376614,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "MRVL": {
-          "stk": 1.321806577504179,
-          "einstieg": 231.274768069406,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "HPE": {
-          "stk": 5.170214557548465,
-          "einstieg": 56.91312411482589,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "WDC": {
-          "stk": 0.7007976167379888,
-          "einstieg": 456.12441996379033,
-          "tag": 35,
           "richtung": "LONG"
         },
         "DLTR": {
-          "stk": -5.961896805813454,
-          "einstieg": 117.9099643009129,
+          "stk": -8.136668979828432,
+          "einstieg": 118.38710137223906,
           "tag": 35,
           "richtung": "SHORT"
         },
         "CHTR": {
-          "stk": -4.8739033021831775,
-          "einstieg": 140.1679640712496,
+          "stk": -6.746100490593694,
+          "einstieg": 141.33350973027441,
           "tag": 35,
           "richtung": "SHORT"
         },
         "COO": {
-          "stk": -13.084650687227446,
-          "einstieg": 53.30833158493042,
+          "stk": -18.093153460471886,
+          "einstieg": 53.452204875377966,
           "tag": 36,
           "richtung": "SHORT"
         },
         "SWKS": {
-          "stk": 3.481612363811551,
-          "einstieg": 90.2450969467163,
+          "stk": 12.207551679488526,
+          "einstieg": 82.82178094343064,
           "tag": 36,
           "richtung": "LONG"
         }
       },
-      "handelstage": 36,
-      "letzter_tag": "2026-09-11"
+      "handelstage": 37,
+      "letzter_tag": "2026-09-14"
     },
     "social": {
-      "cash": 8958.058791257577,
+      "cash": 9919.120788748904,
       "pos": {
         "PTC": {
-          "stk": -5.604373702132313,
-          "einstieg": 132.1091598347579,
+          "stk": -7.366094282152706,
+          "einstieg": 133.2625004773763,
           "tag": 33,
           "richtung": "SHORT"
         },
         "GLW": {
-          "stk": 1.9500650698224078,
-          "einstieg": 168.71098762649447,
+          "stk": 5.771876789019474,
+          "einstieg": 153.52264281751602,
           "tag": 34,
-          "richtung": "LONG"
-        },
-        "COHR": {
-          "stk": 1.0637240404271961,
-          "einstieg": 307.30195446577926,
-          "tag": 34,
-          "richtung": "LONG"
-        },
-        "INTC": {
-          "stk": 3.186118829125473,
-          "einstieg": 101.30789458038619,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 0.6345757711044191,
-          "einstieg": 506.91501014250935,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "MRVL": {
-          "stk": 1.369071491911273,
-          "einstieg": 230.64098310235642,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "HPE": {
-          "stk": 5.355090130637423,
-          "einstieg": 56.53282071589858,
-          "tag": 35,
           "richtung": "LONG"
         },
         "DLTR": {
-          "stk": -6.175081205881101,
-          "einstieg": 117.90885361155594,
+          "stk": -8.426829274768474,
+          "einstieg": 118.38616497119061,
           "tag": 35,
           "richtung": "SHORT"
         },
         "CHTR": {
-          "stk": -5.048183432367665,
-          "einstieg": 140.1715453524901,
+          "stk": -6.986671971736473,
+          "einstieg": 141.33581319501633,
           "tag": 35,
           "richtung": "SHORT"
         },
         "COO": {
-          "stk": -13.552529199336432,
-          "einstieg": 53.30833158493042,
+          "stk": -18.738370164936697,
+          "einstieg": 53.45216967396589,
           "tag": 36,
           "richtung": "SHORT"
         },
         "SWKS": {
-          "stk": 3.6061072128876916,
-          "einstieg": 90.2450969467163,
+          "stk": 10.53573582762489,
+          "einstieg": 83.41448806200245,
           "tag": 36,
           "richtung": "LONG"
         },
         "WDC": {
-          "stk": 0.725856607921373,
-          "einstieg": 448.3440551147461,
+          "stk": 1.933647015392933,
+          "einstieg": 440.0887332873225,
           "tag": 36,
           "richtung": "LONG"
         }
       },
-      "handelstage": 36,
-      "letzter_tag": "2026-09-11"
+      "handelstage": 37,
+      "letzter_tag": "2026-09-14"
     },
     "confidence": {
-      "cash": 9172.319548557469,
+      "cash": 10051.980511952757,
       "pos": {
         "PTC": {
-          "stk": -6.219709985207553,
-          "einstieg": 131.9621057337469,
+          "stk": -7.069939022396854,
+          "einstieg": 132.5597238021667,
           "tag": 33,
           "richtung": "SHORT"
         },
         "GLW": {
-          "stk": 2.6788194517250625,
-          "einstieg": 168.40889869946244,
+          "stk": 6.647780826052066,
+          "einstieg": 154.89437145725324,
           "tag": 34,
-          "richtung": "LONG"
-        },
-        "COHR": {
-          "stk": 1.2331174308787853,
-          "einstieg": 307.12883437063715,
-          "tag": 34,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 0.043001550797647954,
-          "einstieg": 505.5076323852539,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "INTC": {
-          "stk": 3.171152520692701,
-          "einstieg": 101.2291629321328,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "WDC": {
-          "stk": 0.5132643823989255,
-          "einstieg": 457.6338298271224,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "MRVL": {
-          "stk": 1.8604382469936593,
-          "einstieg": 230.57291473312463,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "HPE": {
-          "stk": 2.160577006819532,
-          "einstieg": 59.27920348115623,
-          "tag": 35,
           "richtung": "LONG"
         },
         "DLTR": {
-          "stk": -6.385269357399348,
-          "einstieg": 118.0470209472365,
+          "stk": -8.088026957394668,
+          "einstieg": 118.39399219064234,
           "tag": 35,
           "richtung": "SHORT"
         },
         "CHTR": {
-          "stk": -5.308358524590225,
-          "einstieg": 140.2917189880335,
+          "stk": -6.705771460100087,
+          "einstieg": 141.14112816159206,
           "tag": 35,
           "richtung": "SHORT"
         },
@@ -309,17 +171,17 @@
           "richtung": "SHORT"
         },
         "SWKS": {
-          "stk": 5.961973108152986,
-          "einstieg": 90.2450969467163,
+          "stk": 12.13457341232206,
+          "einstieg": 84.96237230427195,
           "tag": 36,
           "richtung": "LONG"
         }
       },
-      "handelstage": 36,
-      "letzter_tag": "2026-09-11"
+      "handelstage": 37,
+      "letzter_tag": "2026-09-14"
     },
     "all": {
-      "cash": 9539.621558766998,
+      "cash": 9926.2338286293,
       "pos": {
         "PTC": {
           "stk": -6.4877460406077025,
@@ -328,39 +190,9 @@
           "richtung": "SHORT"
         },
         "GLW": {
-          "stk": 2.677398280756773,
-          "einstieg": 168.77889388497258,
+          "stk": 6.645168320281546,
+          "einstieg": 155.04219085957104,
           "tag": 34,
-          "richtung": "LONG"
-        },
-        "COHR": {
-          "stk": 1.232463235728706,
-          "einstieg": 305.92804468919525,
-          "tag": 34,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 0.04297873755596207,
-          "einstieg": 505.5076323852539,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "INTC": {
-          "stk": 1.5684353955849777,
-          "einstieg": 101.10552780532836,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "MRVL": {
-          "stk": 1.8747146811913538,
-          "einstieg": 229.2566515052782,
-          "tag": 35,
-          "richtung": "LONG"
-        },
-        "HPE": {
-          "stk": 2.318771328557364,
-          "einstieg": 59.40711125536256,
-          "tag": 35,
           "richtung": "LONG"
         },
         "DLTR": {
@@ -370,8 +202,8 @@
           "richtung": "SHORT"
         },
         "CHTR": {
-          "stk": -5.41437724831438,
-          "einstieg": 140.04102934830198,
+          "stk": -6.703136164639285,
+          "einstieg": 140.87289990693944,
           "tag": 35,
           "richtung": "SHORT"
         },
@@ -382,26 +214,26 @@
           "richtung": "SHORT"
         },
         "SWKS": {
-          "stk": 5.958810154005563,
-          "einstieg": 90.2450969467163,
+          "stk": 12.129804656568522,
+          "einstieg": 84.96167027539309,
           "tag": 36,
           "richtung": "LONG"
         },
         "WDC": {
-          "stk": 0.5508448577022836,
+          "stk": 0.06367632562779524,
           "einstieg": 448.3440551147461,
           "tag": 36,
           "richtung": "LONG"
         }
       },
-      "handelstage": 36,
-      "letzter_tag": "2026-09-11"
+      "handelstage": 37,
+      "letzter_tag": "2026-09-14"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-11"
+    "letzter_tag": "2026-09-14"
   }
 }

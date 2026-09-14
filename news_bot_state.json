@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 9464.80832348874,
+  "cash": 10202.060700810767,
   "pos": {
     "PTC": {
       "stk": -6.6751977172874755,
@@ -10,76 +10,48 @@
       "einstieg_ts": "2026-09-08 13:00 ET"
     },
     "GLW": {
-      "stk": 2.57911288645034,
-      "einstieg": 168.25675207480023,
+      "stk": 6.8293553038195105,
+      "einstieg": 154.29505119857916,
       "tag": 39,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-09 12:58 ET"
-    },
-    "COHR": {
-      "stk": 1.40801970584935,
-      "einstieg": 307.0957093944134,
-      "tag": 39,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-09 12:58 ET"
-    },
-    "INTC": {
-      "stk": 4.219435868741706,
-      "einstieg": 101.5130788481174,
-      "tag": 40,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-10 12:51 ET"
-    },
-    "MRVL": {
-      "stk": 1.8124919291143697,
-      "einstieg": 232.4914819928015,
-      "tag": 40,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-10 12:51 ET"
-    },
-    "HPE": {
-      "stk": 7.087623756297368,
-      "einstieg": 57.604426042317385,
-      "tag": 40,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-10 12:51 ET"
     },
     "DLTR": {
-      "stk": -7.355263937486899,
-      "einstieg": 117.80524258422905,
+      "stk": -8.312138083771972,
+      "einstieg": 118.02222589637587,
       "tag": 40,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-10 15:26 ET"
     },
     "CHTR": {
-      "stk": -6.012736536710258,
-      "einstieg": 140.4999842071521,
+      "stk": -6.891294092406848,
+      "einstieg": 140.99308221109385,
       "tag": 40,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-10 15:26 ET"
     },
     "COO": {
-      "stk": -16.145028673448596,
-      "einstieg": 53.298338262557984,
+      "stk": -18.48943164222669,
+      "einstieg": 53.36297214538408,
       "tag": 41,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-11 12:51 ET"
     },
     "SWKS": {
-      "stk": 4.774476660159794,
-      "einstieg": 90.20508366394043,
+      "stk": 12.474978369601576,
+      "einstieg": 83.8007317988028,
       "tag": 41,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-11 12:51 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 41,
-  "letzter_tag": "2026-09-11",
+  "handelstage": 42,
+  "letzter_tag": "2026-09-14",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-11"
+    "letzter_tag": "2026-09-14"
   }
 }
