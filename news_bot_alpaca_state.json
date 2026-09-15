@@ -1,18 +1,17 @@
 {
   "entry_dates": {
-    "PTC": "2026-09-08",
     "GLW": "2026-09-09",
     "DLTR": "2026-09-10",
     "CHTR": "2026-09-10",
-    "COO": "2026-09-11",
-    "SWKS": "2026-09-11",
-    "COHR": "2026-09-11"
+    "COHR": "2026-09-11",
+    "PANW": "2026-09-15",
+    "DDOG": "2026-09-15"
   },
-  "letzter_lauf": "2026-09-14 18:14 ET",
+  "letzter_lauf": "2026-09-15 13:26 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-14"
+    "letzter_tag": "2026-09-15"
   }
 }
