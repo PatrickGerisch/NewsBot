@@ -1,17 +1,13 @@
 {
   "entry_dates": {
-    "GLW": "2026-09-09",
-    "DLTR": "2026-09-10",
-    "CHTR": "2026-09-10",
-    "COHR": "2026-09-11",
     "PANW": "2026-09-15",
     "DDOG": "2026-09-15"
   },
-  "letzter_lauf": "2026-09-15 19:21 ET",
+  "letzter_lauf": "2026-09-16 13:26 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-15"
+    "letzter_tag": "2026-09-16"
   }
 }

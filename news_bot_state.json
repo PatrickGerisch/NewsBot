@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 10393.180738023504,
+  "cash": 8484.571243800085,
   "pos": {
     "GLW": {
       "stk": -7.099266469467961,
@@ -8,20 +8,6 @@
       "tag": 43,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-15 13:26 ET"
-    },
-    "DLTR": {
-      "stk": -8.312138083771972,
-      "einstieg": 118.02222589637587,
-      "tag": 40,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-09-10 15:26 ET"
-    },
-    "CHTR": {
-      "stk": -6.891294092406848,
-      "einstieg": 140.99308221109385,
-      "tag": 40,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-09-10 15:26 ET"
     },
     "PANW": {
       "stk": 2.69220282349031,
@@ -32,12 +18,12 @@
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 43,
-  "letzter_tag": "2026-09-15",
+  "handelstage": 44,
+  "letzter_tag": "2026-09-16",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-15"
+    "letzter_tag": "2026-09-16"
   }
 }
