@@ -3,105 +3,105 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 8448.649801575742,
+      "cash": 6391.63925053005,
       "pos": {
-        "GLW": {
-          "stk": -7.061501329387004,
-          "einstieg": 143.16838549041748,
-          "tag": 38,
-          "richtung": "SHORT"
-        },
         "PANW": {
           "stk": 2.677137448637542,
           "einstieg": 378.01392471313477,
           "tag": 38,
           "richtung": "LONG"
+        },
+        "SWKS": {
+          "stk": 11.148431290105428,
+          "einstieg": 90.51523622131347,
+          "tag": 40,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 39,
-      "letzter_tag": "2026-09-16"
+      "handelstage": 40,
+      "letzter_tag": "2026-09-17"
     },
     "regime": {
-      "cash": 8315.011561019028,
+      "cash": 6290.538193701448,
       "pos": {
-        "GLW": {
-          "stk": -6.949804592569699,
-          "einstieg": 143.16838549041748,
-          "tag": 38,
-          "richtung": "SHORT"
-        },
         "PANW": {
           "stk": 2.634791281289277,
           "einstieg": 378.01392471313477,
           "tag": 38,
           "richtung": "LONG"
+        },
+        "SWKS": {
+          "stk": 10.9720887054833,
+          "einstieg": 90.51523622131347,
+          "tag": 40,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 39,
-      "letzter_tag": "2026-09-16"
+      "handelstage": 40,
+      "letzter_tag": "2026-09-17"
     },
     "social": {
-      "cash": 8538.532796526986,
+      "cash": 6458.278046974648,
       "pos": {
-        "GLW": {
-          "stk": -7.14584328825906,
-          "einstieg": 143.16838549041748,
-          "tag": 38,
-          "richtung": "SHORT"
-        },
         "PANW": {
           "stk": 2.709112945922824,
           "einstieg": 378.01392471313477,
           "tag": 38,
           "richtung": "LONG"
+        },
+        "SWKS": {
+          "stk": 11.26696097402946,
+          "einstieg": 90.51523622131347,
+          "tag": 40,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 39,
-      "letzter_tag": "2026-09-16"
+      "handelstage": 40,
+      "letzter_tag": "2026-09-17"
     },
     "confidence": {
-      "cash": 8266.839910466706,
+      "cash": 6254.088829712511,
       "pos": {
-        "GLW": {
-          "stk": -6.909583827703227,
-          "einstieg": 143.16838549041748,
-          "tag": 38,
-          "richtung": "SHORT"
-        },
         "PANW": {
           "stk": 2.6195428927647613,
           "einstieg": 378.01392471313477,
           "tag": 38,
           "richtung": "LONG"
+        },
+        "SWKS": {
+          "stk": 10.908523373258655,
+          "einstieg": 90.51523622131347,
+          "tag": 40,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 39,
-      "letzter_tag": "2026-09-16"
+      "handelstage": 40,
+      "letzter_tag": "2026-09-17"
     },
     "all": {
-      "cash": 8251.280033493646,
+      "cash": 6241.074663363281,
       "pos": {
-        "GLW": {
-          "stk": -6.90499890173326,
-          "einstieg": 143.16838549041748,
-          "tag": 38,
-          "richtung": "SHORT"
-        },
         "PANW": {
           "stk": 2.6178046679254696,
           "einstieg": 378.01392471313477,
           "tag": 38,
           "richtung": "LONG"
+        },
+        "SWKS": {
+          "stk": 10.887922252898148,
+          "einstieg": 90.51523622131347,
+          "tag": 40,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 39,
-      "letzter_tag": "2026-09-16"
+      "handelstage": 40,
+      "letzter_tag": "2026-09-17"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-16"
+    "letzter_tag": "2026-09-17"
   }
 }
