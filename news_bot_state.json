@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 6417.893189071906,
+  "cash": 2394.6673881325723,
   "pos": {
     "PANW": {
       "stk": 2.69220282349031,
@@ -15,15 +15,43 @@
       "tag": 45,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-17 13:25 ET"
+    },
+    "GNRC": {
+      "stk": 4.919468287083708,
+      "einstieg": 204.352125,
+      "tag": 46,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-18 12:53 ET"
+    },
+    "HPE": {
+      "stk": 16.579513327717947,
+      "einstieg": 60.635302042007446,
+      "tag": 46,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-18 12:53 ET"
+    },
+    "TMO": {
+      "stk": 1.5403740574228912,
+      "einstieg": 652.6361525573731,
+      "tag": 46,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-18 12:53 ET"
+    },
+    "A": {
+      "stk": 6.4478541684911015,
+      "einstieg": 155.91292421722412,
+      "tag": 46,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-18 12:53 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 45,
-  "letzter_tag": "2026-09-17",
+  "handelstage": 46,
+  "letzter_tag": "2026-09-18",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-17"
+    "letzter_tag": "2026-09-18"
   }
 }

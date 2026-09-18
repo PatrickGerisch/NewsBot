@@ -1,13 +1,17 @@
 {
   "entry_dates": {
     "PANW": "2026-09-15",
-    "SWKS": "2026-09-17"
+    "SWKS": "2026-09-17",
+    "GNRC": "2026-09-18",
+    "HPE": "2026-09-18",
+    "A": "2026-09-18",
+    "TMO": "2026-09-18"
   },
-  "letzter_lauf": "2026-09-17 19:19 ET",
+  "letzter_lauf": "2026-09-18 12:53 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-17"
+    "letzter_tag": "2026-09-18"
   }
 }
