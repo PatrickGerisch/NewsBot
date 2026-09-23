@@ -1,10 +1,10 @@
 {
   "start": "2026-07-17",
-  "cash": 3638.969318833448,
+  "cash": 3671.9547103965215,
   "pos": {
     "GNRC": {
-      "stk": 2.31716414925476,
-      "einstieg": 204.352125,
+      "stk": 2.658512754595455,
+      "einstieg": 204.12731556910944,
       "tag": 46,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-18 12:53 ET"
@@ -16,51 +16,16 @@
       "richtung": "LONG",
       "einstieg_ts": "2026-09-18 12:53 ET"
     },
-    "A": {
-      "stk": 2.892787618441046,
-      "einstieg": 155.91292421722412,
-      "tag": 46,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-18 12:53 ET"
-    },
-    "INTC": {
-      "stk": 2.12888924363352,
-      "einstieg": 107.39366633605957,
-      "tag": 46,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-18 15:23 ET"
-    },
-    "CRWD": {
-      "stk": 1.9253907146504723,
-      "einstieg": 248.84436122131348,
-      "tag": 47,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-21 14:25 ET"
-    },
     "JBHT": {
-      "stk": -1.0137318133661806,
-      "einstieg": 234.04791078948975,
+      "stk": -1.1346080347757617,
+      "einstieg": 234.37534546037105,
       "tag": 47,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-21 14:25 ET"
     },
     "COIN": {
-      "stk": 2.3969266356755314,
-      "einstieg": 202.96143061065672,
-      "tag": 47,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-21 14:25 ET"
-    },
-    "CMCSA": {
-      "stk": -10.60262639059938,
-      "einstieg": 22.953517652511596,
-      "tag": 47,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-09-21 14:25 ET"
-    },
-    "AMD": {
-      "stk": 0.42004468943269724,
-      "einstieg": 609.6846948852539,
+      "stk": 2.7127721217588165,
+      "einstieg": 202.44768756761135,
       "tag": 47,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-21 14:25 ET"
@@ -87,8 +52,8 @@
       "einstieg_ts": "2026-09-22 13:29 ET"
     },
     "META": {
-      "stk": 0.6456055347277746,
-      "einstieg": 743.5015698852538,
+      "stk": 0.7188791610863741,
+      "einstieg": 744.0871810312041,
       "tag": 48,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-22 13:29 ET"
@@ -127,15 +92,36 @@
       "tag": 48,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-22 13:29 ET"
+    },
+    "LRCX": {
+      "stk": 0.8444963822141678,
+      "einstieg": 306.1429852294922,
+      "tag": 49,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-23 13:38 ET"
+    },
+    "SNDK": {
+      "stk": 0.14186401850579985,
+      "einstieg": 1822.4257721557617,
+      "tag": 49,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-23 13:38 ET"
+    },
+    "HOOD": {
+      "stk": 4.3123105462810996,
+      "einstieg": 124.90241633605956,
+      "tag": 49,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-23 13:38 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 48,
-  "letzter_tag": "2026-09-22",
+  "handelstage": 49,
+  "letzter_tag": "2026-09-23",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-22"
+    "letzter_tag": "2026-09-23"
   }
 }
