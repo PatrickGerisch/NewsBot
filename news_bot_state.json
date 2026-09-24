@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 3671.9547103965215,
+  "cash": 4687.102270800211,
   "pos": {
     "GNRC": {
       "stk": 2.658512754595455,
@@ -10,18 +10,11 @@
       "einstieg_ts": "2026-09-18 12:53 ET"
     },
     "HPE": {
-      "stk": 4.223937062385679,
+      "stk": 3.362892962123081,
       "einstieg": 60.635302042007446,
       "tag": 46,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-18 12:53 ET"
-    },
-    "JBHT": {
-      "stk": -1.1346080347757617,
-      "einstieg": 234.37534546037105,
-      "tag": 47,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-09-21 14:25 ET"
     },
     "COIN": {
       "stk": 2.7127721217588165,
@@ -30,78 +23,50 @@
       "richtung": "LONG",
       "einstieg_ts": "2026-09-21 14:25 ET"
     },
-    "MRNA": {
-      "stk": 2.6269990217788877,
-      "einstieg": 176.31811072540282,
-      "tag": 47,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-21 14:25 ET"
-    },
     "LITE": {
-      "stk": 0.2719464037933569,
+      "stk": 0.23157721056915354,
       "einstieg": 953.1463179016113,
       "tag": 48,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-22 13:29 ET"
     },
     "SWKS": {
-      "stk": 2.892593856889399,
+      "stk": 2.408127721589015,
       "einstieg": 89.60978494262694,
       "tag": 48,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-22 13:29 ET"
     },
-    "META": {
-      "stk": 0.7188791610863741,
-      "einstieg": 744.0871810312041,
-      "tag": 48,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-22 13:29 ET"
-    },
     "GLW": {
-      "stk": 1.6254167566746434,
+      "stk": 1.3886995038219545,
       "einstieg": 159.46969438934326,
       "tag": 48,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-22 13:29 ET"
     },
-    "COHR": {
-      "stk": 0.8347838593819218,
-      "einstieg": 310.50518110656736,
-      "tag": 48,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-22 13:29 ET"
-    },
     "MRVL": {
-      "stk": 0.9860327719610608,
+      "stk": 0.8300261598234935,
       "einstieg": 262.8763676147461,
       "tag": 48,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-22 13:29 ET"
     },
     "CIEN": {
-      "stk": 0.6962047050165825,
+      "stk": 0.5968268822415437,
       "einstieg": 372.3110625,
       "tag": 48,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-22 13:29 ET"
     },
-    "SMCI": {
-      "stk": 6.346770646525636,
-      "einstieg": 40.84040969467163,
-      "tag": 48,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-22 13:29 ET"
-    },
     "LRCX": {
-      "stk": 0.8444963822141678,
+      "stk": 0.7063181266453661,
       "einstieg": 306.1429852294922,
       "tag": 49,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-23 13:38 ET"
     },
     "SNDK": {
-      "stk": 0.14186401850579985,
+      "stk": 0.12213364344477637,
       "einstieg": 1822.4257721557617,
       "tag": 49,
       "richtung": "LONG",
@@ -113,15 +78,50 @@
       "tag": 49,
       "richtung": "LONG",
       "einstieg_ts": "2026-09-23 13:38 ET"
+    },
+    "AMD": {
+      "stk": 0.3452045901658377,
+      "einstieg": 622.3210147705078,
+      "tag": 50,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-24 13:42 ET"
+    },
+    "INTC": {
+      "stk": 1.7110570121055564,
+      "einstieg": 125.55284209442138,
+      "tag": 50,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-24 13:42 ET"
+    },
+    "MU": {
+      "stk": 0.20033094735526846,
+      "einstieg": 1072.3658710327147,
+      "tag": 50,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-24 13:42 ET"
+    },
+    "WDC": {
+      "stk": 0.4692118193943985,
+      "einstieg": 457.8488051147461,
+      "tag": 50,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-24 13:42 ET"
+    },
+    "ABNB": {
+      "stk": -1.78268392984521,
+      "einstieg": 150.48471755981447,
+      "tag": 50,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-09-24 13:42 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 49,
-  "letzter_tag": "2026-09-23",
+  "handelstage": 50,
+  "letzter_tag": "2026-09-24",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-23"
+    "letzter_tag": "2026-09-24"
   }
 }
