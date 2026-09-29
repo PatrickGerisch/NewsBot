@@ -1,19 +1,14 @@
 {
   "entry_dates": {
-    "CIEN": "2026-09-22",
-    "MRNA": "2026-09-25",
-    "CDNS": "2026-09-25",
-    "META": "2026-09-25",
-    "KLAC": "2026-09-25",
     "PAYX": "2026-09-28",
     "SNPS": "2026-09-28",
     "SMCI": "2026-09-28"
   },
-  "letzter_lauf": "2026-09-28 20:13 ET",
+  "letzter_lauf": "2026-09-29 14:25 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-28"
+    "letzter_tag": "2026-09-29"
   }
 }

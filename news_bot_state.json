@@ -1,35 +1,7 @@
 {
   "start": "2026-07-17",
-  "cash": 2879.4029305572644,
+  "cash": 7495.746255015116,
   "pos": {
-    "CIEN": {
-      "stk": 2.9706335765007887,
-      "einstieg": 351.17149634550077,
-      "tag": 48,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-22 13:29 ET"
-    },
-    "MRNA": {
-      "stk": 5.172851997306802,
-      "einstieg": 197.61098557905606,
-      "tag": 51,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-25 13:43 ET"
-    },
-    "CDNS": {
-      "stk": 3.117952695367171,
-      "einstieg": 326.5710235258668,
-      "tag": 51,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-25 13:43 ET"
-    },
-    "META": {
-      "stk": 1.4247308745894578,
-      "einstieg": 740.2846965798185,
-      "tag": 51,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-25 13:43 ET"
-    },
     "SNPS": {
       "stk": 2.438982146652919,
       "einstieg": 417.87884843444823,
@@ -45,20 +17,20 @@
       "einstieg_ts": "2026-09-28 15:57 ET"
     },
     "PAYX": {
-      "stk": -5.1309043033682835,
-      "einstieg": 99.22036164474488,
+      "stk": -10.259428809136159,
+      "einstieg": 99.265330693865,
       "tag": 52,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-28 15:57 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 52,
-  "letzter_tag": "2026-09-28",
+  "handelstage": 53,
+  "letzter_tag": "2026-09-29",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-28"
+    "letzter_tag": "2026-09-29"
   }
 }
