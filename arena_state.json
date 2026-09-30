@@ -3,26 +3,8 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 9522.097374416258,
+      "cash": 5426.1650653350935,
       "pos": {
-        "SMCI": {
-          "stk": 24.70591882835427,
-          "einstieg": 41.64914935714234,
-          "tag": 47,
-          "richtung": "LONG"
-        },
-        "PAYX": {
-          "stk": -10.28086662858681,
-          "einstieg": 99.17069197129733,
-          "tag": 47,
-          "richtung": "SHORT"
-        },
-        "TTD": {
-          "stk": -82.71329674580295,
-          "einstieg": 12.351252794936814,
-          "tag": 47,
-          "richtung": "SHORT"
-        },
         "CVNA": {
           "stk": -16.13742624717522,
           "einstieg": 63.24336402511597,
@@ -34,32 +16,44 @@
           "einstieg": 267.33361221313476,
           "tag": 48,
           "richtung": "LONG"
-        }
-      },
-      "handelstage": 48,
-      "letzter_tag": "2026-09-29"
-    },
-    "regime": {
-      "cash": 9377.697683670196,
-      "pos": {
-        "SMCI": {
-          "stk": 24.33342473660689,
-          "einstieg": 41.649116474652025,
-          "tag": 47,
+        },
+        "RCL": {
+          "stk": 3.8443465368032097,
+          "einstieg": 266.7833188934326,
+          "tag": 49,
           "richtung": "LONG"
         },
-        "PAYX": {
-          "stk": -10.125860773358454,
-          "einstieg": 99.22052132201,
-          "tag": 47,
-          "richtung": "SHORT"
+        "NTAP": {
+          "stk": 4.871198292539312,
+          "einstieg": 210.54522244262694,
+          "tag": 49,
+          "richtung": "LONG"
         },
-        "TTD": {
-          "stk": -81.46621848245987,
-          "einstieg": 12.345039596511056,
-          "tag": 47,
-          "richtung": "SHORT"
+        "AMAT": {
+          "stk": 2.002960127121298,
+          "einstieg": 512.0459035491943,
+          "tag": 49,
+          "richtung": "LONG"
         },
+        "CCL": {
+          "stk": 41.468075123882095,
+          "einstieg": 24.732460453033447,
+          "tag": 49,
+          "richtung": "LONG"
+        },
+        "EFX": {
+          "stk": -7.4690882512638295,
+          "einstieg": 137.17637261962892,
+          "tag": 49,
+          "richtung": "SHORT"
+        }
+      },
+      "handelstage": 49,
+      "letzter_tag": "2026-09-30"
+    },
+    "regime": {
+      "cash": 5343.820936585909,
+      "pos": {
         "CVNA": {
           "stk": -15.894120342430522,
           "einstieg": 63.24336402511597,
@@ -71,51 +65,87 @@
           "einstieg": 267.33361221313476,
           "tag": 48,
           "richtung": "LONG"
-        }
-      },
-      "handelstage": 48,
-      "letzter_tag": "2026-09-29"
-    },
-    "social": {
-      "cash": 8575.85428154467,
-      "pos": {
-        "SMCI": {
-          "stk": 24.92439731355061,
-          "einstieg": 41.74890063784109,
-          "tag": 47,
+        },
+        "RCL": {
+          "stk": 3.786009590393257,
+          "einstieg": 266.7833188934326,
+          "tag": 49,
           "richtung": "LONG"
         },
+        "NTAP": {
+          "stk": 4.7972791411247195,
+          "einstieg": 210.54522244262694,
+          "tag": 49,
+          "richtung": "LONG"
+        },
+        "AMAT": {
+          "stk": 1.9725657346078922,
+          "einstieg": 512.0459035491943,
+          "tag": 49,
+          "richtung": "LONG"
+        },
+        "CCL": {
+          "stk": 40.83880800317205,
+          "einstieg": 24.732460453033447,
+          "tag": 49,
+          "richtung": "LONG"
+        },
+        "EFX": {
+          "stk": -7.3557468037970475,
+          "einstieg": 137.17637261962892,
+          "tag": 49,
+          "richtung": "SHORT"
+        }
+      },
+      "handelstage": 49,
+      "letzter_tag": "2026-09-30"
+    },
+    "social": {
+      "cash": 6499.549043952577,
+      "pos": {
         "PAYX": {
           "stk": -10.346858307838342,
           "einstieg": 99.15039694976807,
           "tag": 47,
           "richtung": "SHORT"
-        }
-      },
-      "handelstage": 48,
-      "letzter_tag": "2026-09-29"
-    },
-    "confidence": {
-      "cash": 9855.221841507984,
-      "pos": {
-        "SMCI": {
-          "stk": 8.817326095085042,
-          "einstieg": 41.83590612602234,
-          "tag": 47,
+        },
+        "RCL": {
+          "stk": 3.851919495013639,
+          "einstieg": 266.7833188934326,
+          "tag": 49,
           "richtung": "LONG"
         },
-        "PAYX": {
-          "stk": -9.281495605914891,
-          "einstieg": 99.15039694976807,
-          "tag": 47,
-          "richtung": "SHORT"
+        "NTAP": {
+          "stk": 4.8807940406725665,
+          "einstieg": 210.54522244262694,
+          "tag": 49,
+          "richtung": "LONG"
         },
-        "TTD": {
-          "stk": -80.75807822439772,
-          "einstieg": 12.350577840918328,
-          "tag": 47,
-          "richtung": "SHORT"
+        "AMAT": {
+          "stk": 2.006905747838534,
+          "einstieg": 512.0459035491943,
+          "tag": 49,
+          "richtung": "LONG"
         },
+        "CCL": {
+          "stk": 41.54976286898357,
+          "einstieg": 24.732460453033447,
+          "tag": 49,
+          "richtung": "LONG"
+        },
+        "EFX": {
+          "stk": -7.483801569289489,
+          "einstieg": 137.17637261962892,
+          "tag": 49,
+          "richtung": "SHORT"
+        }
+      },
+      "handelstage": 49,
+      "letzter_tag": "2026-09-30"
+    },
+    "confidence": {
+      "cash": 5562.0212506741755,
+      "pos": {
         "CVNA": {
           "stk": -15.755961646831036,
           "einstieg": 63.24336402511597,
@@ -123,39 +153,93 @@
           "richtung": "SHORT"
         },
         "DDOG": {
-          "stk": 3.731131930010776,
+          "stk": 2.80309771977883,
           "einstieg": 267.33361221313476,
           "tag": 48,
           "richtung": "LONG"
-        }
-      },
-      "handelstage": 48,
-      "letzter_tag": "2026-09-29"
-    },
-    "all": {
-      "cash": 8295.54592537212,
-      "pos": {
-        "SMCI": {
-          "stk": 23.69061995671348,
-          "einstieg": 41.83590612602234,
-          "tag": 47,
+        },
+        "AMAT": {
+          "stk": 1.9585126284169605,
+          "einstieg": 512.0459035491943,
+          "tag": 49,
           "richtung": "LONG"
         },
+        "NTAP": {
+          "stk": 4.7631019920366215,
+          "einstieg": 210.54522244262694,
+          "tag": 49,
+          "richtung": "LONG"
+        },
+        "EFX": {
+          "stk": -7.303342420443042,
+          "einstieg": 137.17637261962892,
+          "tag": 49,
+          "richtung": "SHORT"
+        },
+        "RCL": {
+          "stk": 3.7590370064736347,
+          "einstieg": 266.7833188934326,
+          "tag": 49,
+          "richtung": "LONG"
+        },
+        "CCL": {
+          "stk": 40.5478609916172,
+          "einstieg": 24.732460453033447,
+          "tag": 49,
+          "richtung": "LONG"
+        }
+      },
+      "handelstage": 49,
+      "letzter_tag": "2026-09-30"
+    },
+    "all": {
+      "cash": 6276.327628581557,
+      "pos": {
         "PAYX": {
           "stk": -10.010825050169702,
           "einstieg": 99.21051631162818,
           "tag": 47,
           "richtung": "SHORT"
+        },
+        "AMAT": {
+          "stk": 1.9372709263571963,
+          "einstieg": 512.0459035491943,
+          "tag": 49,
+          "richtung": "LONG"
+        },
+        "NTAP": {
+          "stk": 4.71144218043924,
+          "einstieg": 210.54522244262694,
+          "tag": 49,
+          "richtung": "LONG"
+        },
+        "EFX": {
+          "stk": -7.224131583870146,
+          "einstieg": 137.17637261962892,
+          "tag": 49,
+          "richtung": "SHORT"
+        },
+        "RCL": {
+          "stk": 3.718267116627338,
+          "einstieg": 266.7833188934326,
+          "tag": 49,
+          "richtung": "LONG"
+        },
+        "CCL": {
+          "stk": 40.108085638705205,
+          "einstieg": 24.732460453033447,
+          "tag": 49,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 48,
-      "letzter_tag": "2026-09-29"
+      "handelstage": 49,
+      "letzter_tag": "2026-09-30"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-29"
+    "letzter_tag": "2026-09-30"
   }
 }

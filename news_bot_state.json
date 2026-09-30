@@ -1,36 +1,50 @@
 {
   "start": "2026-07-17",
-  "cash": 7495.746255015116,
+  "cash": 7480.233273331847,
   "pos": {
-    "SNPS": {
-      "stk": 2.438982146652919,
-      "einstieg": 417.87884843444823,
-      "tag": 52,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-28 15:57 ET"
-    },
-    "SMCI": {
-      "stk": 24.344358375559676,
-      "einstieg": 41.86592372131347,
-      "tag": 52,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-28 15:57 ET"
-    },
     "PAYX": {
       "stk": -10.259428809136159,
       "einstieg": 99.265330693865,
       "tag": 52,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-28 15:57 ET"
+    },
+    "RCL": {
+      "stk": 3.8301468604802116,
+      "einstieg": 266.73330610656734,
+      "tag": 54,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-30 14:14 ET"
+    },
+    "AMAT": {
+      "stk": 1.9951877905638287,
+      "einstieg": 512.0459035491943,
+      "tag": 54,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-30 14:14 ET"
+    },
+    "CCL": {
+      "stk": 41.3073302890323,
+      "einstieg": 24.73235931301117,
+      "tag": 54,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-09-30 14:14 ET"
+    },
+    "EFX": {
+      "stk": -7.440375513772824,
+      "einstieg": 137.1713854904175,
+      "tag": 54,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-09-30 14:14 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 53,
-  "letzter_tag": "2026-09-29",
+  "handelstage": 54,
+  "letzter_tag": "2026-09-30",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-29"
+    "letzter_tag": "2026-09-30"
   }
 }
