@@ -7,11 +7,11 @@
     "NTAP": "2026-09-30",
     "AMAT": "2026-09-30"
   },
-  "letzter_lauf": "2026-09-30 18:45 ET",
+  "letzter_lauf": "2026-10-01 14:40 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-30"
+    "letzter_tag": "2026-10-01"
   }
 }

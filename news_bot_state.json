@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 7480.233273331847,
+  "cash": 6456.847546230256,
   "pos": {
     "PAYX": {
       "stk": -10.259428809136159,
@@ -36,15 +36,22 @@
       "tag": 54,
       "richtung": "SHORT",
       "einstieg_ts": "2026-09-30 14:14 ET"
+    },
+    "NTAP": {
+      "stk": 4.763774144844857,
+      "einstieg": 214.66727755737304,
+      "tag": 55,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-10-01 14:39 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 54,
-  "letzter_tag": "2026-09-30",
+  "handelstage": 55,
+  "letzter_tag": "2026-10-01",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-09-30"
+    "letzter_tag": "2026-10-01"
   }
 }
