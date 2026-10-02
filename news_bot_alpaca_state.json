@@ -1,17 +1,14 @@
 {
   "entry_dates": {
-    "PAYX": "2026-09-28",
     "CCL": "2026-09-30",
-    "EFX": "2026-09-30",
-    "RCL": "2026-09-30",
-    "NTAP": "2026-09-30",
-    "AMAT": "2026-09-30"
+    "AMAT": "2026-09-30",
+    "LRCX": "2026-10-02"
   },
-  "letzter_lauf": "2026-10-01 18:58 ET",
+  "letzter_lauf": "2026-10-02 14:10 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-01"
+    "letzter_tag": "2026-10-02"
   }
 }

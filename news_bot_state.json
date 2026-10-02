@@ -1,23 +1,9 @@
 {
   "start": "2026-07-17",
-  "cash": 6456.847546230256,
+  "cash": 5008.099251676041,
   "pos": {
-    "PAYX": {
-      "stk": -10.259428809136159,
-      "einstieg": 99.265330693865,
-      "tag": 52,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-09-28 15:57 ET"
-    },
-    "RCL": {
-      "stk": 3.8301468604802116,
-      "einstieg": 266.73330610656734,
-      "tag": 54,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-30 14:14 ET"
-    },
     "AMAT": {
-      "stk": 1.9951877905638287,
+      "stk": 1.608436526736817,
       "einstieg": 512.0459035491943,
       "tag": 54,
       "richtung": "LONG",
@@ -30,28 +16,28 @@
       "richtung": "LONG",
       "einstieg_ts": "2026-09-30 14:14 ET"
     },
-    "EFX": {
-      "stk": -7.440375513772824,
-      "einstieg": 137.1713854904175,
-      "tag": 54,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-09-30 14:14 ET"
-    },
     "NTAP": {
-      "stk": 4.763774144844857,
+      "stk": 3.7985515031222845,
       "einstieg": 214.66727755737304,
       "tag": 55,
       "richtung": "LONG",
       "einstieg_ts": "2026-10-01 14:39 ET"
+    },
+    "LRCX": {
+      "stk": 2.481674692711774,
+      "einstieg": 349.73477755737304,
+      "tag": 56,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-10-02 14:10 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 55,
-  "letzter_tag": "2026-10-01",
+  "handelstage": 56,
+  "letzter_tag": "2026-10-02",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-01"
+    "letzter_tag": "2026-10-02"
   }
 }
