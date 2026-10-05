@@ -3,7 +3,7 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 5002.2497568893905,
+      "cash": 5002.128209321388,
       "pos": {
         "AMAT": {
           "stk": 0.9707291584720912,
@@ -54,11 +54,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 51,
-      "letzter_tag": "2026-10-02"
+      "handelstage": 52,
+      "letzter_tag": "2026-10-05"
     },
     "regime": {
-      "cash": 4926.340909499106,
+      "cash": 4926.221206380769,
       "pos": {
         "AMAT": {
           "stk": 0.9559984176603386,
@@ -109,11 +109,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 51,
-      "letzter_tag": "2026-10-02"
+      "handelstage": 52,
+      "letzter_tag": "2026-10-05"
     },
     "social": {
-      "cash": 6575.701367218819,
+      "cash": 6575.577369715011,
       "pos": {
         "AMAT": {
           "stk": 2.006905747838534,
@@ -140,11 +140,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 51,
-      "letzter_tag": "2026-10-02"
+      "handelstage": 52,
+      "letzter_tag": "2026-10-05"
     },
     "confidence": {
-      "cash": 4176.450369100498,
+      "cash": 4176.417323337466,
       "pos": {
         "AMAT": {
           "stk": 0.9861566566162715,
@@ -195,11 +195,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 51,
-      "letzter_tag": "2026-10-02"
+      "handelstage": 52,
+      "letzter_tag": "2026-10-05"
     },
     "all": {
-      "cash": 6376.88324462805,
+      "cash": 6376.763549786301,
       "pos": {
         "AMAT": {
           "stk": 1.8730044707118598,
@@ -226,14 +226,14 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 51,
-      "letzter_tag": "2026-10-02"
+      "handelstage": 52,
+      "letzter_tag": "2026-10-05"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-02"
+    "letzter_tag": "2026-10-05"
   }
 }
