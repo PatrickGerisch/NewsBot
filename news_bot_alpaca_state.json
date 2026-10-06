@@ -1,14 +1,12 @@
 {
   "entry_dates": {
-    "CCL": "2026-09-30",
-    "AMAT": "2026-09-30",
-    "LRCX": "2026-10-02"
+    "HPE": "2026-10-06"
   },
-  "letzter_lauf": "2026-10-05 21:38 ET",
+  "letzter_lauf": "2026-10-06 14:44 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-02"
+    "letzter_tag": "2026-10-06"
   }
 }

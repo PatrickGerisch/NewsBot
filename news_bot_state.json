@@ -1,43 +1,22 @@
 {
   "start": "2026-07-17",
-  "cash": 5008.099251676041,
+  "cash": 7607.56554367471,
   "pos": {
-    "AMAT": {
-      "stk": 1.608436526736817,
-      "einstieg": 512.0459035491943,
-      "tag": 54,
+    "HPE": {
+      "stk": 14.64494164332431,
+      "einstieg": 70.91543725204467,
+      "tag": 58,
       "richtung": "LONG",
-      "einstieg_ts": "2026-09-30 14:14 ET"
-    },
-    "CCL": {
-      "stk": 41.3073302890323,
-      "einstieg": 24.73235931301117,
-      "tag": 54,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-09-30 14:14 ET"
-    },
-    "NTAP": {
-      "stk": 3.7985515031222845,
-      "einstieg": 214.66727755737304,
-      "tag": 55,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-10-01 14:39 ET"
-    },
-    "LRCX": {
-      "stk": 2.481674692711774,
-      "einstieg": 349.73477755737304,
-      "tag": 56,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-10-02 14:10 ET"
+      "einstieg_ts": "2026-10-06 14:44 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 57,
-  "letzter_tag": "2026-10-05",
+  "handelstage": 58,
+  "letzter_tag": "2026-10-06",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-02"
+    "letzter_tag": "2026-10-06"
   }
 }

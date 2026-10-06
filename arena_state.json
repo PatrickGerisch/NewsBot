@@ -3,237 +3,129 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 5002.128209321388,
+      "cash": 5044.346801065595,
       "pos": {
-        "AMAT": {
-          "stk": 0.9707291584720912,
-          "einstieg": 512.0459035491943,
-          "tag": 49,
-          "richtung": "LONG"
-        },
         "CCL": {
           "stk": 41.468075123882095,
           "einstieg": 24.732460453033447,
           "tag": 49,
           "richtung": "LONG"
         },
-        "PAYX": {
-          "stk": -10.23250735332672,
-          "einstieg": 100.65964408493042,
-          "tag": 50,
-          "richtung": "SHORT"
-        },
-        "SNPS": {
-          "stk": 2.1484696019962306,
-          "einstieg": 487.73874261474606,
-          "tag": 51,
-          "richtung": "LONG"
-        },
-        "LITE": {
-          "stk": 0.4825780636830469,
-          "einstieg": 1085.7226437377929,
-          "tag": 51,
-          "richtung": "LONG"
-        },
-        "LRCX": {
-          "stk": 1.4981878411936107,
-          "einstieg": 349.7197859344482,
-          "tag": 51,
-          "richtung": "LONG"
-        },
         "COHR": {
-          "stk": 1.5686679092137625,
-          "einstieg": 334.00691633605953,
+          "stk": 2.6189066479549705,
+          "einstieg": 334.6027378806083,
           "tag": 51,
           "richtung": "LONG"
         },
-        "ON": {
-          "stk": 6.300337725732612,
-          "einstieg": 83.16156274795532,
-          "tag": 51,
+        "CIEN": {
+          "stk": 2.0185606842329262,
+          "einstieg": 435.27252017211913,
+          "tag": 53,
+          "richtung": "LONG"
+        },
+        "HPE": {
+          "stk": 12.388867563364595,
+          "einstieg": 70.92044463729859,
+          "tag": 53,
           "richtung": "LONG"
         }
       },
-      "handelstage": 52,
-      "letzter_tag": "2026-10-05"
+      "handelstage": 53,
+      "letzter_tag": "2026-10-06"
     },
     "regime": {
-      "cash": 4926.221206380769,
+      "cash": 4967.798948880311,
       "pos": {
-        "AMAT": {
-          "stk": 0.9559984176603386,
-          "einstieg": 512.0459035491943,
-          "tag": 49,
-          "richtung": "LONG"
-        },
         "CCL": {
           "stk": 40.83880800317205,
           "einstieg": 24.732460453033447,
           "tag": 49,
           "richtung": "LONG"
         },
-        "PAYX": {
-          "stk": -10.077231973604428,
-          "einstieg": 100.65964408493042,
-          "tag": 50,
-          "richtung": "SHORT"
-        },
-        "SNPS": {
-          "stk": 2.115866739938651,
-          "einstieg": 487.73874261474606,
-          "tag": 51,
-          "richtung": "LONG"
-        },
-        "LITE": {
-          "stk": 0.4752549784377851,
-          "einstieg": 1085.7226437377929,
-          "tag": 51,
-          "richtung": "LONG"
-        },
-        "LRCX": {
-          "stk": 1.475452955171768,
-          "einstieg": 349.7197859344482,
-          "tag": 51,
-          "richtung": "LONG"
-        },
         "COHR": {
-          "stk": 1.5448634935447074,
-          "einstieg": 334.00691633605953,
+          "stk": 2.5791649099613214,
+          "einstieg": 334.60273787035794,
           "tag": 51,
           "richtung": "LONG"
         },
-        "ON": {
-          "stk": 6.204730582118678,
-          "einstieg": 83.16156274795532,
-          "tag": 51,
+        "CIEN": {
+          "stk": 1.9879291571795628,
+          "einstieg": 435.27252017211913,
+          "tag": 53,
+          "richtung": "LONG"
+        },
+        "HPE": {
+          "stk": 12.200867304124458,
+          "einstieg": 70.92044463729859,
+          "tag": 53,
           "richtung": "LONG"
         }
       },
-      "handelstage": 52,
-      "letzter_tag": "2026-10-05"
+      "handelstage": 53,
+      "letzter_tag": "2026-10-06"
     },
     "social": {
-      "cash": 6575.577369715011,
+      "cash": 7654.867382900589,
       "pos": {
-        "AMAT": {
-          "stk": 2.006905747838534,
-          "einstieg": 512.0459035491943,
-          "tag": 49,
-          "richtung": "LONG"
-        },
-        "CCL": {
-          "stk": 41.54976286898357,
-          "einstieg": 24.732460453033447,
-          "tag": 49,
-          "richtung": "LONG"
-        },
-        "CVNA": {
-          "stk": -16.34618662946935,
-          "einstieg": 63.00848091506958,
-          "tag": 50,
-          "richtung": "SHORT"
-        },
-        "LRCX": {
-          "stk": 2.9966775166291955,
-          "einstieg": 349.7197859344482,
-          "tag": 51,
+        "HPE": {
+          "stk": 14.735964719246017,
+          "einstieg": 70.92044463729859,
+          "tag": 53,
           "richtung": "LONG"
         }
       },
-      "handelstage": 52,
-      "letzter_tag": "2026-10-05"
+      "handelstage": 53,
+      "letzter_tag": "2026-10-06"
     },
     "confidence": {
-      "cash": 4176.417323337466,
+      "cash": 4941.032175660685,
       "pos": {
-        "AMAT": {
-          "stk": 0.9861566566162715,
-          "einstieg": 512.0459035491943,
-          "tag": 49,
-          "richtung": "LONG"
-        },
         "CCL": {
           "stk": 40.5478609916172,
           "einstieg": 24.732460453033447,
           "tag": 49,
           "richtung": "LONG"
         },
-        "PAYX": {
-          "stk": -2.78196445051662,
-          "einstieg": 100.65964408493042,
-          "tag": 50,
-          "richtung": "SHORT"
-        },
-        "LITE": {
-          "stk": 0.5013260619478389,
-          "einstieg": 1085.7226437377929,
-          "tag": 51,
-          "richtung": "LONG"
-        },
         "COHR": {
-          "stk": 1.5808206579990098,
-          "einstieg": 334.00691633605953,
+          "stk": 2.4088088286784366,
+          "einstieg": 334.5176211898694,
           "tag": 51,
           "richtung": "LONG"
         },
-        "SNPS": {
-          "stk": 2.1008505489499916,
-          "einstieg": 487.73874261474606,
-          "tag": 51,
+        "HPE": {
+          "stk": 13.193695273629487,
+          "einstieg": 70.92044463729859,
+          "tag": 53,
           "richtung": "LONG"
         },
-        "LRCX": {
-          "stk": 1.4340421059832673,
-          "einstieg": 349.7197859344482,
-          "tag": 51,
-          "richtung": "LONG"
-        },
-        "ON": {
-          "stk": 5.478176061804647,
-          "einstieg": 83.16156274795532,
-          "tag": 51,
+        "CIEN": {
+          "stk": 1.9227333422173492,
+          "einstieg": 435.27252017211913,
+          "tag": 53,
           "richtung": "LONG"
         }
       },
-      "handelstage": 52,
-      "letzter_tag": "2026-10-05"
+      "handelstage": 53,
+      "letzter_tag": "2026-10-06"
     },
     "all": {
-      "cash": 6376.763549786301,
+      "cash": 7384.559148797934,
       "pos": {
-        "AMAT": {
-          "stk": 1.8730044707118598,
-          "einstieg": 519.3052852029763,
-          "tag": 49,
-          "richtung": "LONG"
-        },
-        "CCL": {
-          "stk": 40.108085638705205,
-          "einstieg": 24.732460453033447,
-          "tag": 49,
-          "richtung": "LONG"
-        },
-        "CVNA": {
-          "stk": -15.778980719229985,
-          "einstieg": 63.00848091506958,
-          "tag": 50,
-          "richtung": "SHORT"
-        },
-        "LRCX": {
-          "stk": 2.8907265224612697,
-          "einstieg": 349.7197859344482,
-          "tag": 51,
+        "HPE": {
+          "stk": 14.215547328049329,
+          "einstieg": 70.92044463729859,
+          "tag": 53,
           "richtung": "LONG"
         }
       },
-      "handelstage": 52,
-      "letzter_tag": "2026-10-05"
+      "handelstage": 53,
+      "letzter_tag": "2026-10-06"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-05"
+    "letzter_tag": "2026-10-06"
   }
 }
