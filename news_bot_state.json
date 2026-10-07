@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 7607.56554367471,
+  "cash": 5524.846670724432,
   "pos": {
     "HPE": {
       "stk": 14.64494164332431,
@@ -8,15 +8,29 @@
       "tag": 58,
       "richtung": "LONG",
       "einstieg_ts": "2026-10-06 14:44 ET"
+    },
+    "VST": {
+      "stk": 6.214383471962033,
+      "einstieg": 167.4887012786865,
+      "tag": 59,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-10-07 15:10 ET"
+    },
+    "CSCO": {
+      "stk": 8.828426601794183,
+      "einstieg": 117.89632104492186,
+      "tag": 59,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-10-07 15:10 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 58,
-  "letzter_tag": "2026-10-06",
+  "handelstage": 59,
+  "letzter_tag": "2026-10-07",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-06"
+    "letzter_tag": "2026-10-07"
   }
 }
