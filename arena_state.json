@@ -66,8 +66,8 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 56,
-      "letzter_tag": "2026-10-09"
+      "handelstage": 57,
+      "letzter_tag": "2026-10-12"
     },
     "regime": {
       "cash": 11.21864527015748,
@@ -133,8 +133,8 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 56,
-      "letzter_tag": "2026-10-09"
+      "handelstage": 57,
+      "letzter_tag": "2026-10-12"
     },
     "social": {
       "cash": 2961.5443042570487,
@@ -182,8 +182,8 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 56,
-      "letzter_tag": "2026-10-09"
+      "handelstage": 57,
+      "letzter_tag": "2026-10-12"
     },
     "confidence": {
       "cash": 492.75348917008074,
@@ -249,8 +249,8 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 56,
-      "letzter_tag": "2026-10-09"
+      "handelstage": 57,
+      "letzter_tag": "2026-10-12"
     },
     "all": {
       "cash": 2892.5455089873417,
@@ -298,14 +298,14 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 56,
-      "letzter_tag": "2026-10-09"
+      "handelstage": 57,
+      "letzter_tag": "2026-10-12"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-09"
+    "letzter_tag": "2026-10-12"
   }
 }
