@@ -1,18 +1,14 @@
 {
   "entry_dates": {
-    "HPE": "2026-10-06",
     "VST": "2026-10-07",
-    "CIEN": "2026-10-08",
-    "LITE": "2026-10-08",
-    "SMCI": "2026-10-08",
     "CEG": "2026-10-09",
-    "INTU": "2026-10-09"
+    "PLTR": "2026-10-13"
   },
-  "letzter_lauf": "2026-10-12 17:31 ET",
+  "letzter_lauf": "2026-10-13 15:42 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-09"
+    "letzter_tag": "2026-10-13"
   }
 }
