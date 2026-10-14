@@ -1,21 +1,7 @@
 {
   "start": "2026-07-17",
-  "cash": 5406.276526356964,
+  "cash": 7318.929892980201,
   "pos": {
-    "VST": {
-      "stk": 6.214383471962033,
-      "einstieg": 167.4887012786865,
-      "tag": 59,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-10-07 15:10 ET"
-    },
-    "CEG": {
-      "stk": 3.4846762027910003,
-      "einstieg": 299.74980610656735,
-      "tag": 61,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-10-09 14:37 ET"
-    },
     "PLTR": {
       "stk": 4.868133016861869,
       "einstieg": 208.8038431549072,
@@ -25,12 +11,12 @@
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 63,
-  "letzter_tag": "2026-10-13",
+  "handelstage": 64,
+  "letzter_tag": "2026-10-14",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-13"
+    "letzter_tag": "2026-10-14"
   }
 }
