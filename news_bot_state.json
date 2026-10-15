@@ -11,12 +11,12 @@
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 64,
-  "letzter_tag": "2026-10-14",
+  "handelstage": 65,
+  "letzter_tag": "2026-10-15",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-14"
+    "letzter_tag": "2026-10-15"
   }
 }

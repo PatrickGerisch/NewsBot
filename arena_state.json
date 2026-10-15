@@ -3,14 +3,8 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 6359.2592151355375,
+      "cash": 7397.307671818517,
       "pos": {
-        "CCI": {
-          "stk": 12.894909591321571,
-          "einstieg": 79.43970152664184,
-          "tag": 58,
-          "richtung": "LONG"
-        },
         "PLTR": {
           "stk": 4.905403580102347,
           "einstieg": 208.82436122131347,
@@ -18,18 +12,12 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 59,
-      "letzter_tag": "2026-10-14"
+      "handelstage": 60,
+      "letzter_tag": "2026-10-15"
     },
     "regime": {
-      "cash": 6262.757869345066,
+      "cash": 7285.0540080808205,
       "pos": {
-        "CCI": {
-          "stk": 12.699230175321778,
-          "einstieg": 79.43970152664184,
-          "tag": 58,
-          "richtung": "LONG"
-        },
         "PLTR": {
           "stk": 4.83096439919923,
           "einstieg": 208.82436122131347,
@@ -37,8 +25,8 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 59,
-      "letzter_tag": "2026-10-14"
+      "handelstage": 60,
+      "letzter_tag": "2026-10-15"
     },
     "social": {
       "cash": 7355.738082598272,
@@ -50,27 +38,21 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 59,
-      "letzter_tag": "2026-10-14"
+      "handelstage": 60,
+      "letzter_tag": "2026-10-15"
     },
     "confidence": {
-      "cash": 6224.302051044381,
+      "cash": 7240.3170272847365,
       "pos": {
         "PLTR": {
           "stk": 4.8012821268604275,
           "einstieg": 208.82436122131347,
           "tag": 58,
           "richtung": "LONG"
-        },
-        "CCI": {
-          "stk": 12.62120393099269,
-          "einstieg": 79.43970152664184,
-          "tag": 58,
-          "richtung": "LONG"
         }
       },
-      "handelstage": 59,
-      "letzter_tag": "2026-10-14"
+      "handelstage": 60,
+      "letzter_tag": "2026-10-15"
     },
     "all": {
       "cash": 7109.719174154828,
@@ -82,14 +64,14 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 59,
-      "letzter_tag": "2026-10-14"
+      "handelstage": 60,
+      "letzter_tag": "2026-10-15"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-14"
+    "letzter_tag": "2026-10-15"
   }
 }
