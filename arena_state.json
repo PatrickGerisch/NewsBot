@@ -3,75 +3,40 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 7397.307671818517,
-      "pos": {
-        "PLTR": {
-          "stk": 4.905403580102347,
-          "einstieg": 208.82436122131347,
-          "tag": 58,
-          "richtung": "LONG"
-        }
-      },
-      "handelstage": 60,
-      "letzter_tag": "2026-10-15"
+      "cash": 8308.623192824094,
+      "pos": {},
+      "handelstage": 61,
+      "letzter_tag": "2026-10-16"
     },
     "regime": {
-      "cash": 7285.0540080808205,
-      "pos": {
-        "PLTR": {
-          "stk": 4.83096439919923,
-          "einstieg": 208.82436122131347,
-          "tag": 58,
-          "richtung": "LONG"
-        }
-      },
-      "handelstage": 60,
-      "letzter_tag": "2026-10-15"
+      "cash": 8182.540375211451,
+      "pos": {},
+      "handelstage": 61,
+      "letzter_tag": "2026-10-16"
     },
     "social": {
-      "cash": 7355.738082598272,
-      "pos": {
-        "PLTR": {
-          "stk": 4.891572947491749,
-          "einstieg": 208.82436122131347,
-          "tag": 58,
-          "richtung": "LONG"
-        }
-      },
-      "handelstage": 60,
-      "letzter_tag": "2026-10-15"
+      "cash": 8264.48417787617,
+      "pos": {},
+      "handelstage": 61,
+      "letzter_tag": "2026-10-16"
     },
     "confidence": {
-      "cash": 7240.3170272847365,
-      "pos": {
-        "PLTR": {
-          "stk": 4.8012821268604275,
-          "einstieg": 208.82436122131347,
-          "tag": 58,
-          "richtung": "LONG"
-        }
-      },
-      "handelstage": 60,
-      "letzter_tag": "2026-10-15"
+      "cash": 8132.289084524375,
+      "pos": {},
+      "handelstage": 61,
+      "letzter_tag": "2026-10-16"
     },
     "all": {
-      "cash": 7109.719174154828,
-      "pos": {
-        "PLTR": {
-          "stk": 4.729728357026347,
-          "einstieg": 208.82436122131347,
-          "tag": 58,
-          "richtung": "LONG"
-        }
-      },
-      "handelstage": 60,
-      "letzter_tag": "2026-10-15"
+      "cash": 7988.398123096351,
+      "pos": {},
+      "handelstage": 61,
+      "letzter_tag": "2026-10-16"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-15"
+    "letzter_tag": "2026-10-16"
   }
 }

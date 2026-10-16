@@ -1,22 +1,14 @@
 {
   "start": "2026-07-17",
-  "cash": 7318.929892980201,
-  "pos": {
-    "PLTR": {
-      "stk": 4.868133016861869,
-      "einstieg": 208.8038431549072,
-      "tag": 63,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-10-13 15:42 ET"
-    }
-  },
+  "cash": 8222.913819557869,
+  "pos": {},
   "bh_anteile": 13.32054612938296,
-  "handelstage": 65,
-  "letzter_tag": "2026-10-15",
+  "handelstage": 66,
+  "letzter_tag": "2026-10-16",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-15"
+    "letzter_tag": "2026-10-16"
   }
 }
