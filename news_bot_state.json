@@ -3,12 +3,12 @@
   "cash": 8222.913819557869,
   "pos": {},
   "bh_anteile": 13.32054612938296,
-  "handelstage": 66,
-  "letzter_tag": "2026-10-16",
+  "handelstage": 67,
+  "letzter_tag": "2026-10-19",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-16"
+    "letzter_tag": "2026-10-19"
   }
 }
