@@ -5,38 +5,38 @@
     "baseline": {
       "cash": 8308.623192824094,
       "pos": {},
-      "handelstage": 63,
-      "letzter_tag": "2026-10-20"
+      "handelstage": 64,
+      "letzter_tag": "2026-10-21"
     },
     "regime": {
       "cash": 8182.540375211451,
       "pos": {},
-      "handelstage": 63,
-      "letzter_tag": "2026-10-20"
+      "handelstage": 64,
+      "letzter_tag": "2026-10-21"
     },
     "social": {
       "cash": 8264.48417787617,
       "pos": {},
-      "handelstage": 63,
-      "letzter_tag": "2026-10-20"
+      "handelstage": 64,
+      "letzter_tag": "2026-10-21"
     },
     "confidence": {
       "cash": 8132.289084524375,
       "pos": {},
-      "handelstage": 63,
-      "letzter_tag": "2026-10-20"
+      "handelstage": 64,
+      "letzter_tag": "2026-10-21"
     },
     "all": {
       "cash": 7988.398123096351,
       "pos": {},
-      "handelstage": 63,
-      "letzter_tag": "2026-10-20"
+      "handelstage": 64,
+      "letzter_tag": "2026-10-21"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-20"
+    "letzter_tag": "2026-10-21"
   }
 }
