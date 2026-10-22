@@ -1,10 +1,13 @@
 {
-  "entry_dates": {},
-  "letzter_lauf": "2026-10-21 17:07 ET",
+  "entry_dates": {
+    "IBM": "2026-10-22",
+    "NOW": "2026-10-22"
+  },
+  "letzter_lauf": "2026-10-22 13:49 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-21"
+    "letzter_tag": "2026-10-22"
   }
 }
