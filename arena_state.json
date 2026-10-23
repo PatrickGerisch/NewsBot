@@ -3,7 +3,7 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 5314.526991281917,
+      "cash": 4315.136104293917,
       "pos": {
         "FICO": {
           "stk": 1.2247230039042132,
@@ -22,13 +22,19 @@
           "einstieg": 157.38364517211915,
           "tag": 65,
           "richtung": "LONG"
+        },
+        "LMT": {
+          "stk": 1.6556673066040726,
+          "einstieg": 603.3165221557617,
+          "tag": 66,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 65,
-      "letzter_tag": "2026-10-22"
+      "handelstage": 66,
+      "letzter_tag": "2026-10-23"
     },
     "regime": {
-      "cash": 5233.879389171618,
+      "cash": 4249.654194020103,
       "pos": {
         "FICO": {
           "stk": 1.2061379118205298,
@@ -47,10 +53,16 @@
           "einstieg": 157.38364517211915,
           "tag": 65,
           "richtung": "LONG"
+        },
+        "LMT": {
+          "stk": 1.6305426627008477,
+          "einstieg": 603.3165221557617,
+          "tag": 66,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 65,
-      "letzter_tag": "2026-10-22"
+      "handelstage": 66,
+      "letzter_tag": "2026-10-23"
     },
     "social": {
       "cash": 6279.0240031141475,
@@ -68,11 +80,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 65,
-      "letzter_tag": "2026-10-22"
+      "handelstage": 66,
+      "letzter_tag": "2026-10-23"
     },
     "confidence": {
-      "cash": 5201.736658119153,
+      "cash": 4223.555867775335,
       "pos": {
         "NOW": {
           "stk": 6.203710852040687,
@@ -91,10 +103,16 @@
           "einstieg": 814.4970718688965,
           "tag": 65,
           "richtung": "LONG"
+        },
+        "LMT": {
+          "stk": 1.6205290398448846,
+          "einstieg": 603.3165221557617,
+          "tag": 66,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 65,
-      "letzter_tag": "2026-10-22"
+      "handelstage": 66,
+      "letzter_tag": "2026-10-23"
     },
     "all": {
       "cash": 6069.264878699796,
@@ -112,14 +130,14 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 65,
-      "letzter_tag": "2026-10-22"
+      "handelstage": 66,
+      "letzter_tag": "2026-10-23"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-22"
+    "letzter_tag": "2026-10-23"
   }
 }
