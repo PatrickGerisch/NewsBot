@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 7235.177164865163,
+  "cash": 5260.97348456243,
   "pos": {
     "NOW": {
       "stk": 6.2742394070102465,
@@ -8,15 +8,29 @@
       "tag": 70,
       "richtung": "LONG",
       "einstieg_ts": "2026-10-22 13:49 ET"
+    },
+    "CRWD": {
+      "stk": 3.7579187697970466,
+      "einstieg": 262.54120866394044,
+      "tag": 72,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-10-26 14:59 ET"
+    },
+    "PANW": {
+      "stk": 2.51974665064095,
+      "einstieg": 391.5506884918213,
+      "tag": 72,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-10-26 14:59 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 71,
-  "letzter_tag": "2026-10-23",
+  "handelstage": 72,
+  "letzter_tag": "2026-10-26",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-23"
+    "letzter_tag": "2026-10-26"
   }
 }
