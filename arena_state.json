@@ -3,7 +3,7 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 3193.0994739161315,
+      "cash": 2204.588885863022,
       "pos": {
         "IBM": {
           "stk": 4.001986092369428,
@@ -34,13 +34,19 @@
           "einstieg": 392.0659301147461,
           "tag": 67,
           "richtung": "LONG"
+        },
+        "AXON": {
+          "stk": 2.311292411606132,
+          "einstieg": 427.4736397705078,
+          "tag": 68,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 67,
-      "letzter_tag": "2026-10-26"
+      "handelstage": 68,
+      "letzter_tag": "2026-10-27"
     },
     "regime": {
-      "cash": 3144.644396673428,
+      "cash": 2171.134392626741,
       "pos": {
         "IBM": {
           "stk": 3.9412562131990327,
@@ -71,13 +77,19 @@
           "einstieg": 392.0659301147461,
           "tag": 67,
           "richtung": "LONG"
+        },
+        "AXON": {
+          "stk": 2.2762186992931572,
+          "einstieg": 427.4736397705078,
+          "tag": 68,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 67,
-      "letzter_tag": "2026-10-26"
+      "handelstage": 68,
+      "letzter_tag": "2026-10-27"
     },
     "social": {
-      "cash": 5298.556077483725,
+      "cash": 4300.4483872224455,
       "pos": {
         "NOW": {
           "stk": 6.304555783484861,
@@ -96,13 +108,19 @@
           "einstieg": 392.0659301147461,
           "tag": 67,
           "richtung": "LONG"
+        },
+        "IBM": {
+          "stk": 3.989558515878218,
+          "einstieg": 250.05495767211912,
+          "tag": 68,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 67,
-      "letzter_tag": "2026-10-26"
+      "handelstage": 68,
+      "letzter_tag": "2026-10-27"
     },
     "confidence": {
-      "cash": 3125.332247580533,
+      "cash": 2492.118052357237,
       "pos": {
         "NOW": {
           "stk": 6.203710852040687,
@@ -123,7 +141,7 @@
           "richtung": "LONG"
         },
         "CRWD": {
-          "stk": 3.677615817968066,
+          "stk": 2.4284024884494144,
           "einstieg": 262.6112509918213,
           "tag": 67,
           "richtung": "LONG"
@@ -133,13 +151,19 @@
           "einstieg": 392.0659301147461,
           "tag": 67,
           "richtung": "LONG"
+        },
+        "AXON": {
+          "stk": 2.2622397975975352,
+          "einstieg": 427.4736397705078,
+          "tag": 68,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 67,
-      "letzter_tag": "2026-10-26"
+      "handelstage": 68,
+      "letzter_tag": "2026-10-27"
     },
     "all": {
-      "cash": 5121.55078447607,
+      "cash": 4156.786205353815,
       "pos": {
         "NOW": {
           "stk": 6.09394373608556,
@@ -158,16 +182,22 @@
           "einstieg": 392.0659301147461,
           "tag": 67,
           "richtung": "LONG"
+        },
+        "IBM": {
+          "stk": 3.856282022481252,
+          "einstieg": 250.05495767211912,
+          "tag": 68,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 67,
-      "letzter_tag": "2026-10-26"
+      "handelstage": 68,
+      "letzter_tag": "2026-10-27"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-26"
+    "letzter_tag": "2026-10-27"
   }
 }
