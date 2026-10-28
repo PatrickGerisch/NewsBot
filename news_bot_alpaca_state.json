@@ -1,14 +1,10 @@
 {
-  "entry_dates": {
-    "NOW": "2026-10-22",
-    "CRWD": "2026-10-26",
-    "PANW": "2026-10-26"
-  },
-  "letzter_lauf": "2026-10-27 18:49 ET",
+  "entry_dates": {},
+  "letzter_lauf": "2026-10-28 14:37 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-27"
+    "letzter_tag": "2026-10-28"
   }
 }

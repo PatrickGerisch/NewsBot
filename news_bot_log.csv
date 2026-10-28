@@ -1026,3 +1026,6 @@ Datum,Asset,Mom5%,Stimmung,Score,Aktion,Schlagzeile,StockTwits,ST-Posts
 2026-10-22,NOW,9.4,2,4,LONG,[StockTwits] $NOW Selling some calls. Holding shares,2,17
 2026-10-26,CRWD,13.3,2,4,LONG,[StockTwits] $NET Solid return of 67% over the last 8 months since our initial bullish call. We&#39;re ,2,12
 2026-10-26,PANW,10.1,2,4,LONG,"[StockTwits] $PANW chewing on the overhead gap 396.04 fills, 397.03 confirm and even better a close ove",2,13
+2026-10-28,NOW,3.5,1,3,EXIT LONG,[StockTwits] $NOW Positive news coming 🔥🔥🔥,1,15
+2026-10-28,PANW,18.0,2,2,EXIT LONG,[StockTwits] $RDWR $TLS $SAIL $PANW $OKTA Cybersecurity stocks are in focus as rapidly evolving AI capa,2,6
+2026-10-28,CRWD,17.9,0,2,EXIT LONG,[StockTwits] $DDOG $QQQ $CRWD Adding a few,0,10
