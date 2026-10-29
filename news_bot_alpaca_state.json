@@ -1,10 +1,12 @@
 {
-  "entry_dates": {},
-  "letzter_lauf": "2026-10-28 18:56 ET",
+  "entry_dates": {
+    "VRT": "2026-10-29"
+  },
+  "letzter_lauf": "2026-10-29 14:46 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-28"
+    "letzter_tag": "2026-10-29"
   }
 }

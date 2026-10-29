@@ -3,129 +3,111 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 4205.635248751273,
+      "cash": 5228.35138439864,
       "pos": {
-        "IBM": {
-          "stk": 4.001986092369428,
-          "einstieg": 249.25956200408933,
-          "tag": 65,
-          "richtung": "LONG"
-        },
-        "PANW": {
-          "stk": 2.516731227897132,
-          "einstieg": 392.0659301147461,
-          "tag": 67,
-          "richtung": "LONG"
-        },
-        "AXON": {
-          "stk": 2.311292411606132,
-          "einstieg": 427.4736397705078,
-          "tag": 68,
-          "richtung": "LONG"
-        },
         "DDOG": {
           "stk": 3.530651451372115,
           "einstieg": 278.1339926147461,
           "tag": 69,
           "richtung": "LONG"
+        },
+        "VRT": {
+          "stk": 3.959211552681039,
+          "einstieg": 246.0029448852539,
+          "tag": 70,
+          "richtung": "LONG"
+        },
+        "GEHC": {
+          "stk": 12.693844372336297,
+          "einstieg": 76.72834744262695,
+          "tag": 70,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 69,
-      "letzter_tag": "2026-10-28"
+      "handelstage": 70,
+      "letzter_tag": "2026-10-29"
     },
     "regime": {
-      "cash": 4141.815006852279,
+      "cash": 5149.01149152887,
       "pos": {
-        "IBM": {
-          "stk": 3.9412562131990327,
-          "einstieg": 249.25956200408933,
-          "tag": 65,
-          "richtung": "LONG"
-        },
-        "PANW": {
-          "stk": 2.4785399948826106,
-          "einstieg": 392.0659301147461,
-          "tag": 67,
-          "richtung": "LONG"
-        },
-        "AXON": {
-          "stk": 2.2762186992931572,
-          "einstieg": 427.4736397705078,
-          "tag": 68,
-          "richtung": "LONG"
-        },
         "DDOG": {
           "stk": 3.4770740447830617,
           "einstieg": 278.1339926147461,
           "tag": 69,
           "richtung": "LONG"
+        },
+        "VRT": {
+          "stk": 3.899130774373786,
+          "einstieg": 246.0029448852539,
+          "tag": 70,
+          "richtung": "LONG"
+        },
+        "GEHC": {
+          "stk": 12.501216107982838,
+          "einstieg": 76.72834744262695,
+          "tag": 70,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 69,
-      "letzter_tag": "2026-10-28"
+      "handelstage": 70,
+      "letzter_tag": "2026-10-29"
     },
     "social": {
-      "cash": 7252.013320968502,
+      "cash": 7274.212556004042,
       "pos": {
-        "IBM": {
-          "stk": 3.989558515878218,
-          "einstieg": 250.05495767211912,
-          "tag": 68,
+        "VRT": {
+          "stk": 4.03535041332611,
+          "einstieg": 246.0029448852539,
+          "tag": 70,
           "richtung": "LONG"
         }
       },
-      "handelstage": 69,
-      "letzter_tag": "2026-10-28"
+      "handelstage": 70,
+      "letzter_tag": "2026-10-29"
     },
     "confidence": {
-      "cash": 4119.383507229004,
+      "cash": 5119.589510653826,
       "pos": {
-        "IBM": {
-          "stk": 3.917051846026987,
-          "einstieg": 249.25956200408933,
-          "tag": 65,
-          "richtung": "LONG"
-        },
-        "PANW": {
-          "stk": 2.4633185809877634,
-          "einstieg": 392.0659301147461,
-          "tag": 67,
-          "richtung": "LONG"
-        },
-        "AXON": {
-          "stk": 2.2622397975975352,
-          "einstieg": 427.4736397705078,
-          "tag": 68,
-          "richtung": "LONG"
-        },
         "DDOG": {
           "stk": 3.457031881360032,
           "einstieg": 278.1339926147461,
           "tag": 69,
           "richtung": "LONG"
-        }
-      },
-      "handelstage": 69,
-      "letzter_tag": "2026-10-28"
-    },
-    "all": {
-      "cash": 7009.750197958761,
-      "pos": {
-        "IBM": {
-          "stk": 3.856282022481252,
-          "einstieg": 250.05495767211912,
-          "tag": 68,
+        },
+        "GEHC": {
+          "stk": 12.429685789612838,
+          "einstieg": 76.72834744262695,
+          "tag": 70,
+          "richtung": "LONG"
+        },
+        "VRT": {
+          "stk": 3.876820459661354,
+          "einstieg": 246.0029448852539,
+          "tag": 70,
           "richtung": "LONG"
         }
       },
-      "handelstage": 69,
-      "letzter_tag": "2026-10-28"
+      "handelstage": 70,
+      "letzter_tag": "2026-10-29"
+    },
+    "all": {
+      "cash": 7031.207838106081,
+      "pos": {
+        "VRT": {
+          "stk": 3.9005441808631405,
+          "einstieg": 246.0029448852539,
+          "tag": 70,
+          "richtung": "LONG"
+        }
+      },
+      "handelstage": 70,
+      "letzter_tag": "2026-10-29"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-28"
+    "letzter_tag": "2026-10-29"
   }
 }
