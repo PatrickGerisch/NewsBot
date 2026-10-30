@@ -3,14 +3,8 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 5228.35138439864,
+      "cash": 2241.4763417208746,
       "pos": {
-        "DDOG": {
-          "stk": 3.530651451372115,
-          "einstieg": 278.1339926147461,
-          "tag": 69,
-          "richtung": "LONG"
-        },
         "VRT": {
           "stk": 3.959211552681039,
           "einstieg": 246.0029448852539,
@@ -22,20 +16,38 @@
           "einstieg": 76.72834744262695,
           "tag": 70,
           "richtung": "LONG"
-        }
-      },
-      "handelstage": 70,
-      "letzter_tag": "2026-10-29"
-    },
-    "regime": {
-      "cash": 5149.01149152887,
-      "pos": {
-        "DDOG": {
-          "stk": 3.4770740447830617,
-          "einstieg": 278.1339926147461,
-          "tag": 69,
+        },
+        "NCLH": {
+          "stk": 54.816404201708316,
+          "einstieg": 17.353671813011168,
+          "tag": 71,
           "richtung": "LONG"
         },
+        "PWR": {
+          "stk": 1.5498060414579171,
+          "einstieg": 613.7967352294921,
+          "tag": 71,
+          "richtung": "LONG"
+        },
+        "HII": {
+          "stk": 2.998062225743742,
+          "einstieg": 317.2935772705078,
+          "tag": 71,
+          "richtung": "LONG"
+        },
+        "GEN": {
+          "stk": 33.21538841010281,
+          "einstieg": 28.6393125,
+          "tag": 71,
+          "richtung": "LONG"
+        }
+      },
+      "handelstage": 71,
+      "letzter_tag": "2026-10-30"
+    },
+    "regime": {
+      "cash": 2207.4620837364314,
+      "pos": {
         "VRT": {
           "stk": 3.899130774373786,
           "einstieg": 246.0029448852539,
@@ -47,10 +59,34 @@
           "einstieg": 76.72834744262695,
           "tag": 70,
           "richtung": "LONG"
+        },
+        "NCLH": {
+          "stk": 53.98456882624993,
+          "einstieg": 17.353671813011168,
+          "tag": 71,
+          "richtung": "LONG"
+        },
+        "PWR": {
+          "stk": 1.5262878353815026,
+          "einstieg": 613.7967352294921,
+          "tag": 71,
+          "richtung": "LONG"
+        },
+        "HII": {
+          "stk": 2.952566826081583,
+          "einstieg": 317.2935772705078,
+          "tag": 71,
+          "richtung": "LONG"
+        },
+        "GEN": {
+          "stk": 32.71134704709322,
+          "einstieg": 28.6393125,
+          "tag": 71,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 70,
-      "letzter_tag": "2026-10-29"
+      "handelstage": 71,
+      "letzter_tag": "2026-10-30"
     },
     "social": {
       "cash": 7274.212556004042,
@@ -62,18 +98,12 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 70,
-      "letzter_tag": "2026-10-29"
+      "handelstage": 71,
+      "letzter_tag": "2026-10-30"
     },
     "confidence": {
-      "cash": 5119.589510653826,
+      "cash": 2194.834350917794,
       "pos": {
-        "DDOG": {
-          "stk": 3.457031881360032,
-          "einstieg": 278.1339926147461,
-          "tag": 69,
-          "richtung": "LONG"
-        },
         "GEHC": {
           "stk": 12.429685789612838,
           "einstieg": 76.72834744262695,
@@ -85,10 +115,34 @@
           "einstieg": 246.0029448852539,
           "tag": 70,
           "richtung": "LONG"
+        },
+        "GEN": {
+          "stk": 32.52420155356095,
+          "einstieg": 28.6393125,
+          "tag": 71,
+          "richtung": "LONG"
+        },
+        "NCLH": {
+          "stk": 53.67571670953427,
+          "einstieg": 17.353671813011168,
+          "tag": 71,
+          "richtung": "LONG"
+        },
+        "HII": {
+          "stk": 2.9356748413198877,
+          "einstieg": 317.2935772705078,
+          "tag": 71,
+          "richtung": "LONG"
+        },
+        "PWR": {
+          "stk": 1.5175557617737252,
+          "einstieg": 613.7967352294921,
+          "tag": 71,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 70,
-      "letzter_tag": "2026-10-29"
+      "handelstage": 71,
+      "letzter_tag": "2026-10-30"
     },
     "all": {
       "cash": 7031.207838106081,
@@ -100,14 +154,14 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 70,
-      "letzter_tag": "2026-10-29"
+      "handelstage": 71,
+      "letzter_tag": "2026-10-30"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-29"
+    "letzter_tag": "2026-10-30"
   }
 }
