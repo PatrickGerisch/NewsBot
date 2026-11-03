@@ -1,22 +1,78 @@
 {
   "start": "2026-07-17",
-  "cash": 7212.937821187156,
+  "cash": 5149.2801307326245,
   "pos": {
-    "VRT": {
-      "stk": 3.996167748059562,
-      "einstieg": 246.28807578277588,
-      "tag": 75,
+    "INTC": {
+      "stk": -13.58296319417369,
+      "einstieg": 59.93001908493042,
+      "tag": 78,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-11-03 14:55 ET"
+    },
+    "GEN": {
+      "stk": 30.270184468459924,
+      "einstieg": 29.909947957992554,
+      "tag": 78,
       "richtung": "LONG",
-      "einstieg_ts": "2026-10-29 14:45 ET"
+      "einstieg_ts": "2026-11-03 14:55 ET"
+    },
+    "GPN": {
+      "stk": 9.233950801440818,
+      "einstieg": 98.04899999999999,
+      "tag": 78,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-03 14:55 ET"
+    },
+    "IDXX": {
+      "stk": 1.3387486680953522,
+      "einstieg": 676.2879872131348,
+      "tag": 78,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-03 14:55 ET"
+    },
+    "CMG": {
+      "stk": 27.343319086361237,
+      "einstieg": 33.111548721313476,
+      "tag": 78,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-03 14:55 ET"
+    },
+    "FDXF": {
+      "stk": 6.908368124226282,
+      "einstieg": 131.05550049591065,
+      "tag": 78,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-03 14:55 ET"
+    },
+    "NCLH": {
+      "stk": 52.2475285499931,
+      "einstieg": 17.32865969467163,
+      "tag": 78,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-03 14:55 ET"
+    },
+    "HPQ": {
+      "stk": -29.222620601452494,
+      "einstieg": 27.856065838813784,
+      "tag": 78,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-11-03 14:55 ET"
+    },
+    "DELL": {
+      "stk": -2.0122411432966167,
+      "einstieg": 404.5376202392578,
+      "tag": 78,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-11-03 14:55 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 77,
-  "letzter_tag": "2026-11-02",
+  "handelstage": 78,
+  "letzter_tag": "2026-11-03",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": 1,
     "pend_days": 0,
-    "letzter_tag": "2026-10-30"
+    "letzter_tag": "2026-11-03"
   }
 }
