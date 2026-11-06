@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 7622.321360969093,
+  "cash": 5339.902122330245,
   "pos": {
     "GEN": {
       "stk": 27.627926655629178,
@@ -17,69 +17,76 @@
       "einstieg_ts": "2026-11-03 14:55 ET"
     },
     "FDXF": {
-      "stk": 6.778366772182546,
+      "stk": 6.11596059262501,
       "einstieg": 130.04598680158546,
       "tag": 78,
       "richtung": "LONG",
       "einstieg_ts": "2026-11-03 14:55 ET"
     },
     "DDOG": {
-      "stk": -4.82287757598062,
+      "stk": -2.0664129982827175,
       "einstieg": 186.20801148363952,
       "tag": 79,
       "richtung": "SHORT",
       "einstieg_ts": "2026-11-04 15:13 ET"
     },
     "REGN": {
-      "stk": 0.9281228442447913,
+      "stk": 0.8321350734065228,
       "einstieg": 938.9441995434984,
       "tag": 79,
       "richtung": "LONG",
       "einstieg_ts": "2026-11-04 15:13 ET"
     },
     "LITE": {
-      "stk": -1.1936213589010964,
+      "stk": -0.586790569026064,
       "einstieg": 526.951419342041,
       "tag": 80,
       "richtung": "SHORT",
       "einstieg_ts": "2026-11-05 15:26 ET"
     },
     "FISV": {
-      "stk": 13.423888351003557,
+      "stk": 11.853031186624039,
       "einstieg": 62.536253568649286,
       "tag": 80,
       "richtung": "LONG",
       "einstieg_ts": "2026-11-05 15:26 ET"
     },
     "MRVL": {
-      "stk": -4.561101045303706,
+      "stk": -2.242942317518487,
       "einstieg": 137.90101622009277,
       "tag": 80,
       "richtung": "SHORT",
       "einstieg_ts": "2026-11-05 15:26 ET"
     },
     "SNDK": {
-      "stk": -0.7479410015098689,
+      "stk": -0.378060594696276,
       "einstieg": 840.949310119629,
       "tag": 80,
       "richtung": "SHORT",
       "einstieg_ts": "2026-11-05 15:26 ET"
     },
     "CIEN": {
-      "stk": -2.6818458689835536,
+      "stk": -1.2848111021139594,
       "einstieg": 234.53266889953613,
       "tag": 80,
       "richtung": "SHORT",
       "einstieg_ts": "2026-11-05 15:26 ET"
+    },
+    "APP": {
+      "stk": 1.9081444810969754,
+      "einstieg": 396.2630349426269,
+      "tag": 81,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-06 14:48 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 80,
-  "letzter_tag": "2026-11-05",
+  "handelstage": 81,
+  "letzter_tag": "2026-11-06",
   "regime_mem": {
     "conf_sign": 1,
-    "pend_sign": 1,
-    "pend_days": 0,
-    "letzter_tag": "2026-11-05"
+    "pend_sign": -1,
+    "pend_days": 1,
+    "letzter_tag": "2026-11-06"
   }
 }

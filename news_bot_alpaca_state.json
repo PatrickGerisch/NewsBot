@@ -1,6 +1,5 @@
 {
   "entry_dates": {
-    "INTC": "2026-11-03",
     "GEN": "2026-11-03",
     "FDXF": "2026-11-03",
     "CMG": "2026-11-03",
@@ -10,13 +9,14 @@
     "LITE": "2026-11-05",
     "FISV": "2026-11-05",
     "SNDK": "2026-11-05",
-    "CIEN": "2026-11-05"
+    "CIEN": "2026-11-05",
+    "APP": "2026-11-06"
   },
-  "letzter_lauf": "2026-11-05 20:18 ET",
+  "letzter_lauf": "2026-11-06 14:48 ET",
   "regime_mem": {
     "conf_sign": 1,
-    "pend_sign": 1,
-    "pend_days": 0,
-    "letzter_tag": "2026-11-05"
+    "pend_sign": -1,
+    "pend_days": 1,
+    "letzter_tag": "2026-11-06"
   }
 }
