@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 5339.902122330245,
+  "cash": 5339.697973610104,
   "pos": {
     "GEN": {
       "stk": 27.627926655629178,
@@ -81,8 +81,8 @@
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 81,
-  "letzter_tag": "2026-11-06",
+  "handelstage": 82,
+  "letzter_tag": "2026-11-09",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
