@@ -3,263 +3,161 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 6993.3378928723405,
+      "cash": 2260.042269259745,
       "pos": {
-        "CMG": {
-          "stk": 21.774925464081367,
-          "einstieg": 33.44878886134844,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "FDXF": {
-          "stk": 6.093505356579432,
-          "einstieg": 129.44646382619254,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "DDOG": {
-          "stk": -4.119153676573488,
-          "einstieg": 187.96779172139318,
-          "tag": 74,
-          "richtung": "SHORT"
-        },
-        "REGN": {
-          "stk": 0.8285384935881247,
-          "einstieg": 935.9286495984222,
-          "tag": 74,
-          "richtung": "LONG"
-        },
-        "LITE": {
-          "stk": -1.168435762702507,
-          "einstieg": 528.6317563982344,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
         "FISV": {
-          "stk": 11.801866111604495,
-          "einstieg": 62.78783231909843,
+          "stk": 15.3479700065208,
+          "einstieg": 62.94237496590477,
           "tag": 75,
           "richtung": "LONG"
         },
         "MRNA": {
-          "stk": 2.8771390184366985,
-          "einstieg": 245.21999845023157,
+          "stk": 3.8610384134806304,
+          "einstieg": 247.0104320490334,
           "tag": 75,
           "richtung": "LONG"
         },
-        "MRVL": {
-          "stk": -4.467806826159235,
-          "einstieg": 138.34933186166884,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
-        "SNDK": {
-          "stk": -0.7536724944043641,
-          "einstieg": 838.688470454491,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
-        "CIEN": {
-          "stk": -2.5592157174905403,
-          "einstieg": 236.19477823599632,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
         "APP": {
-          "stk": 1.8975841296954508,
-          "einstieg": 396.7482627868652,
+          "stk": 2.4830246014099546,
+          "einstieg": 395.68438104397455,
           "tag": 76,
+          "richtung": "LONG"
+        },
+        "RHM.DE": {
+          "stk": -1.1356100934339501,
+          "einstieg": 856.7714122009278,
+          "tag": 78,
+          "richtung": "SHORT"
+        },
+        "NEM": {
+          "stk": 8.124227912145948,
+          "einstieg": 119.87990969467162,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "MOS": {
+          "stk": 42.70432036393634,
+          "einstieg": 22.806397576332092,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "TTD": {
+          "stk": 63.80317152134287,
+          "einstieg": 15.264628469467162,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "XYZ": {
+          "stk": 11.493535503412936,
+          "einstieg": 84.73734719467163,
+          "tag": 78,
           "richtung": "LONG"
         }
       },
-      "handelstage": 77,
-      "letzter_tag": "2026-11-09"
+      "handelstage": 78,
+      "letzter_tag": "2026-11-10"
     },
     "regime": {
-      "cash": 5293.645224247498,
+      "cash": 2253.921094088316,
       "pos": {
-        "CMG": {
-          "stk": 21.444492383641776,
-          "einstieg": 33.44878886134844,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "FDXF": {
-          "stk": 6.001036808341642,
-          "einstieg": 129.44646382619254,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "DDOG": {
-          "stk": -2.0283228934592534,
-          "einstieg": 188.65562500000001,
-          "tag": 74,
-          "richtung": "SHORT"
-        },
-        "REGN": {
-          "stk": 0.8159654757309243,
-          "einstieg": 935.9286495984223,
-          "tag": 74,
-          "richtung": "LONG"
-        },
-        "LITE": {
-          "stk": -0.57535241292514,
-          "einstieg": 528.0508449401856,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
         "FISV": {
-          "stk": 11.622773559456574,
-          "einstieg": 62.78783231909843,
+          "stk": 15.294651682680131,
+          "einstieg": 62.948414184671094,
           "tag": 75,
           "richtung": "LONG"
         },
         "MRNA": {
-          "stk": 2.833478620595925,
-          "einstieg": 245.2199984502316,
+          "stk": 3.847625297843594,
+          "einstieg": 247.0719074769408,
           "tag": 75,
           "richtung": "LONG"
         },
-        "MRVL": {
-          "stk": -2.2000040737957227,
-          "einstieg": 138.22084828948977,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
-        "SNDK": {
-          "stk": -0.3711177816124967,
-          "einstieg": 842.9633172607422,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
-        "CIEN": {
-          "stk": -1.2601898925521196,
-          "einstieg": 234.8875023803711,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
         "APP": {
-          "stk": 1.8687884137053845,
-          "einstieg": 396.7482627868652,
+          "stk": 2.474398658712251,
+          "einstieg": 395.6438913176265,
           "tag": 76,
+          "richtung": "LONG"
+        },
+        "RHM.DE": {
+          "stk": -1.1316650227377785,
+          "einstieg": 856.7714122009278,
+          "tag": 78,
+          "richtung": "SHORT"
+        },
+        "NEM": {
+          "stk": 8.096004621730918,
+          "einstieg": 119.87990969467162,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "MOS": {
+          "stk": 42.55596701286824,
+          "einstieg": 22.806397576332092,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "TTD": {
+          "stk": 63.581521481644366,
+          "einstieg": 15.264628469467162,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "XYZ": {
+          "stk": 11.453607353450117,
+          "einstieg": 84.73734719467163,
+          "tag": 78,
           "richtung": "LONG"
         }
       },
-      "handelstage": 77,
-      "letzter_tag": "2026-11-09"
+      "handelstage": 78,
+      "letzter_tag": "2026-11-10"
     },
     "social": {
-      "cash": 6552.505576439644,
+      "cash": 4285.30498255978,
       "pos": {
-        "GEN": {
-          "stk": 24.768038773660756,
-          "einstieg": 29.914949618339538,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "CMG": {
-          "stk": 21.846026490077545,
-          "einstieg": 33.121552042007444,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "FDXF": {
-          "stk": 5.877549092781751,
-          "einstieg": 131.05550049591065,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "DDOG": {
-          "stk": -4.04686791819338,
-          "einstieg": 188.65562500000001,
-          "tag": 74,
-          "richtung": "SHORT"
-        },
-        "REGN": {
-          "stk": 0.8102922789215411,
-          "einstieg": 943.1513326721191,
-          "tag": 74,
-          "richtung": "LONG"
-        },
-        "LITE": {
-          "stk": -1.1892933627347535,
-          "einstieg": 528.6257826468833,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
         "FISV": {
-          "stk": 11.279298644321543,
-          "einstieg": 62.54125332069397,
+          "stk": 15.629374904981882,
+          "einstieg": 62.79605007022547,
           "tag": 75,
           "richtung": "LONG"
         },
         "MRNA": {
-          "stk": 2.911162154473143,
-          "einstieg": 242.31610482788085,
+          "stk": 3.9318305196834853,
+          "einstieg": 244.8938319387459,
           "tag": 75,
           "richtung": "LONG"
         },
-        "MRVL": {
-          "stk": -4.5475610846097245,
-          "einstieg": 138.34801666012692,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
-        "SNDK": {
-          "stk": -0.7671262074328262,
-          "einstieg": 838.726595300905,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
-        "CIEN": {
-          "stk": -2.604899955799196,
-          "einstieg": 236.17928141825152,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
         "APP": {
-          "stk": 1.770502860168373,
-          "einstieg": 396.7482627868652,
+          "stk": 2.5285508361849294,
+          "einstieg": 395.39551559972944,
           "tag": 76,
+          "richtung": "LONG"
+        },
+        "RHM.DE": {
+          "stk": -1.156431494759232,
+          "einstieg": 856.7714122009278,
+          "tag": 78,
+          "richtung": "SHORT"
+        },
+        "NEM": {
+          "stk": 8.273185561250083,
+          "einstieg": 119.87990969467162,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "TTD": {
+          "stk": 64.97300212407602,
+          "einstieg": 15.264628469467162,
+          "tag": 78,
           "richtung": "LONG"
         }
       },
-      "handelstage": 77,
-      "letzter_tag": "2026-11-09"
+      "handelstage": 78,
+      "letzter_tag": "2026-11-10"
     },
     "confidence": {
-      "cash": 7042.139246981877,
+      "cash": 2361.8326888593247,
       "pos": {
-        "CMG": {
-          "stk": 17.558948071084536,
-          "einstieg": 33.27699216744925,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "FDXF": {
-          "stk": 4.864655103415255,
-          "einstieg": 129.22001831495416,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "REGN": {
-          "stk": 0.939217546997743,
-          "einstieg": 933.9065636804462,
-          "tag": 74,
-          "richtung": "LONG"
-        },
-        "DDOG": {
-          "stk": -5.282402673732946,
-          "einstieg": 186.81593346720433,
-          "tag": 74,
-          "richtung": "SHORT"
-        },
-        "LITE": {
-          "stk": -0.7946071327601493,
-          "einstieg": 528.0508449401856,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
         "FISV": {
           "stk": 15.134713098355949,
           "einstieg": 62.896307583420864,
@@ -267,78 +165,54 @@
           "richtung": "LONG"
         },
         "MRNA": {
-          "stk": 1.7295245919415898,
-          "einstieg": 242.31610482788085,
+          "stk": 3.7515432012820935,
+          "einstieg": 247.6681808117068,
           "tag": 75,
           "richtung": "LONG"
-        },
-        "MRVL": {
-          "stk": -3.0383794173240393,
-          "einstieg": 138.22084828948977,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
-        "CIEN": {
-          "stk": -3.729475267526593,
-          "einstieg": 238.46165282635658,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
-        "SNDK": {
-          "stk": -0.8054246721849969,
-          "einstieg": 836.6425967598609,
-          "tag": 75,
-          "richtung": "SHORT"
         },
         "APP": {
           "stk": 2.253904776980877,
           "einstieg": 396.7482627868652,
           "tag": 76,
           "richtung": "LONG"
+        },
+        "RHM.DE": {
+          "stk": -1.1034053197851799,
+          "einstieg": 856.7714122009278,
+          "tag": 78,
+          "richtung": "SHORT"
+        },
+        "TTD": {
+          "stk": 61.9937769863708,
+          "einstieg": 15.264628469467162,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "NEM": {
+          "stk": 7.88546011769013,
+          "einstieg": 119.87990969467162,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "MOS": {
+          "stk": 40.20431863820312,
+          "einstieg": 22.806397576332092,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "XYZ": {
+          "stk": 10.138587279945533,
+          "einstieg": 84.73734719467163,
+          "tag": 78,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 77,
-      "letzter_tag": "2026-11-09"
+      "handelstage": 78,
+      "letzter_tag": "2026-11-10"
     },
     "all": {
-      "cash": 4950.000247089975,
+      "cash": 4248.982439992922,
       "pos": {
-        "GEN": {
-          "stk": 28.736521861148848,
-          "einstieg": 29.900137173767554,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "CMG": {
-          "stk": 17.217478666983574,
-          "einstieg": 33.121552042007444,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "FDXF": {
-          "stk": 4.034831400509705,
-          "einstieg": 131.05550049591065,
-          "tag": 73,
-          "richtung": "LONG"
-        },
-        "REGN": {
-          "stk": 0.8433673615607491,
-          "einstieg": 939.530235040153,
-          "tag": 74,
-          "richtung": "LONG"
-        },
-        "DDOG": {
-          "stk": -2.3777663994336997,
-          "einstieg": 188.65562500000001,
-          "tag": 74,
-          "richtung": "SHORT"
-        },
-        "LITE": {
-          "stk": -0.3988667947691133,
-          "einstieg": 528.0508449401856,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
         "FISV": {
           "stk": 13.663756893361109,
           "einstieg": 62.70268454892389,
@@ -346,44 +220,44 @@
           "richtung": "LONG"
         },
         "MRNA": {
-          "stk": 1.553021018956447,
-          "einstieg": 242.31610482788085,
+          "stk": 3.810509938695578,
+          "einstieg": 248.19897958921328,
           "tag": 75,
           "richtung": "LONG"
         },
-        "MRVL": {
-          "stk": -1.5251671039886048,
-          "einstieg": 138.22084828948977,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
-        "CIEN": {
-          "stk": -1.9802219275286026,
-          "einstieg": 234.8875023803711,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
-        "SNDK": {
-          "stk": -0.4042968457965811,
-          "einstieg": 842.9633172607422,
-          "tag": 75,
-          "richtung": "SHORT"
-        },
         "APP": {
-          "stk": 2.023886511754127,
-          "einstieg": 396.7482627868652,
+          "stk": 2.450529859703952,
+          "einstieg": 395.96267157512364,
           "tag": 76,
+          "richtung": "LONG"
+        },
+        "RHM.DE": {
+          "stk": -1.1207486391237866,
+          "einstieg": 856.7714122009278,
+          "tag": 78,
+          "richtung": "SHORT"
+        },
+        "TTD": {
+          "stk": 62.96819486527891,
+          "einstieg": 15.264628469467162,
+          "tag": 78,
+          "richtung": "LONG"
+        },
+        "NEM": {
+          "stk": 8.017908108703011,
+          "einstieg": 119.87990969467162,
+          "tag": 78,
           "richtung": "LONG"
         }
       },
-      "handelstage": 77,
-      "letzter_tag": "2026-11-09"
+      "handelstage": 78,
+      "letzter_tag": "2026-11-10"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
     "pend_days": 1,
-    "letzter_tag": "2026-11-09"
+    "letzter_tag": "2026-11-10"
   }
 }
