@@ -3,17 +3,11 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 2260.042269259745,
+      "cash": 4201.903826640583,
       "pos": {
         "FISV": {
           "stk": 15.3479700065208,
           "einstieg": 62.94237496590477,
-          "tag": 75,
-          "richtung": "LONG"
-        },
-        "MRNA": {
-          "stk": 3.8610384134806304,
-          "einstieg": 247.0104320490334,
           "tag": 75,
           "richtung": "LONG"
         },
@@ -52,23 +46,23 @@
           "einstieg": 84.73734719467163,
           "tag": 78,
           "richtung": "LONG"
+        },
+        "FIX": {
+          "stk": -0.8546928705178349,
+          "einstieg": 1157.421,
+          "tag": 79,
+          "richtung": "SHORT"
         }
       },
-      "handelstage": 78,
-      "letzter_tag": "2026-11-10"
+      "handelstage": 79,
+      "letzter_tag": "2026-11-11"
     },
     "regime": {
-      "cash": 2253.921094088316,
+      "cash": 4189.244099289497,
       "pos": {
         "FISV": {
           "stk": 15.294651682680131,
           "einstieg": 62.948414184671094,
-          "tag": 75,
-          "richtung": "LONG"
-        },
-        "MRNA": {
-          "stk": 3.847625297843594,
-          "einstieg": 247.0719074769408,
           "tag": 75,
           "richtung": "LONG"
         },
@@ -107,30 +101,24 @@
           "einstieg": 84.73734719467163,
           "tag": 78,
           "richtung": "LONG"
+        },
+        "FIX": {
+          "stk": -0.851902985214842,
+          "einstieg": 1157.421,
+          "tag": 79,
+          "richtung": "SHORT"
         }
       },
-      "handelstage": 78,
-      "letzter_tag": "2026-11-10"
+      "handelstage": 79,
+      "letzter_tag": "2026-11-11"
     },
     "social": {
-      "cash": 4285.30498255978,
+      "cash": 7291.495983416679,
       "pos": {
         "FISV": {
           "stk": 15.629374904981882,
           "einstieg": 62.79605007022547,
           "tag": 75,
-          "richtung": "LONG"
-        },
-        "MRNA": {
-          "stk": 3.9318305196834853,
-          "einstieg": 244.8938319387459,
-          "tag": 75,
-          "richtung": "LONG"
-        },
-        "APP": {
-          "stk": 2.5285508361849294,
-          "einstieg": 395.39551559972944,
-          "tag": 76,
           "richtung": "LONG"
         },
         "RHM.DE": {
@@ -150,23 +138,23 @@
           "einstieg": 15.264628469467162,
           "tag": 78,
           "richtung": "LONG"
+        },
+        "FIX": {
+          "stk": -0.869405133120651,
+          "einstieg": 1157.421,
+          "tag": 79,
+          "richtung": "SHORT"
         }
       },
-      "handelstage": 78,
-      "letzter_tag": "2026-11-10"
+      "handelstage": 79,
+      "letzter_tag": "2026-11-11"
     },
     "confidence": {
-      "cash": 2361.8326888593247,
+      "cash": 4626.761772482823,
       "pos": {
         "FISV": {
           "stk": 15.134713098355949,
           "einstieg": 62.896307583420864,
-          "tag": 75,
-          "richtung": "LONG"
-        },
-        "MRNA": {
-          "stk": 3.7515432012820935,
-          "einstieg": 247.6681808117068,
           "tag": 75,
           "richtung": "LONG"
         },
@@ -195,40 +183,34 @@
           "richtung": "LONG"
         },
         "MOS": {
-          "stk": 40.20431863820312,
+          "stk": 33.174329223290314,
           "einstieg": 22.806397576332092,
           "tag": 78,
           "richtung": "LONG"
         },
         "XYZ": {
-          "stk": 10.138587279945533,
+          "stk": 7.590336832518922,
           "einstieg": 84.73734719467163,
           "tag": 78,
           "richtung": "LONG"
+        },
+        "FIX": {
+          "stk": -0.8300655788867094,
+          "einstieg": 1157.421,
+          "tag": 79,
+          "richtung": "SHORT"
         }
       },
-      "handelstage": 78,
-      "letzter_tag": "2026-11-10"
+      "handelstage": 79,
+      "letzter_tag": "2026-11-11"
     },
     "all": {
-      "cash": 4248.982439992922,
+      "cash": 7057.39413863868,
       "pos": {
         "FISV": {
-          "stk": 13.663756893361109,
-          "einstieg": 62.70268454892389,
+          "stk": 15.312579156361789,
+          "einstieg": 62.81673454241539,
           "tag": 75,
-          "richtung": "LONG"
-        },
-        "MRNA": {
-          "stk": 3.810509938695578,
-          "einstieg": 248.19897958921328,
-          "tag": 75,
-          "richtung": "LONG"
-        },
-        "APP": {
-          "stk": 2.450529859703952,
-          "einstieg": 395.96267157512364,
-          "tag": 76,
           "richtung": "LONG"
         },
         "RHM.DE": {
@@ -248,16 +230,22 @@
           "einstieg": 119.87990969467162,
           "tag": 78,
           "richtung": "LONG"
+        },
+        "FIX": {
+          "stk": -0.8427207794692524,
+          "einstieg": 1157.421,
+          "tag": 79,
+          "richtung": "SHORT"
         }
       },
-      "handelstage": 78,
-      "letzter_tag": "2026-11-10"
+      "handelstage": 79,
+      "letzter_tag": "2026-11-11"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
     "pend_days": 1,
-    "letzter_tag": "2026-11-10"
+    "letzter_tag": "2026-11-11"
   }
 }

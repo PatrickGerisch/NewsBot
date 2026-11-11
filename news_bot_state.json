@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 4295.612909185832,
+  "cash": 6334.814252777421,
   "pos": {
     "FISV": {
       "stk": 15.663387454436439,
@@ -8,13 +8,6 @@
       "tag": 80,
       "richtung": "LONG",
       "einstieg_ts": "2026-11-05 15:26 ET"
-    },
-    "APP": {
-      "stk": 2.5331489517587635,
-      "einstieg": 395.30400624254605,
-      "tag": 81,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-06 14:48 ET"
     },
     "RHM.DE": {
       "stk": -1.1589481138591917,
@@ -43,15 +36,22 @@
       "tag": 83,
       "richtung": "LONG",
       "einstieg_ts": "2026-11-10 15:09 ET"
+    },
+    "FLEX": {
+      "stk": -12.643541702563999,
+      "einstieg": 79.75510066986084,
+      "tag": 84,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-11-11 14:57 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 83,
-  "letzter_tag": "2026-11-10",
+  "handelstage": 84,
+  "letzter_tag": "2026-11-11",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
     "pend_days": 1,
-    "letzter_tag": "2026-11-10"
+    "letzter_tag": "2026-11-11"
   }
 }

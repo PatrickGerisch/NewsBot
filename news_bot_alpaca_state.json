@@ -1,16 +1,17 @@
 {
   "entry_dates": {
     "FISV": "2026-11-05",
-    "APP": "2026-11-06",
     "MRNA": "2026-11-10",
     "TTD": "2026-11-10",
-    "NEM": "2026-11-10"
+    "NEM": "2026-11-10",
+    "FIX": "2026-11-11",
+    "FLEX": "2026-11-11"
   },
-  "letzter_lauf": "2026-11-10 19:58 ET",
+  "letzter_lauf": "2026-11-11 14:57 ET",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
     "pend_days": 1,
-    "letzter_tag": "2026-11-10"
+    "letzter_tag": "2026-11-11"
   }
 }
