@@ -1,14 +1,7 @@
 {
   "start": "2026-07-17",
-  "cash": 6334.814252777421,
+  "cash": 7337.69744621721,
   "pos": {
-    "FISV": {
-      "stk": 15.663387454436439,
-      "einstieg": 62.760168961153866,
-      "tag": 80,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-05 15:26 ET"
-    },
     "RHM.DE": {
       "stk": -1.1589481138591917,
       "einstieg": 856.7714122009278,
@@ -16,19 +9,12 @@
       "richtung": "SHORT",
       "einstieg_ts": "2026-11-10 15:09 ET"
     },
-    "NEM": {
-      "stk": 8.290497556263544,
-      "einstieg": 119.88991683197021,
-      "tag": 83,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-10 15:09 ET"
-    },
     "MRNA": {
-      "stk": 3.9413248709425934,
-      "einstieg": 252.18602755737302,
-      "tag": 83,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-10 15:09 ET"
+      "stk": -4.287540852926881,
+      "einstieg": 232.02893177032473,
+      "tag": 85,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-11-12 15:36 ET"
     },
     "TTD": {
       "stk": 65.05895923809999,
@@ -38,20 +24,41 @@
       "einstieg_ts": "2026-11-10 15:09 ET"
     },
     "FLEX": {
-      "stk": -12.643541702563999,
+      "stk": -10.66532973923563,
       "einstieg": 79.75510066986084,
       "tag": 84,
       "richtung": "SHORT",
       "einstieg_ts": "2026-11-11 14:57 ET"
+    },
+    "AMD": {
+      "stk": 1.4289338861963816,
+      "einstieg": 580.7528167419433,
+      "tag": 85,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-12 15:36 ET"
+    },
+    "ANET": {
+      "stk": 4.0355299255066015,
+      "einstieg": 205.6377711639404,
+      "tag": 85,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-12 15:36 ET"
+    },
+    "APP": {
+      "stk": 2.5202724738057087,
+      "einstieg": 395.12745767211914,
+      "tag": 85,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-12 15:36 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 84,
-  "letzter_tag": "2026-11-11",
+  "handelstage": 85,
+  "letzter_tag": "2026-11-12",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
     "pend_days": 1,
-    "letzter_tag": "2026-11-11"
+    "letzter_tag": "2026-11-12"
   }
 }

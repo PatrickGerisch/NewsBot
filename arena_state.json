@@ -3,14 +3,8 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 4201.903826640583,
+      "cash": 5030.332925976097,
       "pos": {
-        "FISV": {
-          "stk": 15.3479700065208,
-          "einstieg": 62.94237496590477,
-          "tag": 75,
-          "richtung": "LONG"
-        },
         "APP": {
           "stk": 2.4830246014099546,
           "einstieg": 395.68438104397455,
@@ -23,27 +17,9 @@
           "tag": 78,
           "richtung": "SHORT"
         },
-        "NEM": {
-          "stk": 8.124227912145948,
-          "einstieg": 119.87990969467162,
-          "tag": 78,
-          "richtung": "LONG"
-        },
-        "MOS": {
-          "stk": 42.70432036393634,
-          "einstieg": 22.806397576332092,
-          "tag": 78,
-          "richtung": "LONG"
-        },
         "TTD": {
           "stk": 63.80317152134287,
           "einstieg": 15.264628469467162,
-          "tag": 78,
-          "richtung": "LONG"
-        },
-        "XYZ": {
-          "stk": 11.493535503412936,
-          "einstieg": 84.73734719467163,
           "tag": 78,
           "richtung": "LONG"
         },
@@ -52,20 +28,32 @@
           "einstieg": 1157.421,
           "tag": 79,
           "richtung": "SHORT"
-        }
-      },
-      "handelstage": 79,
-      "letzter_tag": "2026-11-11"
-    },
-    "regime": {
-      "cash": 4189.244099289497,
-      "pos": {
-        "FISV": {
-          "stk": 15.294651682680131,
-          "einstieg": 62.948414184671094,
-          "tag": 75,
+        },
+        "AMD": {
+          "stk": 1.6697250904710235,
+          "einstieg": 581.0203454589844,
+          "tag": 80,
           "richtung": "LONG"
         },
+        "ANET": {
+          "stk": 4.717963498229331,
+          "einstieg": 205.6277563934326,
+          "tag": 80,
+          "richtung": "LONG"
+        },
+        "CEG": {
+          "stk": 3.453203209867446,
+          "einstieg": 280.94038778686524,
+          "tag": 80,
+          "richtung": "LONG"
+        }
+      },
+      "handelstage": 80,
+      "letzter_tag": "2026-11-12"
+    },
+    "regime": {
+      "cash": 5014.1700886562385,
+      "pos": {
         "APP": {
           "stk": 2.474398658712251,
           "einstieg": 395.6438913176265,
@@ -78,27 +66,9 @@
           "tag": 78,
           "richtung": "SHORT"
         },
-        "NEM": {
-          "stk": 8.096004621730918,
-          "einstieg": 119.87990969467162,
-          "tag": 78,
-          "richtung": "LONG"
-        },
-        "MOS": {
-          "stk": 42.55596701286824,
-          "einstieg": 22.806397576332092,
-          "tag": 78,
-          "richtung": "LONG"
-        },
         "TTD": {
           "stk": 63.581521481644366,
           "einstieg": 15.264628469467162,
-          "tag": 78,
-          "richtung": "LONG"
-        },
-        "XYZ": {
-          "stk": 11.453607353450117,
-          "einstieg": 84.73734719467163,
           "tag": 78,
           "richtung": "LONG"
         },
@@ -107,31 +77,37 @@
           "einstieg": 1157.421,
           "tag": 79,
           "richtung": "SHORT"
+        },
+        "AMD": {
+          "stk": 1.6642829947560978,
+          "einstieg": 581.0203454589844,
+          "tag": 80,
+          "richtung": "LONG"
+        },
+        "ANET": {
+          "stk": 4.702586350767501,
+          "einstieg": 205.6277563934326,
+          "tag": 80,
+          "richtung": "LONG"
+        },
+        "CEG": {
+          "stk": 3.441948265865924,
+          "einstieg": 280.94038778686524,
+          "tag": 80,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 79,
-      "letzter_tag": "2026-11-11"
+      "handelstage": 80,
+      "letzter_tag": "2026-11-12"
     },
     "social": {
-      "cash": 7291.495983416679,
+      "cash": 6293.449208236348,
       "pos": {
-        "FISV": {
-          "stk": 15.629374904981882,
-          "einstieg": 62.79605007022547,
-          "tag": 75,
-          "richtung": "LONG"
-        },
         "RHM.DE": {
-          "stk": -1.156431494759232,
-          "einstieg": 856.7714122009278,
+          "stk": -1.2907987094132445,
+          "einstieg": 848.1877713276052,
           "tag": 78,
           "richtung": "SHORT"
-        },
-        "NEM": {
-          "stk": 8.273185561250083,
-          "einstieg": 119.87990969467162,
-          "tag": 78,
-          "richtung": "LONG"
         },
         "TTD": {
           "stk": 64.97300212407602,
@@ -144,20 +120,32 @@
           "einstieg": 1157.421,
           "tag": 79,
           "richtung": "SHORT"
-        }
-      },
-      "handelstage": 79,
-      "letzter_tag": "2026-11-11"
-    },
-    "confidence": {
-      "cash": 4626.761772482823,
-      "pos": {
-        "FISV": {
-          "stk": 15.134713098355949,
-          "einstieg": 62.896307583420864,
-          "tag": 75,
+        },
+        "AMD": {
+          "stk": 1.7219392997966139,
+          "einstieg": 581.0203454589844,
+          "tag": 80,
           "richtung": "LONG"
         },
+        "ANET": {
+          "stk": 4.865499601683072,
+          "einstieg": 205.6277563934326,
+          "tag": 80,
+          "richtung": "LONG"
+        },
+        "APP": {
+          "stk": 2.5305102663669836,
+          "einstieg": 395.3675984344482,
+          "tag": 80,
+          "richtung": "LONG"
+        }
+      },
+      "handelstage": 80,
+      "letzter_tag": "2026-11-12"
+    },
+    "confidence": {
+      "cash": 4656.08133455598,
+      "pos": {
         "APP": {
           "stk": 2.253904776980877,
           "einstieg": 396.7482627868652,
@@ -176,46 +164,40 @@
           "tag": 78,
           "richtung": "LONG"
         },
-        "NEM": {
-          "stk": 7.88546011769013,
-          "einstieg": 119.87990969467162,
-          "tag": 78,
-          "richtung": "LONG"
-        },
-        "MOS": {
-          "stk": 33.174329223290314,
-          "einstieg": 22.806397576332092,
-          "tag": 78,
-          "richtung": "LONG"
-        },
-        "XYZ": {
-          "stk": 7.590336832518922,
-          "einstieg": 84.73734719467163,
-          "tag": 78,
-          "richtung": "LONG"
-        },
         "FIX": {
-          "stk": -0.8300655788867094,
+          "stk": -0.48264947492587856,
           "einstieg": 1157.421,
           "tag": 79,
           "richtung": "SHORT"
-        }
-      },
-      "handelstage": 79,
-      "letzter_tag": "2026-11-11"
-    },
-    "all": {
-      "cash": 7057.39413863868,
-      "pos": {
-        "FISV": {
-          "stk": 15.312579156361789,
-          "einstieg": 62.81673454241539,
-          "tag": 75,
+        },
+        "ANET": {
+          "stk": 4.5952696213402175,
+          "einstieg": 205.6277563934326,
+          "tag": 80,
           "richtung": "LONG"
         },
+        "AMD": {
+          "stk": 1.6263027442053513,
+          "einstieg": 581.0203454589844,
+          "tag": 80,
+          "richtung": "LONG"
+        },
+        "CEG": {
+          "stk": 3.0548747035871053,
+          "einstieg": 280.94038778686524,
+          "tag": 80,
+          "richtung": "LONG"
+        }
+      },
+      "handelstage": 80,
+      "letzter_tag": "2026-11-12"
+    },
+    "all": {
+      "cash": 5775.530713115919,
+      "pos": {
         "RHM.DE": {
-          "stk": -1.1207486391237866,
-          "einstieg": 856.7714122009278,
+          "stk": -1.2511207683111598,
+          "einstieg": 848.178858164645,
           "tag": 78,
           "richtung": "SHORT"
         },
@@ -225,27 +207,39 @@
           "tag": 78,
           "richtung": "LONG"
         },
-        "NEM": {
-          "stk": 8.017908108703011,
-          "einstieg": 119.87990969467162,
-          "tag": 78,
-          "richtung": "LONG"
-        },
         "FIX": {
-          "stk": -0.8427207794692524,
+          "stk": -0.5559139449958362,
           "einstieg": 1157.421,
           "tag": 79,
           "richtung": "SHORT"
+        },
+        "APP": {
+          "stk": 2.45272475529162,
+          "einstieg": 395.3675984344482,
+          "tag": 80,
+          "richtung": "LONG"
+        },
+        "ANET": {
+          "stk": 4.715938709485131,
+          "einstieg": 205.6277563934326,
+          "tag": 80,
+          "richtung": "LONG"
+        },
+        "AMD": {
+          "stk": 1.6690085015083571,
+          "einstieg": 581.0203454589844,
+          "tag": 80,
+          "richtung": "LONG"
         }
       },
-      "handelstage": 79,
-      "letzter_tag": "2026-11-11"
+      "handelstage": 80,
+      "letzter_tag": "2026-11-12"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
     "pend_days": 1,
-    "letzter_tag": "2026-11-11"
+    "letzter_tag": "2026-11-12"
   }
 }
