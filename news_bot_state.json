@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 7337.69744621721,
+  "cash": 4890.680436348345,
   "pos": {
     "RHM.DE": {
       "stk": -1.1589481138591917,
@@ -17,48 +17,62 @@
       "einstieg_ts": "2026-11-12 15:36 ET"
     },
     "TTD": {
-      "stk": 65.05895923809999,
+      "stk": 58.24950758593142,
       "einstieg": 15.277635457992552,
       "tag": 83,
       "richtung": "LONG",
       "einstieg_ts": "2026-11-10 15:09 ET"
     },
-    "FLEX": {
-      "stk": -10.66532973923563,
-      "einstieg": 79.75510066986084,
-      "tag": 84,
-      "richtung": "SHORT",
-      "einstieg_ts": "2026-11-11 14:57 ET"
-    },
     "AMD": {
-      "stk": 1.4289338861963816,
+      "stk": 1.1652137547273815,
       "einstieg": 580.7528167419433,
       "tag": 85,
       "richtung": "LONG",
       "einstieg_ts": "2026-11-12 15:36 ET"
     },
     "ANET": {
-      "stk": 4.0355299255066015,
+      "stk": 3.15824207824943,
       "einstieg": 205.6377711639404,
       "tag": 85,
       "richtung": "LONG",
       "einstieg_ts": "2026-11-12 15:36 ET"
     },
     "APP": {
-      "stk": 2.5202724738057087,
+      "stk": 2.2583079183822505,
       "einstieg": 395.12745767211914,
       "tag": 85,
       "richtung": "LONG",
       "einstieg_ts": "2026-11-12 15:36 ET"
+    },
+    "COHR": {
+      "stk": 2.851301328856452,
+      "einstieg": 218.39913828277588,
+      "tag": 86,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-13 15:14 ET"
+    },
+    "VRT": {
+      "stk": 4.560172558993518,
+      "einstieg": 202.3061043319702,
+      "tag": 86,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-13 15:14 ET"
+    },
+    "AVGO": {
+      "stk": 1.7994724557579638,
+      "einstieg": 346.05795227050777,
+      "tag": 86,
+      "richtung": "LONG",
+      "einstieg_ts": "2026-11-13 15:14 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 85,
-  "letzter_tag": "2026-11-12",
+  "handelstage": 86,
+  "letzter_tag": "2026-11-13",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
     "pend_days": 1,
-    "letzter_tag": "2026-11-12"
+    "letzter_tag": "2026-11-13"
   }
 }
