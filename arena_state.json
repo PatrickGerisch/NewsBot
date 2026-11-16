@@ -3,7 +3,7 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 3735.2416304536546,
+      "cash": 3735.1375734176095,
       "pos": {
         "RHM.DE": {
           "stk": -1.1356100934339501,
@@ -60,11 +60,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 81,
-      "letzter_tag": "2026-11-13"
+      "handelstage": 82,
+      "letzter_tag": "2026-11-16"
     },
     "regime": {
-      "cash": 3722.8759856910965,
+      "cash": 3722.7722901456423,
       "pos": {
         "RHM.DE": {
           "stk": -1.1316650227377785,
@@ -121,11 +121,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 81,
-      "letzter_tag": "2026-11-13"
+      "handelstage": 82,
+      "letzter_tag": "2026-11-16"
     },
     "social": {
-      "cash": 3726.3807875564626,
+      "cash": 3726.262510439511,
       "pos": {
         "RHM.DE": {
           "stk": -1.2907987094132445,
@@ -176,11 +176,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 81,
-      "letzter_tag": "2026-11-13"
+      "handelstage": 82,
+      "letzter_tag": "2026-11-16"
     },
     "confidence": {
-      "cash": 3658.7723464201235,
+      "cash": 3658.6712403382057,
       "pos": {
         "RHM.DE": {
           "stk": -1.1034053197851799,
@@ -237,11 +237,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 81,
-      "letzter_tag": "2026-11-13"
+      "handelstage": 82,
+      "letzter_tag": "2026-11-16"
     },
     "all": {
-      "cash": 3607.6747030228826,
+      "cash": 3607.5600616335205,
       "pos": {
         "RHM.DE": {
           "stk": -1.2511207683111598,
@@ -292,14 +292,14 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 81,
-      "letzter_tag": "2026-11-13"
+      "handelstage": 82,
+      "letzter_tag": "2026-11-16"
     }
   },
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
-    "pend_days": 1,
-    "letzter_tag": "2026-11-13"
+    "pend_days": 2,
+    "letzter_tag": "2026-11-16"
   }
 }
