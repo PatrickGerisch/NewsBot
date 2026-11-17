@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 4890.46436238226,
+  "cash": 4890.253825821594,
   "pos": {
     "RHM.DE": {
       "stk": -1.1589481138591917,
@@ -67,8 +67,8 @@
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 87,
-  "letzter_tag": "2026-11-16",
+  "handelstage": 88,
+  "letzter_tag": "2026-11-17",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
