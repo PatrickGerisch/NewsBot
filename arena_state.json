@@ -3,7 +3,7 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 3735.0347060666786,
+      "cash": 3734.934096418417,
       "pos": {
         "RHM.DE": {
           "stk": -1.1356100934339501,
@@ -60,11 +60,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 83,
-      "letzter_tag": "2026-11-17"
+      "handelstage": 84,
+      "letzter_tag": "2026-11-18"
     },
     "regime": {
-      "cash": 3722.669780152377,
+      "cash": 3722.5695200185987,
       "pos": {
         "RHM.DE": {
           "stk": -1.1316650227377785,
@@ -121,11 +121,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 83,
-      "letzter_tag": "2026-11-17"
+      "handelstage": 84,
+      "letzter_tag": "2026-11-18"
     },
     "social": {
-      "cash": 3726.1455855859986,
+      "cash": 3726.0312269651295,
       "pos": {
         "RHM.DE": {
           "stk": -1.2907987094132445,
@@ -176,11 +176,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 83,
-      "letzter_tag": "2026-11-17"
+      "handelstage": 84,
+      "letzter_tag": "2026-11-18"
     },
     "confidence": {
-      "cash": 3658.571290203115,
+      "cash": 3658.4735337444895,
       "pos": {
         "RHM.DE": {
           "stk": -1.1034053197851799,
@@ -237,11 +237,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 83,
-      "letzter_tag": "2026-11-17"
+      "handelstage": 84,
+      "letzter_tag": "2026-11-18"
     },
     "all": {
-      "cash": 3607.446730940288,
+      "cash": 3607.3358875961153,
       "pos": {
         "RHM.DE": {
           "stk": -1.2511207683111598,
@@ -292,14 +292,14 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 83,
-      "letzter_tag": "2026-11-17"
+      "handelstage": 84,
+      "letzter_tag": "2026-11-18"
     }
   },
   "regime_mem": {
     "conf_sign": -1,
     "pend_sign": -1,
     "pend_days": 0,
-    "letzter_tag": "2026-11-17"
+    "letzter_tag": "2026-11-18"
   }
 }
