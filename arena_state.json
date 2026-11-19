@@ -3,7 +3,7 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 3734.934096418417,
+      "cash": 3734.8360013403135,
       "pos": {
         "RHM.DE": {
           "stk": -1.1356100934339501,
@@ -60,11 +60,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 84,
-      "letzter_tag": "2026-11-18"
+      "handelstage": 85,
+      "letzter_tag": "2026-11-19"
     },
     "regime": {
-      "cash": 3722.5695200185987,
+      "cash": 3722.4717657194474,
       "pos": {
         "RHM.DE": {
           "stk": -1.1316650227377785,
@@ -121,11 +121,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 84,
-      "letzter_tag": "2026-11-18"
+      "handelstage": 85,
+      "letzter_tag": "2026-11-19"
     },
     "social": {
-      "cash": 3726.0312269651295,
+      "cash": 3725.9197265470298,
       "pos": {
         "RHM.DE": {
           "stk": -1.2907987094132445,
@@ -176,11 +176,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 84,
-      "letzter_tag": "2026-11-18"
+      "handelstage": 85,
+      "letzter_tag": "2026-11-19"
     },
     "confidence": {
-      "cash": 3658.4735337444895,
+      "cash": 3658.3782205453113,
       "pos": {
         "RHM.DE": {
           "stk": -1.1034053197851799,
@@ -237,11 +237,11 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 84,
-      "letzter_tag": "2026-11-18"
+      "handelstage": 85,
+      "letzter_tag": "2026-11-19"
     },
     "all": {
-      "cash": 3607.3358875961153,
+      "cash": 3607.2278145962414,
       "pos": {
         "RHM.DE": {
           "stk": -1.2511207683111598,
@@ -292,14 +292,14 @@
           "richtung": "LONG"
         }
       },
-      "handelstage": 84,
-      "letzter_tag": "2026-11-18"
+      "handelstage": 85,
+      "letzter_tag": "2026-11-19"
     }
   },
   "regime_mem": {
     "conf_sign": -1,
     "pend_sign": -1,
     "pend_days": 0,
-    "letzter_tag": "2026-11-18"
+    "letzter_tag": "2026-11-19"
   }
 }
