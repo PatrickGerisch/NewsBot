@@ -3,303 +3,165 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 3734.8360013403135,
+      "cash": 10750.81625748381,
       "pos": {
-        "RHM.DE": {
-          "stk": -1.1356100934339501,
-          "einstieg": 856.7714122009278,
-          "tag": 78,
+        "DELL": {
+          "stk": -3.1368902717779874,
+          "einstieg": 277.96595848083496,
+          "tag": 86,
           "richtung": "SHORT"
         },
-        "TTD": {
-          "stk": 56.26771470010612,
-          "einstieg": 15.264628469467162,
-          "tag": 78,
-          "richtung": "LONG"
+        "SNDK": {
+          "stk": -11.02177979725166,
+          "einstieg": 79.11142547607422,
+          "tag": 86,
+          "richtung": "SHORT"
         },
-        "AMD": {
-          "stk": 0.900878589256864,
-          "einstieg": 581.0203454589844,
-          "tag": 80,
-          "richtung": "LONG"
+        "COIN": {
+          "stk": -8.489537615415669,
+          "einstieg": 102.70862213516236,
+          "tag": 86,
+          "richtung": "SHORT"
         },
-        "ANET": {
-          "stk": 2.441775265849124,
-          "einstieg": 205.6277563934326,
-          "tag": 80,
-          "richtung": "LONG"
-        },
-        "CEG": {
-          "stk": 3.453203209867446,
-          "einstieg": 280.94038778686524,
-          "tag": 80,
-          "richtung": "LONG"
-        },
-        "COHR": {
-          "stk": 2.2043322186754626,
-          "einstieg": 218.37913927459715,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "VRT": {
-          "stk": 4.405217485519657,
-          "einstieg": 202.36112450408933,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "MPWR": {
-          "stk": 0.34391679970565875,
-          "einstieg": 1399.6995,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "AVGO": {
-          "stk": 1.3909185519648648,
-          "einstieg": 346.08796604919434,
-          "tag": 81,
-          "richtung": "LONG"
+        "MRNA": {
+          "stk": -4.484116627146158,
+          "einstieg": 194.45272805023194,
+          "tag": 86,
+          "richtung": "SHORT"
         }
       },
-      "handelstage": 85,
-      "letzter_tag": "2026-11-19"
+      "handelstage": 86,
+      "letzter_tag": "2026-11-20"
     },
     "regime": {
-      "cash": 3722.4717657194474,
+      "cash": 10715.736695500676,
       "pos": {
-        "RHM.DE": {
-          "stk": -1.1316650227377785,
-          "einstieg": 856.7714122009278,
-          "tag": 78,
+        "DELL": {
+          "stk": -3.1266546562179767,
+          "einstieg": 277.96595848083496,
+          "tag": 86,
           "richtung": "SHORT"
         },
-        "TTD": {
-          "stk": 56.08424851978777,
-          "einstieg": 15.264628469467162,
-          "tag": 78,
-          "richtung": "LONG"
+        "SNDK": {
+          "stk": -10.985815931442666,
+          "einstieg": 79.11142547607422,
+          "tag": 86,
+          "richtung": "SHORT"
         },
-        "AMD": {
-          "stk": 0.8979411898159512,
-          "einstieg": 581.0203454589844,
-          "tag": 80,
-          "richtung": "LONG"
+        "COIN": {
+          "stk": -8.461836409512667,
+          "einstieg": 102.70862213516236,
+          "tag": 86,
+          "richtung": "SHORT"
         },
-        "ANET": {
-          "stk": 2.433813627747971,
-          "einstieg": 205.6277563934326,
-          "tag": 80,
-          "richtung": "LONG"
-        },
-        "CEG": {
-          "stk": 3.441948265865924,
-          "einstieg": 280.94038778686524,
-          "tag": 80,
-          "richtung": "LONG"
-        },
-        "COHR": {
-          "stk": 2.1971447859803814,
-          "einstieg": 218.37913927459715,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "VRT": {
-          "stk": 4.390853859240405,
-          "einstieg": 202.36112450408933,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "MPWR": {
-          "stk": 0.3427954266069715,
-          "einstieg": 1399.6995,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "AVGO": {
-          "stk": 1.38638333109757,
-          "einstieg": 346.08796604919434,
-          "tag": 81,
-          "richtung": "LONG"
+        "MRNA": {
+          "stk": -4.469485036639262,
+          "einstieg": 194.45272805023194,
+          "tag": 86,
+          "richtung": "SHORT"
         }
       },
-      "handelstage": 85,
-      "letzter_tag": "2026-11-19"
+      "handelstage": 86,
+      "letzter_tag": "2026-11-20"
     },
     "social": {
-      "cash": 3725.9197265470298,
+      "cash": 11082.598984837974,
       "pos": {
-        "RHM.DE": {
-          "stk": -1.2907987094132445,
-          "einstieg": 848.1877713276052,
-          "tag": 78,
+        "DELL": {
+          "stk": -3.2337832151736383,
+          "einstieg": 277.96595848083496,
+          "tag": 86,
           "richtung": "SHORT"
         },
-        "TTD": {
-          "stk": 64.97300212407602,
-          "einstieg": 15.264628469467162,
-          "tag": 78,
-          "richtung": "LONG"
+        "SNDK": {
+          "stk": -11.362222909215896,
+          "einstieg": 79.11142547607422,
+          "tag": 86,
+          "richtung": "SHORT"
         },
-        "AMD": {
-          "stk": 1.162836056293667,
-          "einstieg": 581.0203454589844,
-          "tag": 80,
-          "richtung": "LONG"
+        "COIN": {
+          "stk": -8.751764284619332,
+          "einstieg": 102.70862213516236,
+          "tag": 86,
+          "richtung": "SHORT"
         },
-        "ANET": {
-          "stk": 3.151794652859524,
-          "einstieg": 205.6277563934326,
-          "tag": 80,
-          "richtung": "LONG"
-        },
-        "APP": {
-          "stk": 2.5305102663669836,
-          "einstieg": 395.3675984344482,
-          "tag": 80,
-          "richtung": "LONG"
-        },
-        "COHR": {
-          "stk": 2.8453079188396466,
-          "einstieg": 218.37913927459715,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "VRT": {
-          "stk": 4.912847926182311,
-          "einstieg": 202.36112450408933,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "AVGO": {
-          "stk": 1.7953698343821505,
-          "einstieg": 346.08796604919434,
-          "tag": 81,
-          "richtung": "LONG"
+        "MRNA": {
+          "stk": -4.622622988826226,
+          "einstieg": 194.45272805023194,
+          "tag": 86,
+          "richtung": "SHORT"
         }
       },
-      "handelstage": 85,
-      "letzter_tag": "2026-11-19"
+      "handelstage": 86,
+      "letzter_tag": "2026-11-20"
     },
     "confidence": {
-      "cash": 3658.3782205453113,
+      "cash": 10467.16215719333,
       "pos": {
-        "RHM.DE": {
-          "stk": -1.1034053197851799,
-          "einstieg": 856.7714122009278,
-          "tag": 78,
+        "DELL": {
+          "stk": -3.054117876348177,
+          "einstieg": 277.96595848083496,
+          "tag": 86,
           "richtung": "SHORT"
         },
-        "TTD": {
-          "stk": 61.9937769863708,
-          "einstieg": 15.264628469467162,
-          "tag": 78,
-          "richtung": "LONG"
+        "SNDK": {
+          "stk": -10.730950652245793,
+          "einstieg": 79.11142547607422,
+          "tag": 86,
+          "richtung": "SHORT"
         },
-        "ANET": {
-          "stk": 2.103323111111997,
-          "einstieg": 205.6277563934326,
-          "tag": 80,
-          "richtung": "LONG"
+        "COIN": {
+          "stk": -8.265526157048287,
+          "einstieg": 102.70862213516236,
+          "tag": 86,
+          "richtung": "SHORT"
         },
-        "AMD": {
-          "stk": 0.6844262092719171,
-          "einstieg": 581.0203454589844,
-          "tag": 80,
-          "richtung": "LONG"
-        },
-        "CEG": {
-          "stk": 2.7540250454349815,
-          "einstieg": 280.94038778686524,
-          "tag": 80,
-          "richtung": "LONG"
-        },
-        "MPWR": {
-          "stk": 0.39858109025855254,
-          "einstieg": 1399.6995,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "VRT": {
-          "stk": 4.423373355364444,
-          "einstieg": 202.36112450408933,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "COHR": {
-          "stk": 2.3507246698542206,
-          "einstieg": 218.37913927459715,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "AVGO": {
-          "stk": 1.415725299718244,
-          "einstieg": 346.08796604919434,
-          "tag": 81,
-          "richtung": "LONG"
+        "MRNA": {
+          "stk": -4.365795282611159,
+          "einstieg": 194.45272805023194,
+          "tag": 86,
+          "richtung": "SHORT"
         }
       },
-      "handelstage": 85,
-      "letzter_tag": "2026-11-19"
+      "handelstage": 86,
+      "letzter_tag": "2026-11-20"
     },
     "all": {
-      "cash": 3607.2278145962414,
+      "cash": 10745.34105061598,
       "pos": {
-        "RHM.DE": {
-          "stk": -1.2511207683111598,
-          "einstieg": 848.178858164645,
-          "tag": 78,
+        "DELL": {
+          "stk": -3.135376364160516,
+          "einstieg": 277.96595848083496,
+          "tag": 86,
           "richtung": "SHORT"
         },
-        "TTD": {
-          "stk": 62.96819486527891,
-          "einstieg": 15.264628469467162,
-          "tag": 78,
-          "richtung": "LONG"
+        "SNDK": {
+          "stk": -11.016460530414923,
+          "einstieg": 79.11142547607422,
+          "tag": 86,
+          "richtung": "SHORT"
         },
-        "APP": {
-          "stk": 2.45272475529162,
-          "einstieg": 395.3675984344482,
-          "tag": 80,
-          "richtung": "LONG"
+        "COIN": {
+          "stk": -8.485440444475257,
+          "einstieg": 102.70862213516236,
+          "tag": 86,
+          "richtung": "SHORT"
         },
-        "ANET": {
-          "stk": 1.4833835658446632,
-          "einstieg": 205.6277563934326,
-          "tag": 80,
-          "richtung": "LONG"
-        },
-        "AMD": {
-          "stk": 1.0571404732107965,
-          "einstieg": 581.0203454589844,
-          "tag": 80,
-          "richtung": "LONG"
-        },
-        "VRT": {
-          "stk": 4.757834384400533,
-          "einstieg": 202.36112450408933,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "COHR": {
-          "stk": 3.6308460374735505,
-          "einstieg": 218.37913927459715,
-          "tag": 81,
-          "richtung": "LONG"
-        },
-        "AVGO": {
-          "stk": 2.1866791379493256,
-          "einstieg": 346.08796604919434,
-          "tag": 81,
-          "richtung": "LONG"
+        "MRNA": {
+          "stk": -4.48195252903264,
+          "einstieg": 194.45272805023194,
+          "tag": 86,
+          "richtung": "SHORT"
         }
       },
-      "handelstage": 85,
-      "letzter_tag": "2026-11-19"
+      "handelstage": 86,
+      "letzter_tag": "2026-11-20"
     }
   },
   "regime_mem": {
     "conf_sign": -1,
     "pend_sign": -1,
     "pend_days": 0,
-    "letzter_tag": "2026-11-19"
+    "letzter_tag": "2026-11-20"
   }
 }

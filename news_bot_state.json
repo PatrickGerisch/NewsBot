@@ -1,78 +1,36 @@
 {
   "start": "2026-07-17",
-  "cash": 4889.848849323341,
+  "cash": 9051.519982226178,
   "pos": {
-    "RHM.DE": {
-      "stk": -1.1589481138591917,
-      "einstieg": 856.7714122009278,
-      "tag": 83,
+    "DELL": {
+      "stk": -1.654425995339466,
+      "einstieg": 278.28080342102055,
+      "tag": 91,
       "richtung": "SHORT",
-      "einstieg_ts": "2026-11-10 15:09 ET"
+      "einstieg_ts": "2026-11-20 15:53 ET"
     },
-    "MRNA": {
-      "stk": -4.287540852926881,
-      "einstieg": 232.02893177032473,
-      "tag": 85,
+    "SNDK": {
+      "stk": -5.822224866020617,
+      "einstieg": 79.07544036483765,
+      "tag": 91,
       "richtung": "SHORT",
-      "einstieg_ts": "2026-11-12 15:36 ET"
+      "einstieg_ts": "2026-11-20 15:53 ET"
     },
-    "TTD": {
-      "stk": 58.24950758593142,
-      "einstieg": 15.277635457992552,
-      "tag": 83,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-10 15:09 ET"
-    },
-    "AMD": {
-      "stk": 1.1652137547273815,
-      "einstieg": 580.7528167419433,
-      "tag": 85,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-12 15:36 ET"
-    },
-    "ANET": {
-      "stk": 3.15824207824943,
-      "einstieg": 205.6377711639404,
-      "tag": 85,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-12 15:36 ET"
-    },
-    "APP": {
-      "stk": 2.2583079183822505,
-      "einstieg": 395.12745767211914,
-      "tag": 85,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-12 15:36 ET"
-    },
-    "COHR": {
-      "stk": 2.851301328856452,
-      "einstieg": 218.39913828277588,
-      "tag": 86,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-13 15:14 ET"
-    },
-    "VRT": {
-      "stk": 4.560172558993518,
-      "einstieg": 202.3061043319702,
-      "tag": 86,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-13 15:14 ET"
-    },
-    "AVGO": {
-      "stk": 1.7994724557579638,
-      "einstieg": 346.05795227050777,
-      "tag": 86,
-      "richtung": "LONG",
-      "einstieg_ts": "2026-11-13 15:14 ET"
+    "COIN": {
+      "stk": -4.476001277290844,
+      "einstieg": 102.85854866027833,
+      "tag": 91,
+      "richtung": "SHORT",
+      "einstieg_ts": "2026-11-20 15:53 ET"
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 90,
-  "letzter_tag": "2026-11-19",
+  "handelstage": 91,
+  "letzter_tag": "2026-11-20",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
-    "pend_days": 1,
-    "letzter_tag": "2026-11-13"
+    "pend_days": 2,
+    "letzter_tag": "2026-11-20"
   }
 }
