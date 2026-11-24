@@ -3,7 +3,7 @@
   "bh_anteile": 13.379537816344122,
   "variants": {
     "baseline": {
-      "cash": 10750.35295039068,
+      "cash": 10749.915585050754,
       "pos": {
         "DELL": {
           "stk": -3.1368902717779874,
@@ -30,11 +30,11 @@
           "richtung": "SHORT"
         }
       },
-      "handelstage": 87,
-      "letzter_tag": "2026-11-23"
+      "handelstage": 88,
+      "letzter_tag": "2026-11-24"
     },
     "regime": {
-      "cash": 10715.274900170114,
+      "cash": 10714.838961945292,
       "pos": {
         "DELL": {
           "stk": -3.1266546562179767,
@@ -61,11 +61,11 @@
           "richtung": "SHORT"
         }
       },
-      "handelstage": 87,
-      "letzter_tag": "2026-11-23"
+      "handelstage": 88,
+      "letzter_tag": "2026-11-24"
     },
     "social": {
-      "cash": 11082.12136701541,
+      "cash": 11081.670492240519,
       "pos": {
         "DELL": {
           "stk": -3.2337832151736383,
@@ -92,11 +92,11 @@
           "richtung": "SHORT"
         }
       },
-      "handelstage": 87,
-      "letzter_tag": "2026-11-23"
+      "handelstage": 88,
+      "letzter_tag": "2026-11-24"
     },
     "confidence": {
-      "cash": 10466.711075276919,
+      "cash": 10466.285250594692,
       "pos": {
         "DELL": {
           "stk": -3.054117876348177,
@@ -123,11 +123,11 @@
           "richtung": "SHORT"
         }
       },
-      "handelstage": 87,
-      "letzter_tag": "2026-11-23"
+      "handelstage": 88,
+      "letzter_tag": "2026-11-24"
     },
     "all": {
-      "cash": 10744.877967121409,
+      "cash": 10744.440812860184,
       "pos": {
         "DELL": {
           "stk": -3.135376364160516,
@@ -154,14 +154,14 @@
           "richtung": "SHORT"
         }
       },
-      "handelstage": 87,
-      "letzter_tag": "2026-11-23"
+      "handelstage": 88,
+      "letzter_tag": "2026-11-24"
     }
   },
   "regime_mem": {
     "conf_sign": -1,
     "pend_sign": -1,
     "pend_days": 0,
-    "letzter_tag": "2026-11-23"
+    "letzter_tag": "2026-11-24"
   }
 }
