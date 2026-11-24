@@ -1,6 +1,6 @@
 {
   "start": "2026-07-17",
-  "cash": 9051.519982226178,
+  "cash": 9051.335261920547,
   "pos": {
     "DELL": {
       "stk": -1.654425995339466,
@@ -25,8 +25,8 @@
     }
   },
   "bh_anteile": 13.32054612938296,
-  "handelstage": 91,
-  "letzter_tag": "2026-11-20",
+  "handelstage": 92,
+  "letzter_tag": "2026-11-23",
   "regime_mem": {
     "conf_sign": 1,
     "pend_sign": -1,
